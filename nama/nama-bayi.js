@@ -5,10 +5,8 @@ function getName() {
         return Math.floor(Math.random() * (max - min)) + min;
     };
 
-    var prefixes = ["Dengansepenuhhati ","Kanselalucayan","inhilangingatan", "Manusia Biasa ", "C'yank Dya ", "Wet willy O'", "O'", "Ronald Mac ", "The wee bellboy ", "bahagia-melihatmu Tersenyum ", "NggaSuka'BasaBasi-KalauMau Ngomong'Mending-ToThe Point'Aja ",
-                    "Emuach-Emuach ", "Si Piink-Queenchez ", "Tersenyum'Maniez ", "'Akan-Selalu ", "Cinta-iank'tulus ", "Pug face ", "Disgruntled ", "Down'n'Out ", "Randy ", "PengenBelajar Utk'merasakan-sebuah Keikhlasan ", "jenuh'Dengan-smuaini ", "Hatiya-Cenat'Cenut "],
-        affixes = ["' sedih lihat", "Hiks", "Meski'HatidanCinta-ini ", "Telah'qauLukai-GubRakk", "'LoversEdition", "'iank-prnhMrasakn", "'s milk", 
-                  "Sakityach'CintaDumay", "Tpi-ttapBngkit'danMncari", "SelaLu'MngingatMu", "'s pot pouri mix", "KaloDi-Pasar SuQa'Nyasar", "'s porridge juice", "'s liquid lunch", "'s morning glory", "Akan Trus'TinggalDi-HatinyaDlam Jrak'WaktuYang-CkupLama", "Kuinginmelukis'sinarmudihati"],
+    var prefixes = ["Abid (Ahli Ibadah)","Pranaja (Anak laki-laki)","Pranaja (Anak laki-laki)", "Abinaya (Semangat)", "Alexi (Penjaga, pejuang, pelindung)", "Abinaya (Semangat)", "Basupati (Tak takut mati)", "Abqari (Genius, pintar)", "Agam (Kuat)", "Agler (Terkenal mulia)", "Abraham (Ayah semua orang) ", "Achilles (Kekuatan)", "Azka (Bersih, suci)", "Aldric (Bijaksana)", "Aaron (Cahaya gunung yang tinngi)", "Blenda (Penuh kemegahan)", "Abdul (Hamba Allah)", "Rahman (Ar-Rahman : Yang Maha Pengasih)", "Hafiz (Yang terpelihara)", "Abdullah (Hamba Allah)", "Abid (Beribadah)", "Pratama (Anak Pertama)", "Reynand (Bijaksana, besar, berani, kuat)"],
+        affixes = ["Abrisam (Ketampanan, kelembutan)", "Abyan (Bisa menjelaskan secara jelas)", "Nandana (Anak laki-laki)", "Achazia (Raja)", "Brigit (Kekuatan)", "Aharon (Agung dan mulia)", "Ahmad (Terpercaya, jujur, nama kecil nabi Muhammad S.A.W.)", "Adam (yang pertama di bumi)", "Albert (mulia, cemerlang)", "Adrian (pemberani)", "Nurwahid (Cahaya utama, pertama)", "Poldi (Orang yang sangat berani)", "Emery (Pemimpin yang baik hati)", "Adelardo (Pangeran)", "Cetta (Berpengetahuan luas)", "Early ()", "Radmilo (Bekerja untuk rakyat)"],
         randomise = randomNumber(3, 0),
         randyP = randomNumber(prefixes.length, 0),
         randyA = randomNumber(affixes.length, 0),
