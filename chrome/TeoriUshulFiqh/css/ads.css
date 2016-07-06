@@ -1,0 +1,284 @@
+/* Note: 1px = 1dp in this css */
+
+/* == Colors == */
+body {
+  background-color: #f4f4f4;
+}
+.title-link {
+  color: #000000;
+}
+.button {
+  background-color: #4cbe99;
+}
+.button-text,
+.button-link {
+  color: #ffffff;
+}
+.price,
+.reviews {
+  color: rgba(0,0,0,0.5);
+}
+.reviews svg {
+  fill: rgba(0,0,0,0.7);
+}
+.url-link {
+  color: rgba(0,0,0,0.3);
+}
+
+/* == Fonts == */
+body {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+}
+@media (min-height: 100px) {
+  body {
+    font-size: 11px;
+  }
+}
+@media (min-width: 360px) and (min-height: 100px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (min-width: 700px) and (min-height: 100px) {
+  body {
+    font-size: 16px;
+  }
+}
+.title {
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+.button {
+  font-size: 1.1em;
+}
+.body,
+.price,
+.reviews,
+.url {
+  font-size: 1em;
+  line-height: 1.1em;
+}
+@media (min-width: 360px) and (min-height: 100px) {
+  .title {
+    font-size: 1.2em;
+    line-height: 1.25em;
+  }
+  .button {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 700px) and (min-height: 100px) {
+  .title {
+    font-size: 1.5em;
+    line-height: 1.55em;
+  }
+  .button {
+    font-size: 1.5em;
+  }
+}
+
+/* == Layout == */
+.app-icon,
+.image {
+  float: left;
+  margin: 0 8px 8px 8px;
+  padding: 0;
+}
+.button {
+  display: block;
+  float: right;
+  margin: 0 8px 4px;
+  position: relative;
+  top: 0;
+}
+.title {
+  margin-bottom: 5px;
+  padding: 5px 0 0 0;
+}
+/**
+ * == App install ad layout ==
+ * App store, price, and reviews are
+ * optional elements.
+ */
+.app-store {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+}
+.reviews {
+  display: inline-block;
+}
+.rating-stars,
+.reviews-count {
+  display: inline;
+}
+.reviews-count {
+  margin-left: 2px;
+}
+.price {
+  display: none;
+}
+@media (min-width: 360px) {
+  .price {
+    display: inline-block;
+  }
+}
+/* == Content ad layout == */
+.url {
+  padding: 0;
+}
+
+/* == App icon, content image == */
+.app-icon a {
+  display: inline-block;
+}
+.app-icon img,
+.image img {
+  height: 50px;
+  width: 50px;
+}
+.app-icon img {
+  border-radius: 20%;
+}
+@media (min-width: 360px) and (min-height: 100px) {
+  .app-icon img,
+  .image img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+/* == Title == */
+.title {
+  display: block;
+  text-align: left;
+}
+
+/* == Button == */
+.button {
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
+}
+.button-link {
+  display: block;
+  position: relative;
+  padding: 0 1em;
+}
+.button svg {
+  display: none;
+}
+.button {
+  height: 2.8em;
+}
+.button-text {
+  display: block;
+  line-height: 2.8em;
+  text-align: center;
+  min-width: 50px;
+  max-width: 78px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media (min-width: 360px) {
+  .button-link {
+    padding: 0 1.5em;
+  }
+  .button-text {
+    max-width: 100px;
+  }
+}
+@media (min-width: 700px) and (min-height: 100px) {
+  .button {
+    height: 2em;
+  }
+  .button-text {
+    line-height: 2em;
+    max-width: 180px;
+  }
+}
+
+/* == App store == */
+.app-store {
+  border: none;
+}
+.app-store a {
+  display: inline-block;
+  height: 1.4em;
+}
+.app-store img {
+  height: 100%;
+  width: auto;
+}
+@media (min-width: 700px) and (min-height: 100px) {
+  .app-store a {
+    height: 1.1em;
+  }
+}
+
+/* == Price == */
+.price {
+  /* add more customizations here */
+}
+
+/* == App rating == */
+.reviews {
+  border: none;
+  line-height: 1.1em;
+}
+.rating-star {
+  display: inline;
+  float: left;
+  height: 1.1em;
+  width: 1.1em;
+}
+
+/* == Url == */
+.url {
+  display: inline-block;
+  /* word-break only works with inline-block */
+  word-break: break-all;
+}
+
+/* == Attribution == */
+.attribution {
+  background-color: #fbb320;
+  border-radius: 2px;
+  color: #ffffff;
+  display: table;
+  font-size: 13px;
+  line-height: 13px;
+  margin: 4px 8px;
+  padding: 0 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rtl .attribution {
+  left: auto;
+  right: 0;
+}
+
+/* == Other == */
+.ads a {
+  text-decoration: none;
+}
+.ads, .ad {
+  /**
+   * DO NOT TOUCH OR REMOVE
+   * Will break image rendering
+   */
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  word-wrap: break-word;
+}
+.ad {
+  /* Padding for attribution */
+  padding-top: 23px;
+  height: calc(100% - 23px);
+}

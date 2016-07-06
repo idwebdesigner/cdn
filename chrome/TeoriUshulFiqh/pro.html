@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grid Item Animation Layout - Demo 1</title>
+		<meta name="description" content="A responsive, magazine-like website layout with a grid item animation effect when opening the content" />
+		<meta name="keywords" content="grid, layout, effect, animated, responsive, magazine, template, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script src="js/modernizr.custom.js"></script>
+        
+        <link rel="stylesheet" href="shortcodes/jquery-ui.css">
+        <script src="shortcodes/external/jquery/jquery.js"></script>
+        <script src="shortcodes/jquery-ui.js"></script>
+        <style>
+        * {
+           -webkit-user-select: none;
+        }        
+        </style>
+  <script> $(function() { $( document ).tooltip({ track: true }); }); </script>
+  <script> $(function() { $( "#accordion" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion" ).accordion({ collapsible: true }); }); </script>
+  <script> $(function() { $( "#accordion2" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion2" ).accordion({ collapsible: true }); }); </script>
+  <script> $(function() { $( "#accordion3" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion3" ).accordion({ collapsible: true }); }); </script>
+  <script> $(function() { $( "#accordion4" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion4" ).accordion({ collapsible: true }); }); </script>
+  <script> $(function() { $( "#accordion5" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion5" ).accordion({ collapsible: true }); }); </script>
+  <script> $(function() { $( "#accordion6" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion6" ).accordion({ collapsible: true }); }); </script>
+  <script> $(function() { $( "#accordion7" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion7" ).accordion({ collapsible: true }); }); </script>
+  <script> $(function() { $( "#accordion8" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion8" ).accordion({ collapsible: true }); }); </script>
+  <script> $(function() { $( "#accordion9" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion9" ).accordion({ collapsible: true }); }); </script>
+  <script> $(function() { $( "#accordion10" ).accordion({ heightStyle: "content" }); }); </script>
+  <script> $(function() { $( "#accordion10" ).accordion({ collapsible: true }); }); </script>
+	</head>
+	<body>
+		<div class="container">
+			<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
+			<div id="theSidebar" class="sidebar">
+				<button class="close-button fa fa-fw fa-close"></button>
+				<img width="50%" src="img/logo_t.png"/>
+				<h1><span>Teori<span> Ushul Fiqh</h1>
+				<nav class="codrops-demos">
+					<a class="current-demo" href="pro.html">Versi Pro</a> / <a href="index.html">Free</a>
+				</nav>
+				<div class="related">
+					<h3>REDAKSI</h3>
+					<i class="fa fa-user"></i> Komunitas ushulfiqh<br/>
+                    <i class="fa fa-envelope-square"></i> ushulfiqh@designer.web.id<br/>
+                    <i class="fa fa-map-marker"></i> Yogyakarta<br/>
+					<h3>DEVELOPER</h3>
+					<i class="fa fa-envelope-square"></i> dev@designer.web.id<br/>
+                    <i class="fa fa-heart"></i> designer.web.id<br/>
+				</div>
+			</div>
+			<div id="theGrid" class="main">
+				<section class="grid">
+					<header class="top-bar">
+						<h2 class="top-bar__headline">Teori Ushul Fiqh</h2>
+						<div class="filter">
+							<span>Filter by:</span>
+							<span class="dropdown">Popular</span>
+						</div>
+					</header>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Mashlahah Mursalah</h2>
+						<div class="loader"></div>
+						<span class="category">by <b>Redaksi Ushulfiqh.com</b></span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author01" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Nasakh Mansukh</h2>
+						<div class="loader"></div>
+						<span class="category">by <b>Redaksi Ushulfiqh.com</b></span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author02" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Amm dan Khash</h2>
+						<div class="loader"></div>
+						<span class="category">by <b>Redaksi Ushulfiqh.com</b></span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author03" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Mutlaq Muqayyad</h2>
+						<div class="loader"></div>
+						<span class="category">by <b>Redaksi Ushulfiqh.com</b></span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author04" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Muhkam dan Mutasyabih</h2>
+						<div class="loader"></div>
+						<span class="category">by <b>Redaksi Ushulfiqh.com</b></span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author05" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Amr dan Nahi</h2>
+						<div class="loader"></div>
+						<span class="category">by <b>Redaksi Ushulfiqh.com</b></span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author06" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Mafhum</h2>
+						<div class="loader"></div>
+						<span class="category">by <b>Redaksi Ushulfiqh.com</b></span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author07" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+						</div>
+					</a>
+					<footer class="page-meta">
+						<span>Copyright &copy; 2016 Ushulfiqh.com</span>
+					</footer>
+				</section>
+				<section class="content">
+					<div class="scroll-wrap">
+						<article class="content__item">
+							<span class="category category--full">Teori Ushul Fiqh</span>
+							<h2 class="title title--full">Mashlahah Mursalah</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author01" />
+								<span class="meta__author">Redaksi Ushulfiqh.com</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+							</div>
+                            
+<p>Semua perintah dan larangan Allah memiliki dimensi <i>Maslahah</i> dan bisa dirasionalkan, yaitu: apa tujuan dibalik suatu hukum ditetapkan. Pendekatan maslahah (<i>substansive rationality</i>) menekankan tujuan dibalik hukum. </p><p>Kemaslahatan adalah fondasi paling 
+pokok dari setiap perundang-undangan syari&#8217;at Islam. Al-Qur'an tanpa 
+kemaslahatan tidak berfungsi apa-apa buat manusia, kecuali untuk 
+Al-Qur'an itu sendiri. Al-Qur'an baru bermakna sekiranya menyertakan 
+    cita kemaslahatan bagi umat manusia.<br />
+<br />
+Untuk mengungkap aspek <i>maslahah</i>
+ dan rasionalitas dari hukum tidak cukup berpatokan kepada teks Qur'an, 
+tetapi juga harus menggunakan 
+pendekatan sosio-historis guna mengetahui alasan logis kenapa Allah 
+menyebutkan hukuman semacam itu dalam Al-Qur&#8217;an. Melalui pendekatan ini 
+dimungkinkan untuk mengubah hukum yang tercantum dalam Al-Qur&#8217;an dengan hukum baru yang sesuai dengan zaman modern.</p> <br />
+
+                            <p><b>Konsep Mashlahah Mursalah</b></p>
+<p>Realitas
+ dalam Islam adalah ada beberapa syariat yang disepakati seluruh umat 
+Islam seperti kewajiban Shalat, puasa Ramadhan, dsb; yang lain adalah 
+syariat 
+yang &#8220;relevan&#8221; untuk dan hanya dipercayai oleh umat Islam yang 
+mempercayainya saja, sisanya adalah 
+syariat yang tidak bisa lagi dilaksanakan dalam konteks masyarakat 
+modern. Dalam konteks yang terakhir ini <i>Maslahah</i> memiliki 
+otoritas untuk mengontrol keberadaan teks dengan menganulir beberapa
+ teks suci yang sudah aus.<br />
+<br />
+Keharusan
+ memakai jilbab (bagi yang berpendapat demikian), tentu hanya relevan 
+bagi umat Islam yang meyakini pendapat keharusan berjilbab, dan tidak &#8220;<i>fair</i>&#8221; jika mewajibkan syariat ini kepada seluruh umat Islam. (Lihat: <a href="http://fiqhushul.blogspot.co.id/">Jilbab</a>, <a href="http://fiqhushul.blogspot.co.id/"><u>Aurat</u></a>). Hukum Islam yang disebut &#8220;<i>hudud</i>&#8221; (hukum pidana Islam) seperti potong tangan, <i>qisas</i>
+ (hukum mata balas mata, dsb.), rajam, dan hukum-hukum fisik yang lain masuk 
+dalam jenis yang tidak bisa lagi diterapkan dalam masyarakat modern 
+modern. Sebab rasa keadilan modern sudah tak bisa 
+menerimanya lagi. Ditambah faktor lain dimana situasi sosial-politik di 
+negeri-negeri Muslim masih dikuasai oleh penguasa-penguasa otoriter
+sehingga tidak kondusif untuk pelaksanaan hukum <i>hudud </i>ini. Di 
+negeri-negeri
+ Muslim dimana sistem peradilannya masih belum independen, hukum ini 
+menjadi sangat berbahaya jika diterapkan. Maka dari perspektif 
+<i>maslahah</i>, hukuman <i>hudud </i>yang dikenal dalam Islam sudah tidak bisa lagi 
+diterapkan saat ini. Sama dengan hukum perbudakan, meskipun hukum ini 
+ada dalam Al-Quran dan dibahas dengan sangat ekstensif di literatur fiqh Islam
+ klasik, dia tidak bisa lagi diterapkan saat ini sebab lembaga perbudakan
+ sudah tidak bisa lagi diterima oleh rasa keadilan masyarakat modern. Dengan analisis <a href="http://fiqhushul.blogspot.co.id/2015/11/mafhum.html"><i>Mafhum</i></a>
+ yang dibahas pada bagian lain diblog ini, meski Al-Qur'an tidak secara 
+eksplisit mengharamkan tindak dehumanisasi ini, dengan mencermati pesan 
+yang implisit dari ayat Qur'an kita menjumpai banyak indikasi bahwa visi
+ ke depan Islam yang hendak dituju adalah kesetaraan, yang dalam konteks
+ ini diupayakan melalui penghapusan sistem perbudakan.<br />
+<br />
+Dalam proses istinbath hukum, kita bisa langsung berpatokan kepada dimensi
+ maslahah dari syari&#8217;at. Sebab ia lebih bersifat universal dan kompleks. Ketika maslahah yang menjadi 
+patokan, maka setiap kasus yang menegasikan kemaslahatan akan dihukumi 
+    haram.</p><br />
+
+                            <p><b>Contoh </b></p>
+<p>Lihat contoh penggunaan konsep <i>Mashlahah Mursalah</i> dalam kasus:<br />
+    
+<div id="accordion">
+  <h3>Mengucapkan selamat natal</h3>
+  <div>
+    <p>
+        Masyarakat Indonesia memiliki kebiasaan atau tradisi saling 
+mengucapkan selamat atas perayaan agama yang dilakukan oleh setiap umat 
+beragama. Sikap saling mengapresiasi seperti itu sudah lama dipraktekkan
+ umat beragama di Indonesia. <i>Maslahah</i> sebagai upaya merajut dan mengukuhkan 
+harmoni sosial antar umat beragama di Indonesia. 
+Setiap umat beragama harus saling menghargai dan mengapresiasi umat 
+agama lain, termasuk dengan cara mengucapkan selamat kalau perayaan 
+agama masing-masing tiba. Termasuk doa bersama, mengucapkan salam kepada
+ nonmuslim, menghadiri dan mengucapkan selamat Natal, dan 
+persoalan-persoalan yang terkait langsung dengan hubungan umat Islam 
+dengan umat agama-agama lain. Memang tampak simbolis, tapi simbolisasi 
+seperti ini potensial mengurangi konflik dan ketegangan antar umat beragama.
+    </p>
+  </div>
+  <h3>Larangan poligami dan pemukulan istri</h3>
+  <div>
+    <p>
+Umat
+ Islam tidak usah menerapkan 
+poligami. Dalam pandangan masyarakat modern, menikah dengan banyak 
+perempuan adalah bagian dari perkawinan primitif. Menyemarakkan 
+poligami akan menimbulkan stigma negatif terhadap agama Islam sendiri. 
+Begitu juga soal pemukulan suami terhadap istri, masyarakat modern tidak
+ mengerti kenapa seorang suami diberi kewenangan untuk memukul istrinya.
+ Memukul seorang istri bagaimanapun tidak bisa dipahami dan tetap 
+dianggap sebagai 
+tindakan kriminal, sekalipun dengan merujuk pada Al-Qur&#8217;an. Ayat 
+al-Qur&#8217;an yang memperkenalkan pemukulan istri misalnya <a href="#" title="الر&#1616;&#1617;ج&#1614;ال&#1615; ق&#1614;و&#1617;&#1614;ام&#1615;ون&#1614; ع&#1614;ل&#1614;ى الن&#1616;&#1617;س&#1614;اء&#1616; ب&#1616;م&#1614;ا
+ ف&#1614;ض&#1617;&#1614;ل&#1614; الل&#1617;&#1614;ه&#1615; ب&#1614;ع&#1618;ض&#1614;ه&#1615;م&#1618; ع&#1614;ل&#1614;ى&#1648; ب&#1614;ع&#1618;ض&#1613; و&#1614;ب&#1616;م&#1614;ا أ&#1614;نف&#1614;ق&#1615;وا م&#1616;ن&#1618; 
+أ&#1614;م&#1618;و&#1614;ال&#1616;ه&#1616;م&#1618; &#1754; ف&#1614;الص&#1617;&#1614;ال&#1616;ح&#1614;ات&#1615; ق&#1614;ان&#1616;ت&#1614;ات&#1612; ح&#1614;اف&#1616;ظ&#1614;ات&#1612; ل&#1616;&#1617;ل&#1618;غ&#1614;ي&#1618;ب&#1616; ب&#1616;م&#1614;ا 
+ح&#1614;ف&#1616;ظ&#1614; الل&#1617;&#1614;ه&#1615; &#1754; و&#1614;الل&#1617;&#1614;ات&#1616;ي ت&#1614;خ&#1614;اف&#1615;ون&#1614; ن&#1615;ش&#1615;وز&#1614;ه&#1615;ن&#1617;&#1614; ف&#1614;ع&#1616;ظ&#1615;وه&#1615;ن&#1617;&#1614; 
+و&#1614;اه&#1618;ج&#1615;ر&#1615;وه&#1615;ن&#1617;&#1614; ف&#1616;ي ال&#1618;م&#1614;ض&#1614;اج&#1616;ع&#1616; و&#1614;اض&#1618;ر&#1616;ب&#1615;وه&#1615;ن&#1617;&#1614; &#1750; ف&#1614;إ&#1616;ن&#1618; أ&#1614;ط&#1614;ع&#1618;ن&#1614;ك&#1615;م&#1618; 
+ف&#1614;ل&#1614;ا ت&#1614;ب&#1618;غ&#1615;وا ع&#1614;ل&#1614;ي&#1618;ه&#1616;ن&#1617;&#1614; س&#1614;ب&#1616;يل&#1611;ا &#1751; إ&#1616;ن&#1617;&#1614; الل&#1617;&#1614;ه&#1614; ك&#1614;ان&#1614; ع&#1614;ل&#1616;ي&#1617;&#1611;ا 
+ك&#1614;ب&#1616;ير&#1611;ا
+
+Kaum laki-laki itu adalah pemimpin bagi kaum 
+wanita, oleh karena Allah telah melebihkan sebahagian mereka (laki-laki)
+ atas sebahagian yang lain (wanita), dan karena mereka (laki-laki) telah
+ menafkahkan sebagian dari harta mereka. Sebab itu maka wanita yang 
+saleh, ialah yang taat kepada Allah lagi memelihara diri ketika suaminya
+ tidak ada, oleh karena Allah telah memelihara (mereka). Wanita-wanita 
+yang kamu khawatirkan nusyuznya, maka nasehatilah mereka dan pisahkanlah
+ mereka di tempat tidur mereka, dan pukullah mereka. Kemudian jika 
+mereka mentaatimu, maka janganlah kamu mencari-cari jalan untuk 
+menyusahkannya. Sesungguhnya Allah Maha Tinggi lagi Maha 
+Besar.">QS. al-Nisa 4: 34</a> tidak bisa dimaknai secara harafiah, karena ia lahir 
+dari sebuah 
+konteks yang berbeda dengan konteks umat Islam hari ini. Keduanya keluar
+ dari konteks kemaslahatan.
+    </p>
+  </div>
+  <h3>Moratorium pemberlakuan hukum pidana Islam</h3>
+  <div>
+    <p>
+Misalnya pada kasus hukuman potong tangan, satu bentuk hukum yang tepat 
+berlaku di zaman nomaden dimana tidak akan 
+mungkin membuat hukuman penjara seperti zaman sekarang. Tujuan dari 
+pemberlakuan hukum ini ialah mencegah pencuri untuk mengulangi 
+perbuatannya dan memberi tahu kepada khalayak bahwa statusnya adalah 
+pencuri. Dari perspektif kita yang hidup zaman modern, hukum ini tidak 
+relevan. Tujuan hukum bisa dicapai dengan cara lain tidak harus potong 
+tangan.
+    </p>
+  </div>
+  <h3>Kebolehan Aborsi</h3>
+  <div>
+    <p>
+Ada beberapa point yang perlu dipertimbangkan untuk menganalisis kasus aborsi dari perspektif <i>Mashlahah Mursalah</i>. <br />
+<br />
+<i>Pertama,</i> ketika bicara aborsi, yang 
+menjadi sasaran dan 
+korban selalu kaum perempuan. Ketika dihadapkan pada persoalan kehamilan
+ yang tidak dikehendaki, perempuan yang paling terbebani dan paling 
+bertanggung jawab. Padahal penyebab kehamilan yang tidak
+ dikehendaki adalah beragam. Hasil penelitian Pusat Kesehatan UI dan Yayasan Kesehatan 
+Perempuan 
+tahun 2003 misalnya, menunjukkan bahwa 87 % mereka yang melakukan aborsi
+ justru adalah 
+ibu rumah tangga dengan suami yang sah. Data menunjukkan kalau 87 % 
+pelaku aborsi di Indonesia adalah perempuan bersuami, misalnya karena 
+gagal KB, alasan kesehatan, bahkan alasan karir. Bicara data, tidak 
+kurang dari dua juta perempuan Indonesia setiap 
+tahun melakukan aborsi karena kehamilan yang tidak mereka kehendaki. Dan
+ kebanyakan
+ melakukan praktik aborsi secara tidak aman, sehingga ikut mendongkrak 
+angka kematian ibu melahirkan di Indonesia. Dalam rangka <i>Mashlahah</i> maka perlu sistem praktk aborsi yang legal dan aman.<br />
+<br />
+<i>Kedua,</i> d sisi lain, masyarakat 
+selalu menganggap kasus aborsi itu 
+pasti akibat kehamilan di luar nikah. Mereka yang melakukannya dianggap 
+berdosa. Padahal mereka punya beban yang sangat tinggi kalau anaknya 
+sampai lahir. Misalnya kasus orang yang diperkosa lalu hamil. Mereka adalah 
+korban. Tapi 
+ketika menghadapi persoalan ini, masyarakat tidak berempati 
+atau memberi solusi, dan selalu saja bertindak menghakimi. Untuk kasus 
+kehamilan yang tidak dikehendaki karena bencana 
+perkosaan, dilihat dari sisi apapun tentu sangat membebani perempuan. 
+Untuk kasus seperti ini, mesti dicarikan solusi yang bijak. Kalau si 
+perempuan tidak mampu menanggung itu, baik secara medis 
+maupun psikis, maka kalau mereka tidak menginginkan anaknya, maka secara
+ <i>Maslahah</i> bisa 
+digugurkan.<br />
+<br />
+<i>Ketiga,</i> Hukum di Indonesia tidak membuka ruang bagi tindakan 
+aborsi. UU Indonesia menutup sama sekali praktik aborsi 
+dengan alasan apapun. Dalam UU Kesehatan terdapat klausul 
+tentang aborsi itu sangat bias (gender), dimana doktermestinya&nbsp; mengambil tindakan untuk menyelamatkan ibu dan janinnya. 
+Karenanya untuk mendapat pelayanan aborsi yang aman, nyaris tidak ada dokter 
+yang mau memberi pertolongan. Sehingga kemudian mereka lari ke 
+praktik-praktik dukun atau melalukan 
+aborsi sendiri. Kasus seperti inilah yang paling sering menimbulkan 
+resiko pendarahan. Dalam konteks <i>Mashlahah</i> mestinya UU yang bias 
+gender ini direvisi dan menjamin terselenggaranya aborsi yang legal dan 
+aman. Perlu ada payung hukum untuk melindungi praktik ini, dan supaya 
+dokter punya jaminan hukum untuk melakukannya. <br />
+<br />
+<i>Keempat, </i>dari sisi kedokteran, 
+perlu mempersiapkan tenaga yang memiliki keahlian sehingga terjamin 
+keamanan sesuai prosedur standar kesehatan, Ini diperlukan agar kita 
+punya solusi dalam kondisi-kondisi tertentu, bukan lari ke dukun, tukang
+ pijat, atau mengaborsi sendiri. Itu membahayakan nyawa perempuan, yang 
+dalam konteks ini keluar dari kemaslahatan.
+    </p>
+  </div>
+  <h3>Menghapus sistem perbudakan</h3>
+  <div>
+    <p>
+Sebagaimana disebutkan sebelumnya, upaya 
+melegalkan perbudakan adalah bertentangan dengan kemaslahatan, dan itu 
+tidak dibenarkan. Dengan demikian ayat-ayat Al-Qur'an yang berkaitan dengan perbudakan tidak bisa diberlakukan.
+    </p>
+  </div>
+</div><p/>
+    
+<br />
+
+<p><b>Logika Maslahah</b><p/>
+<p>
+Logika
+ dasarnya bukan karena ajaran Islam dicocok-cocokkan secara opurtunistik
+ dengan perkembangan kemaslahatan, melainkan karena tuntutan 
+kemaslahatan itu secara obyektif mengharuskan demikian. Hal ini tidak lain karakter hukum 
+Islam adalah mengutamakan kemaslahatan. <i>Syari'at</i> ditetapkan tidak lain 
+adalah untuk kemaslahatan manusia. Karenanya, yang harus 
+diperhitungkan dalam menetapkan sebuah produk hukum adalah: apakah 
+produknya akan membawa kemaslahatan atau 
+tidak. Jadi, ketetapan sebuah produk hukum selalu ditentukan oleh tujuan
+ syariat itu sendiri. Inilah logika maslahah sebagai metode atau pendekatan yang harus dipakai.<br />
+<br />
+Khalifah
+
+ Umar Umar ibn Khattab mencontohkan banyak hal. Misalnya pada ayat 
+Al-Qur&#8217;an yang 
+bersifat kontekstual 
+seperti jatah harta rampasan perang diantara umat Islam. Al-Qur&#8217;an 
+mengaturnya&nbsp; dengan sangat jelas, misalnya dalam <a href="#" title="ف&#1614;ك&#1615;ل&#1615;وا م&#1616;م&#1617;&#1614;ا غ&#1614;ن&#1616;م&#1618;ت&#1615;م&#1618; ح&#1614;ل&#1614;ال&#1611;ا ط&#1614;ي&#1616;&#1617;ب&#1611;ا &#1754; 
+و&#1614;ات&#1617;&#1614;ق&#1615;وا الل&#1617;&#1614;ه&#1614; &#1754; إ&#1616;ن&#1617;&#1614; الل&#1617;&#1614;ه&#1614; غ&#1614;ف&#1615;ور&#1612; ر&#1617;&#1614;ح&#1616;يم&#1612;
+
+Maka makanlah dari sebagian rampasan perang yang telah kamu ambil itu, 
+sebagai makanan yang halal lagi baik, dan bertakwalah kepada Allah; 
+sesungguhnya Allah Maha Pengampun lagi Maha Penyayang.">QS. 
+Al-Anfal 8: 69</a>. Tapi 
+Umar tidak 
+menggunakan 
+ayat ini ketika kasus pemberian jatah rampasan perang di Khaibar. 
+Khalifah Umar tidak melawan Al-Qur&#8217;an karena konteks yang menjadi 
+pertimbangannya adalah soal 
+kemaslahatan. Pada masa itu tentara sudah cukup kaya raya, 
+sementara banyak orang miskin yang lebih membutuhkannya sehingga 
+pertimbangannya tepat: lebih baik harta itu dibagikan kepada orang 
+miskin. Pertimbangannya adalah soal kemaslahatan. Contoh lain adalah 
+<a href="#" title="إ&#1616;ن&#1617;&#1614;م&#1614;ا الص&#1617;&#1614;د&#1614;ق&#1614;ات&#1615; ل&#1616;ل&#1618;ف&#1615;ق&#1614;ر&#1614;اء&#1616;
+ و&#1614;ال&#1618;م&#1614;س&#1614;اك&#1616;ين&#1616; و&#1614;ال&#1618;ع&#1614;ام&#1616;ل&#1616;ين&#1614; ع&#1614;ل&#1614;ي&#1618;ه&#1614;ا و&#1614;ال&#1618;م&#1615;ؤ&#1614;ل&#1617;&#1614;ف&#1614;ة&#1616; ق&#1615;ل&#1615;وب&#1615;ه&#1615;م&#1618; 
+و&#1614;ف&#1616;ي الر&#1616;&#1617;ق&#1614;اب&#1616; و&#1614;ال&#1618;غ&#1614;ار&#1616;م&#1616;ين&#1614; و&#1614;ف&#1616;ي س&#1614;ب&#1616;يل&#1616; الل&#1617;&#1614;ه&#1616; و&#1614;اب&#1618;ن&#1616; 
+الس&#1617;&#1614;ب&#1616;يل&#1616; &#1750; ف&#1614;ر&#1616;يض&#1614;ة&#1611; م&#1616;&#1617;ن&#1614; الل&#1617;&#1614;ه&#1616; &#1751; و&#1614;الل&#1617;&#1614;ه&#1615; ع&#1614;ل&#1616;يم&#1612; ح&#1614;ك&#1616;يم&#1612;
+
+Sesungguhnya zakat-zakat itu, hanyalah untuk orang-orang fakir, orang-orang miskin, 
+pengurus-pengurus zakat, para mu'allaf yang dibujuk hatinya, untuk 
+(memerdekakan) budak, orang-orang yang berhutang, untuk jalan Allah dan 
+untuk mereka yuang sedang dalam perjalanan, sebagai suatu ketetapan yang
+ diwajibkan Allah, dan Allah Maha Mengetahui lagi Maha 
+Bijaksana.">QS. At-Taubah 9: 60</a> yang menerangkan para&nbsp;<i>muallaf&nbsp;</i>(orang yang 
+baru masuk Islam) mendapat bagian dari harta zakat. Namun Umar tidak 
+memberikan jatah mereka, karena konteksnya yang sudah berbeda. Lihat 
+contoh lainnya: <a href="http://ushulfiqh.com">Umar ibn Khattab</a><br />
+<br />
+Logika Maslahah adalah bukan merubah hukum yang ditetapkan dalam Al-Qur'an, tapi 
+tentang perspektif memahami Al-Qur'an yang mengalami pergeseran ke arah yang lebih 
+    kontekstual karena perbedaan konteks.</p><br />
+
+<b>Questions &amp; Answers</b><br />
+<br />
+Tidaklah
+ mustahil bahwa sesuatu yang bernilai maslahat dalam suatu tempat dan 
+waktu tertentu, kemudian berubah menjadi mafsadat dalam suatu ruang dan 
+waktu yang lain. Apa ini berarti konsep <i>Mahlahah</i> abstrak dan tidak jelas, antara satu orang dengan
+ lainnya bisa jadi berbeda dalam penentuan maslahah dan kriterianya 
+sangat subjektif?. Lalu bagaimana jika  terjadi pertentangan antara teks (<i>nash</i>)
+ dan maslahah, mana yang mesti dimenangkan?<br />
+<br />
+
+<div id="accordion2">
+  <h3>Subjektifitas Mashlahah</h3>
+  <div>
+    <p><i>Maslahah</i>
+ bukan konsep yang bersifat abstrak dan tidak jelas. Ini karena 
+pergeseran paradigma hukum Islam di era modern: tidak lagi hitam-putih. 
+Maslahah
+ sebagai metodologi hukum Islam berguna merumuskan hukum Islam yang 
+produktif dan progresif. Kriterianya 
+bisa sangat subjektif dimana antara satu orang dengan
+ lainnya bisa berbeda dalam penentuan <i>Maslahah</i>. Kasus aborsi pada
+ contoh yang disebutkan sebelumnya misalnya, bisa sangat berbeda pada 
+setiap kasus. Dan pada setiap hukum yang ditetapkan dengan Mashlahah, 
+selalu bisa bernilai maslahah dalam suatu tempat dan 
+waktu tertentu tapi bisa menjadi mafsadah dalam suatu ruang dan 
+waktu yang lain. Harus selalu kontekstual.<br />
+<br />
+Konsep <i>Nasakh-Mansukh</i> juga bisa diletakkan dalam bingkai Mashlahah. Penganuliran beberapa syari&#8217;at baik <i>Nasakh</i> terhadap syari&#8217;at nabi-nabi
+ terdahulu (<i>syar&#8217;u man qablana</i>) atau saling me<i>nasakh</i>
+ syari&#8217;at Nabi Muhammad sendiri yang dipandang tidak lagi bersendikan 
+kemaslahatan. Kasus <i>Nasakh Mansukh</i> adalah contoh dimana syari&#8217;at Islam yang baru 
+diundangkan, kerap dalam 3 sampai 5 tahun dianulir kembali oleh Nabi 
+karena tidak maslahah lagi. (Lihat: nasakh Mansukh)</p>
+  </div>
+  <h3>Jawaz Naskh al-Nushush bi al-Mashlahah</h3>
+  <div>
+    <p>Satu pertanyaan ontologis dalam ushul fikih: jika terjadi pertentangan antara teks (<i>nash</i>)
+ dan maslahah, mana yang mesti dimenangkan?  <br />
+<br />
+Jawabannya sederhana, tidak mungkin terjadi pertentangan antara <i>nash</i> dan <i>mashlahah</i>, karena apa yang diujarkan oleh <i>nash</i>
+ tidak lain adalah untuk kemaslahatan. Hukum yang ditetapkan tidak lain 
+adalah untuk kemaslahatan manusia. Lalu bagaimana dengan contoh-contoh 
+yang telah disebutkan?. Itu berbeda dengan harfiahnya. Mungkin itu 
+kemaslahatan 
+yang semu dan relatif, tidak seperti kemaslahatan hakiki seperti yang 
+ditetapkan Tuhan sesuai bunyi harafiah <i>nash</i>?. Apakah manusia memiliki 
+kewenangan untuk mempertanyakan dan menggugat kemaslahatan literal teks?.
+ Bukankah kewajiban manusia adalah mengamalkan dan mengimaninya secara sepenuh 
+hati?. Bukankah ulama ushul fikih klasik mengatakan bahwa yang dimenangkan 
+adalah <i>nash</i>, bukan "kemaslahatan semu"? <br />
+<br />
+Logika 
+khas Asy'ariah adalah 
+tidak perlu mempertanyakan apakah tuhan akan memberikan kemaslahatan 
+manusia atau tidak. Yang paling penting tugas manusia adalah mengerjakan
+ perintah dan meninggalkan larangan Tuhan, tanpa mempertanyakan makna 
+yang terbesit dalam setiap perintah dan larangan. Mu'tazilah. memiliki 
+logika disisi yang berseberangan, dimana manusia dianugerahi Allah 
+sebuah akal. Tidak mungkin Allah menurunkan hukum yang sama sekali tidak
+ bisa dipahami manusia. Logika maslahah, sebelumnya 
+memang sangat identik dengan teologi Mu&#8217;tazilah, 
+kalangan yang paling getol mewacanakan maslahat dalam konteks perdebatan
+ teologis. Perdebatan
+ dua madzhab teologis ini lalu berpengaruh terhadap logika hukum Islam. 
+Ketika terjadi pertentangan antara akal publik
+ dan bunyi harfiah teks ajaran, metodologi yang digunakan selalu 
+menundukkan akal publik. Karena&nbsp; madzhab Asy&#8217;ari adalah madzhab teologis
+ yang dominan kala itu, jadi sangat jarang ditemukan maslahah dijadikan 
+sebagai pertimbangan
+ dalam memformulasikan hukum. Namun kita dapat menilainya secara jernih 
+sekarang.<br />
+<br />&#8220;Naskh al-nushush bi al-mashlahah&#8221; Maslahah memiliki 
+otoritas untuk menganulir kententuan-ketentuan teks suci. Kemaslahatan 
+untuk mengontrol keberadaan teks dengan menganulir beberapa
+ teks suci yang sudah aus. Dengan cara ini, maka cita kemaslahatan akan 
+senantiasa berkreasi untuk memproduksi formulasi bahkan teks keagamaan 
+baru di tengah kegamangan dan kegagapan formulasi dan teks keagamaan 
+lama.</p>
+  </div>
+  <h3>Fenomena baru</h3>
+  <div>
+    <p>Masifnya penggunaan nalar <i>maslahah</i>
+ dalam menganalisis kasus-kasus baru memang fenomena baru. Beberapa abad
+ silam 
+pendekatan ini sangat jarang digunakan, bahkan ada kesan sarjana Islam 
+awal sangat anti menggunakannya. Bukan berarti ahistoris, hal ini, 
+sebagaimana disebutkan sebelumnya, adalah karena dominasi madzhab 
+Asy'ariyah.</p>
+  </div>
+</div>           
+                            
+<br/>
+<p>Jika suatu hal memiliki Mashlahah di satu sisi dan mudharat disisi yang 
+lain, maka menolak mudharat yang mengancam kehidupan banyak orang lebih 
+diutamakan ketimbang mengambil manfaatnya. Pada prinsipnya segala 
+aktivitas &#8216;ugal-ugalan&#8217; yang karenanya mengakibatkan gangguan atau 
+mudharat bagi masyarakat luas, tidak diperkenankan agama. Melakukan 
+aktivitas pembakaran hutan misalnya, meskipun membawa maslahat untuk 
+segelintir orang tapi asapnya bisa menganggu dan membahayakan masyarakat
+    luas. Pembakaran hutan dengan demikian merupakan aktivitas terlarang.</p><br />
+
+                            <p><b>Penutup</b></p>
+<p>Umat Islam tak perlu mengusulkan sanski-sanksi hukum fikih jinayat 
+(pidana) Islam seperti hukum qishash, hukum rajam, hukum potong tangan, 
+hukum pancung, dan lain-lain. Hukum penjara bagi pelaku kriminal tak 
+usah diusulkan untuk diganti hukum potong tangan, hukum pancung, hukum 
+qishash seperti yang diujarkan secara harafiah dalam al-Qur&#8217;an. Menangkap
+ spirit al-Qur&#8217;an, kita tahu bahwa yang terpenting dari pemberian sanksi
+ hukum adalah bagaimana menjerakan para pelaku kriminal (zawâjir). Jika 
+dengan hukum penjara, tujuan hukum sudah tercapai, maka tuntutan untuk 
+menerapkan sanksi hukum seperti potong tangan sudah tak diperlukan lagi.<br />
+<br />
+Meskipun konsep <i>mashlahah </i>bisa digunakan dalam beberapa kasus, namun 
+realitas penggunaannya 
+masih bersifat apologetik. <i>Maslahah </i>sejauh ini masih untuk 
+mengukuhkan 
+hukum yang sudah ada, bukan untuk memproduksi maupun merekontruksi hukum
+ yang sudah baku. Karenanya contoh yang sudah disebutkan sebelumnya 
+mungkin tidak populer. Metodologi yang populer masih memandang sebelah 
+mata 
+terhadap kemampuan akal publik dalam menganalisis dan menganulir 
+ketentuan-ketentuan legal-formalistik di dalam Islam yang tidak lagi 
+relevan.<br />
+<br />
+Maslahah mestinya digunakan untuk menelusuri 
+rasionalitas syariat dan mengaplikasikannya ke
+ dalam setiap putusan hukum. Maslahah yang ditekankan di sini tentu bukan hanya 
+maslahah yang berbasis pada teks, namun juga maslahah
+ yang diperoleh dari penalaran akal sehat sebagai 
+pertimbangan dalam putusan hukum. Dalam bahasa lain, <i>maqashid syari&#8217;ah</i>
+ (filosofi syari&#8217;at) mestinya lebih diprioritaskan ketimbang bentuk 
+formal hukum itu sendiri, sehingga ada kemungkinan untuk berpikir lain 
+yang tidak dogmatik saat berhadapan dengan hukum Islam, dan menjadikan 
+epistemologi hukum Islam tidak kaku. Maslahah mestinya dijadikan tumpuan
+ utama dalam menentukan hukum.<br />
+                            </p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Teori Ushul Fiqh</span>
+							<h2 class="title title--full">Nasakh Mansukh</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author02" />
+								<span class="meta__author">Redaksi Ushulfiqh.com</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+							</div>
+							<p>Nasakh adalah pembatalan hukum, baik dengan menghapuskan dan membuang teks Al-Qur'an yang menunjuk hukum (tidak dimasukkan dalam kodifikasi qur'an) atau membiarkan teks Al-Qur'an tersebut tetap ada sebagai petunjuk adanya hukum yang di mansukh.</p>
+							<p>Nasakh adalah penghapusan, sedemikian rupa, sehingga hukum yang
+ sudah dihapus atau digantikan dengan yang baru tidak boleh ditaati 
+selamanya. Nasakh menandai selesainya masa berlaku hukum syara', 
+diganti/dihapus denga hukum syara' yang baru.<p/><br />
+
+<p><b>Konsep Nasakh </b><p/>
+<p>Konsep dasar Al-Qur'an adalah wahyu yang berangkat dari konsep realitas. (Lihat: <u>Asbabun Nuzul</u>).
+ Proses penahapan turunnya Al-Qur'an sangat memperhatikan realitas 
+tersebut. Realitas yang dimaksud adalah masyarakat Arab abad ke-7 
+Masehi. Dan <i>Nasakh </i>adalah bukti ada dialektika hubungan antara 
+wahyu dengan realitas. Misalnya penahapan dalam pensyari'atan larangan 
+minum 
+khamr. Penahapan disini dapat dikatakan bahwa ayat-ayat yang terakhir 
+menurut urutannya turunnya menasakh hukum yang ada dalam ayat yang 
+mendahuluinya. Konsekuensi mengganti teks dengan teks lain adalah 
+membatalkan hukum dan diganti dengan hukum lain. Evolusi pelarangan 
+khamar dari status bisa ditoleransi pada <a href="#" title="
+&nbsp;و&#1614;م&#1616;ن
+ ث&#1614;م&#1614;ر&#1614;ات&#1616; الن&#1617;&#1614;خ&#1616;يل&#1616; و&#1614;الأ&#1614;ع&#1618;ن&#1614;اب&#1616; ت&#1614;ت&#1617;&#1614;خ&#1616;ذ&#1615;ون&#1614; م&#1616;ن&#1618;ه&#1615; س&#1614;ك&#1614;را&#1611; 
+و&#1614;ر&#1616;ز&#1618;قا&#1611; ح&#1614;س&#1614;نا&#1611; إ&#1616;ن&#1617;&#1614; ف&#1616;ي ذ&#1614;ل&#1616;ك&#1614; لآي&#1614;ة&#1611; ل&#1617;&#1616;ق&#1614;و&#1618;م&#1613; ي&#1614;ع&#1618;ق&#1616;ل&#1615;ون&#1614;
+
+&#8220;Dan dari buah korma dan anggur, kamu buat minimuman yang memabukkan dan 
+rezki yang baik. Sesunggguhnya pada yang demikian itu benar-benar 
+terdapat tanda (kebesaran Allah) bagi orang yang memikirkan.&#8221;
+QS. An-Nahl: 67">QS. An-Nahl: 67</a>, <a href="#" title="
+&nbsp;ي&#1614;س&#1618;أ&#1614;ل&#1615;ون&#1614;ك&#1614;
+ ع&#1614;ن&#1616; ال&#1618;خ&#1614;م&#1618;ر&#1616; و&#1614;ال&#1618;م&#1614;ي&#1618;س&#1616;ر&#1616; ق&#1615;ل&#1618; ف&#1616;يه&#1616;م&#1614;ا إ&#1616;ث&#1618;م&#1612; ك&#1614;ب&#1616;ير&#1612; و&#1614;م&#1614;ن&#1614;اف&#1616;ع&#1615; 
+ل&#1616;لن&#1617;&#1614;اس&#1616; و&#1614;إ&#1616;ث&#1618;م&#1615;ه&#1615;م&#1614;ا أ&#1614;ك&#1618;ب&#1614;ر&#1615; م&#1616;ن ن&#1617;&#1614;ف&#1618;ع&#1616;ه&#1616;م&#1614;ا ﻭﻳﺳـﻟﻭ ﻧﻙ ﻣﺎﺫﺍ ﻳﻧﻔﻗﻭﻥ &#1751;
+ ﻗﻝﺍﻟﻌﻓﻭ&#1751; ﻛﺫﻟﻙ ﻳﺑﻳﻥﺍﷲﻟﻛﻡﺍﻻﻳﺕ ﻟﻌﻟﻛﻡ ﺗﺗﻓﻛﺭﻭﻥ
+
+&#8220;Mereka 
+bertanya kepadamu tentang khamar dan judi. Katakanlah: &#8220;Pada keduanya 
+terdapat dosa yang besar dan beberapa manfa'at bagi manusia, tetapi dosa
+ keduanya lebih besar dari manfa'atnya&#8221;. Dan mereka bertanya kepadamu 
+apa yang mereka nafkahkan. Katakanlah: &#8220;Yang lebih dari keperluan.&#8221; 
+Demikianlah Allah menerangkan ayat-ayat-Nya kepadamu supaya kamu 
+berfikir. QS. Baqarah: 219 ">QS. Baqarah: 219</a>, <a href="#" title="
+&nbsp;ﻳـﺎﻳﻬﺎﺍﻟﺫﻳﻥ
+ ﺍﻣﻧﻭﺍﻻﺗﻗﺭﺑﻭﺍﺍﻟﺻﻟﻭﺓ ﻭﺍﻧﺗﻡ ﺳﻛﺎﺭﻯ ﺣﺗﻰ ﺗﻌﻟﻣﻭﺍ ﻣﺎﺗﻗﻭﻟﻭﻥ ﻭﻻﺟﻧﺑﺎ ﺍﻻﻋﺎﺑﺭﻱ ﺳﺑﻳﻝ 
+ﺣﺗﻰ ﺗﻐﺗﺳﻟﻭﺍ &#1751; ﻭﺍﻥﻛﻧﺗﻡ ﻣﺭﺿﻰﺍﻭﻋﻟﻰﺳﻓﺭﺍﻭﺟﺎﺀﺍﺣﺩ ﻣﻧﻛﻡ ﻣﻥﺍﻟﻐﺎﺋﻁ ﺍﻭﻟﻣﺳﺗﻡﺍﻟﻧﺳﺎﺀ 
+ﻓﻟﻡ ﺗﺟﺩﻭﺍﻣﺂﺀ ﻓﺗﻳﻣﻣﻭﺍﺻﻌﻳﺩﺍﻁﻳﺑﺎﻓﺎﻣﺳﺣﻭﺍﺑﻭﺟﻭﻫﻛﻡ ﻭﺍﻳﺩﻳﻛﻡ &#1751; ﺍﻥﺍﺍﷲﻛﺎﻥ ﻋﻓﻭﺍﻏﻓﻭﺭﺍ
+
+&#8220;Hai
+ orang-orang yang beriman, janganlah kamu shalat, sedang kamu dalam 
+keadaan mabuk, sehingga kamu mengerti apa yang kamu ucapkan, (jangan 
+pula hampiri mesjid) sedang kamu dalam keadaan junub , terkecuali 
+sekedar berlalu saja, hingga kamu mandi. Dan jika kamu sakit atau sedang
+ dalam musafir atau datang dari tempat buang air atau kamu telah 
+menyentuh perempuan, kemudian kamu tidak mendapat air, maka 
+bertayamumlah kamu dengan tanah yang baik (suci). sapulah mukamu dan 
+tanganmu. Sesungguhnya Allah Maha Pemaaf lagi Maha Pengampun.&#8221;
+QS an-Nisaa': 43">QS. an-Nisaa': 43</a> sampai diharamkan
+di <a href="#" title="
+&nbsp;ﻳـﺎﻳﻬﺎﺍﻟﺫﻳﻥ ﺍﻣﻧﻧﻭﺍﺍﻧﻣﺎﺍﻟﺧﻣﺭﻭﺍﻟﻣﻳﺳﺭﻭﺍﻻﻧﺻﺎﺏﻭﺍﻻﺯﻻﻡ ﺭﺟﺱ ﻣﻥﻋﻣﻝ ﺍﻟﺷﻳﻁﻥ ﻓﺎﺟﺗﻧﺑﻭﻩﻟﻌﻟﻛﻡ ﺗﻓﻟﺣﻭﻥ
+&#8220;Hai
+ orang-orang yang beriman, sesungguhnya (meminum) khamar, berjudi, 
+(berkorban untuk) berhala, mengundi nasib dengan panah , adalah termasuk
+ perbuatan syaitan. Maka jauhilah perbuatan-perbuatan itu agar kamu 
+mendapat keberuntungan.&#8221;
+QS Al &#8211;Maidah : 90">QS. Al &#8211;Maidah: 90</a>, <a href="#" title="
+&nbsp;إ&#1616;ن&#1617;&#1614;م&#1614;ا
+ ي&#1615;ر&#1616;يد&#1615; الش&#1617;&#1614;ي&#1618;ط&#1614;ان&#1615; أ&#1614;ن ي&#1615;وق&#1616;ع&#1614; ب&#1614;ي&#1618;ن&#1614;ك&#1615;م&#1615; ال&#1618;ع&#1614;د&#1614;او&#1614;ة&#1614; و&#1614;ال&#1618;ب&#1614;غ&#1618;ض&#1614;اء 
+ف&#1616;ي ال&#1618;خ&#1614;م&#1618;ر&#1616; و&#1614;ال&#1618;م&#1614;ي&#1618;س&#1616;ر&#1616; و&#1614;ي&#1614;ص&#1615;د&#1617;&#1614;ك&#1615;م&#1618; ع&#1614;ن ذ&#1616;ك&#1618;ر&#1616; الل&#1617;ه&#1616; و&#1614;ع&#1614;ن&#1616; 
+الص&#1617;&#1614;لا&#1614;ة&#1616; ف&#1614;ه&#1614;ل&#1618; أ&#1614;نت&#1615;م م&#1617;&#1615;نت&#1614;ه&#1615;ون&#1614;
+&#8220;Sesungguhnya
+ syaitan itu bermaksud hendak menimbulkan permusuhan dan kebencian di 
+antara kamu lantaran (meminum) khamar dan berjudi itu, dan menghalangi 
+kamu dari mengingat Allah dan sembahyang; maka berhentilah kamu (dari 
+mengerjakan pekerjaan itu).&#8221;
+QS. Al &#8211;Maidah : 91">QS. Al &#8211;Maidah: 91</a>, 
+menunjukkan bahwa kemaslahatan dapat berubah karena perubahan konteks. 
+Maka dapat saja Allah memperbolehkan berbuat sesuatu karena diketahui 
+mengandung <a href="#" title="Kemaslahatan adalah fondasi
+ paling pokok dari setiap perundang-undangan syari&#8217;at Islam. Semua 
+perintah dan larangan Allah memiliki dimensi Maslahah dan 
+bisa dirasionalkan, yaitu: apa tujuan di balik suatu hukum ditetapkan.<br />
+Selengkapnya baca Mashlahah Mursalah."><i>Mashlahah</i></a>, kemudian melarangnya pada waktu kemudian 
+karena diketahui aturan tersebut tidak lagi ada kemaslahatan.<br />
+<br />
+Kesan
+ adanya ayat-ayat yang kontradiktif ini dapat diselesaikan dengan Nasakh
+ Mansukh. Bahwa konsep ini memberikan tasyri' secara bertahap dengan 
+meperhatikan penahapan dan proses perubahannya.<br />
+<br />
+Menetapkan
+ nasakh mansukh dalam ayat Qur'an didasarkan 
+pada pengetahuan yang detail tentang sejarah Asbabun Nuzul dan kronologi
+ turunnya ayat. Ini bukan masalah mudah seperti yang dibayangkan, karena
+ Al-Qur'an tidak disusun bersasarkan kronologi turunnya. Untuk 
+menetapkan mana yang nasikh dan mana yang mansukh adalah urutan turunnya
+ ayat, bukan urutan membaca mushaf. Faktor inilah yang menjadikan upaya 
+menetapkan mana yang nasakh dan mansukh tidak selalu gampang. Lihat 
+contoh kasus berikut:<p/>
+                            
+<div id="accordion3">
+  <h3>Nikah beda agama</h3>
+  <div>
+    <p>Sebagaimana telah disebutkan sebelumnya, menetapkan nasakh mansukh 
+dalam ayat Qur'an didasarkan 
+pada pengetahuan yang detail tentang sejarah Asbabun Nuzul dan kronologi
+ turunnya ayat. Ketidaktahuan aspek historisitas ini menyebabkan hukum 
+menjadi kacau. Misalnya tentang nikah beda agama yang diharamkan secara 
+mutlak. Dalilnya adalah al-Qur&#8217;an (al-Baqarah [2]: 221) yang 
+mengharamkan orang Islam menikah dengan laki-laki dan perempuan musyrik.
+ Dan QS al-Mumtahanah [60]: 10 yang melarang orang Islam menikah dengan 
+orang kafir. Sementara QS, al-Ma&#8217;idah ayat 5 yang membolehkan laki-laki 
+Muslim menikah dengan perempuan Ahli Kitab sudah dibatalkan dua ayat 
+sebelumnya itu. Secara kuantitatif ayat yang mengharamkan lebih banyak.<br />
+<br />
+Pengharaman nikah beda agama adalah contoh kesalahan penerapan <i>Nasakh</i>.
+ Karena realitasnya adalah kabalikannya, keharaman menikahi orang 
+Musyrik dan Kafir dibatalkan QS, al-Maidah [5]: 5 yang membolehkan 
+laki-laki Muslim menikahi perempuan Ahli Kitab. Ketiga ayat tersebut 
+memang sama-sama turun di Madinah, tetapi QS. al-Mumtahanah ayat 10 dan 
+QS. al-Baqarah ayat 221 diturunkan lebih awal, sehingga dimungkinkan 
+untuk dianulir QS. al-Ma&#8217;idah ayat 5. Ibn Katsir mengutip pernyataan 
+Ibnu Abbas melalui Ali bin Abi Thalhah yang berkata bahwa 
+perempuan-perempuan Ahli Kitab dikecualikan dari al-Baqarah ayat 221. 
+Dengan perkataan lain, keharaman menikahi orang musyrik dan orang kafir 
+seperti tertera dalam QS. Al-Baaqarah: 221 dan QS. Al-Mumtahanah: 10 
+telah ditakhshish (dispesifikasi) oleh al-Maidah:5. Pendapat ini juga 
+didukung oleh Mujahid, Ikrimah, Said bin Jubair, Makhul, al-Hasan, 
+al-Dhahhak, Zaid bin Aslam, dan Rabi&#8217; bin Anas. Thabathabai juga 
+berpendirian bahwa pengharaman tersebut hanya terbatas pada orang-orang 
+Watsani (para penyembah berhala), dan tidak termasuk di dalamnya 
+orang-orang Ahli Kitab.</p>
+  </div>
+  <h3>Nasakh ayat inklusif dengan ayat eksklusif</h3>
+  <div>
+    <p>Ayat-ayat inklusif <a href="#" title="
+&#1758;
+ ل&#1614;ي&#1761;س&#1615;وا&#1618; س&#1614;و&#1614;ا&#1619;ء&#1611;&#1772;&#8204;&#1751; م&#1617;&#1616;ن&#1761; أ&#1614;ه&#1761;ل&#1616; ٱل&#1761;ك&#1616;ت&#1614;ـ&#1648;ب&#1616; أ&#1615;م&#1617;&#1614;ة&#1612;&#1772; ق&#1614;ا&#1619;ٮ&#1621;&#1616;م&#1614;ة&#1612;&#1772; 
+ي&#1614;ت&#1761;ل&#1615;ون&#1614; ء&#1614;اي&#1614;ـ&#1648;ت&#1616; ٱلل&#1617;&#1614;ه&#1616; ء&#1614;ان&#1614;ا&#1619;ء&#1614; ٱل&#1617;&#1614;ي&#1761;ل&#1616; و&#1614;ه&#1615;م&#1761; ي&#1614;س&#1761;ج&#1615;د&#1615;ون&#1614; ( ١١٣ )
+ ي&#1615;ؤ&#1761;م&#1616;ن&#1615;ون&#1614; ب&#1616;ٱلل&#1617;&#1614;ه&#1616; و&#1614;ٱل&#1761;ي&#1614;و&#1761;م&#1616; ٱل&#1761;أ&#1614;خ&#1616;ر&#1616; و&#1614;ي&#1614;أ&#1761;م&#1615;ر&#1615;ون&#1614; 
+ب&#1616;ٱل&#1761;م&#1614;ع&#1761;ر&#1615;وف&#1616; و&#1614;ي&#1614;ن&#1761;ه&#1614;و&#1761;ن&#1614; ع&#1614;ن&#1616; ٱل&#1761;م&#1615;نك&#1614;ر&#1616; و&#1614;ي&#1615;س&#1614;ـ&#1648;ر&#1616;ع&#1615;ون&#1614; ف&#1616;ى 
+ٱل&#1761;خ&#1614;ي&#1761;ر&#1614;ٲت&#1616; و&#1614;أ&#1615;و&#1618;ل&#1614;ـ&#1648;&#1619;ٮ&#1621;&#1616;ك&#1614; م&#1616;ن&#1614; ٱلص&#1617;&#1614;ـ&#1648;ل&#1616;ح&#1616;ين&#1614; ( ١١٤ ) 
+&nbsp;Mereka
+ itu tidak sama; di antara Ahli Kitab itu ada golongan yang berlaku 
+lurus [4], mereka membaca ayat-ayat Allah pada beberapa waktu di malam 
+hari, sedang mereka juga bersujud [sembahyang]. (113) Mereka beriman 
+kepada Allah dan hari penghabisan mereka menyuruh kepada yang ma&#8217;ruf, 
+dan mencegah dari yang mungkar dan bersegera kepada [mengerjakan] 
+pelbagai kebaikan; mereka itu termasuk orang-orang yang saleh. (114)
+QS. Ali Imran 3: 113-114">QS. Ali Imran 3: 113-114</a>, <a href="#" title="
+إ&#1616;ن&#1617;&#1614;
+ ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ء&#1614;ام&#1614;ن&#1615;وا&#1618; و&#1614;ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ه&#1614;اد&#1615;وا&#1618; و&#1614;ٱلن&#1617;&#1614;ص&#1614;ـ&#1648;ر&#1614;ى&#1648; 
+و&#1614;ٱلص&#1617;&#1614;ـ&#1648;ب&#1616;ـ&#1620;&#1616;ين&#1614; م&#1614;ن&#1761; ء&#1614;ام&#1614;ن&#1614; ب&#1616;ٱلل&#1617;&#1614;ه&#1616; و&#1614;ٱل&#1761;ي&#1614;و&#1761;م&#1616; ٱل&#1761;أ&#1614;خ&#1616;ر&#1616; و&#1614;ع&#1614;م&#1616;ل&#1614; 
+ص&#1614;ـ&#1648;ل&#1616;ح&#1611;&#1772;ا ف&#1614;ل&#1614;ه&#1615;م&#1761; أ&#1614;ج&#1761;ر&#1615;ه&#1615;م&#1761; ع&#1616;ند&#1614; ر&#1614;ب&#1617;&#1616;ه&#1616;م&#1761; و&#1614;ل&#1614;ا خ&#1614;و&#1761;ف&#1612; ع&#1614;ل&#1614;ي&#1761;ہ&#1616;م&#1761; 
+و&#1614;ل&#1614;ا ه&#1615;م&#1761; ي&#1614;ح&#1761;ز&#1614;ن&#1615;ون&#1614; ( ٦٢ )
+Sesungguhnya orang-orang 
+mu&#8217;min, orang-orang Yahudi, orang-orang Nasrani dan orang-orang Shabiin 
+[1], siapa saja di antara mereka yang benar-benar beriman kepada Allah 
+[2], hari kemudian dan beramal saleh [3], mereka akan menerima pahala 
+dari Tuhan mereka, tidak ada kekhawatiran terhadap mereka, dan tidak 
+[pula] mereka bersedih hati.
+QS. Al-Baqarah 62">QS. Al-Baqarah 62</a>&nbsp; dan <a href="#" title="
+إ&#1616;ن&#1617;&#1614;
+ ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ء&#1614;ام&#1614;ن&#1615;وا&#1618; و&#1614;ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ه&#1614;اد&#1615;وا&#1618; و&#1614;ٱلص&#1617;&#1614;ـ&#1648;ب&#1616;ـ&#1620;&#1615;ون&#1614; 
+و&#1614;ٱلن&#1617;&#1614;ص&#1614;ـ&#1648;ر&#1614;ى&#1648; م&#1614;ن&#1761; ء&#1614;ام&#1614;ن&#1614; ب&#1616;ٱلل&#1617;&#1614;ه&#1616; و&#1614;ٱل&#1761;ي&#1614;و&#1761;م&#1616; ٱل&#1761;أ&#1614;خ&#1616;ر&#1616; و&#1614;ع&#1614;م&#1616;ل&#1614; 
+ص&#1614;ـ&#1648;ل&#1616;ح&#1611;&#1772;ا ف&#1614;ل&#1614;ا خ&#1614;و&#1761;ف&#1612; ع&#1614;ل&#1614;ي&#1761;ه&#1616;م&#1761; و&#1614;ل&#1614;ا ه&#1615;م&#1761; ي&#1614;ح&#1761;ز&#1614;ن&#1615;ون&#1614; ( ٦٩ ) <br />
+<br />
+Sesungguhnya
+ orang-orang mu&#8217;min, orang-orang Yahudi, Shabiin dan orang-orang 
+Nasrani, siapa saja [4] [di antara mereka] yang benar-benar beriman 
+kepada Allah, hari kemudian dan beramal saleh, maka tidak ada 
+kekhawatiran terhadap mereka dan tidak [pula] mereka bersedih hati. (69)
+QS. Al-Maidah 5:69
+">QS. Al-Maidah 5:69</a> ini selalu diklaim oleh penafsiran ekslusif telah dinaskh oleh ayat yang mengait-ngaitkan ahli kitab dengan kekafiran misalnya <a href="#" title="
+ف&#1614;ب&#1616;م&#1614;ا ن&#1614;ق&#1761;ض&#1616;ہ&#1616;م 
+م&#1617;&#1616;يث&#1614;ـ&#1648;ق&#1614;ه&#1615;م&#1761; ل&#1614;ع&#1614;ن&#1617;&#1614;ـ&#1648;ه&#1615;م&#1761; و&#1614;ج&#1614;ع&#1614;ل&#1761;ن&#1614;ا ق&#1615;ل&#1615;وب&#1614;ه&#1615;م&#1761; ق&#1614;ـ&#1648;س&#1616;ي&#1614;ة&#1611;&#1772;&#8204;&#1750; 
+ي&#1615;ح&#1614;ر&#1617;&#1616;ف&#1615;ون&#1614; ٱل&#1761;ڪ&#1614;ل&#1616;م&#1614; ع&#1614;ن م&#1617;&#1614;و&#1614;اض&#1616;ع&#1616;ه&#1616;ۦ&#8204;&#1753; و&#1614;ن&#1614;س&#1615;وا&#1618; ح&#1614;ظ&#1617;&#1611;&#1772;ا م&#1617;&#1616;م&#1617;&#1614;ا 
+ذ&#1615;ك&#1617;&#1616;ر&#1615;وا&#1618; ب&#1616;ه&#1616;ۦ&#8204;&#1754; و&#1614;ل&#1614;ا ت&#1614;ز&#1614;ال&#1615; ت&#1614;ط&#1617;&#1614;ل&#1616;ع&#1615; ع&#1614;ل&#1614;ى&#1648; خ&#1614;ا&#1619;ٮ&#1621;&#1616;ن&#1614;ة&#1613;&#1772; م&#1617;&#1616;ن&#1761;ہ&#1615;م&#1761;
+ إ&#1616;ل&#1617;&#1614;ا ق&#1614;ل&#1616;يلا&#1611;&#1772; م&#1617;&#1616;ن&#1761;ہ&#1615;م&#1761;&#8204;&#1750; ف&#1614;ٱع&#1761;ف&#1615; ع&#1614;ن&#1761;ہ&#1615;م&#1761; و&#1614;ٱص&#1761;ف&#1614;ح&#1761;&#8204;&#1754; إ&#1616;ن&#1617;&#1614; ٱلل&#1617;&#1614;ه&#1614;
+ ي&#1615;ح&#1616;ب&#1617;&#1615; ٱل&#1761;م&#1615;ح&#1761;س&#1616;ن&#1616;ين&#1614; ( ١٣ ) 
+[Tetapi] karena mereka 
+melanggar janjinya, Kami kutuk mereka, dan Kami jadikan hati mereka 
+keras membatu. Mereka suka merobah perkataan [Allah] dari 
+tempat-tempatnya [2], dan mereka [sengaja] melupakan sebagian dari apa 
+yang mereka telah diperingatkan dengannya, dan kamu [Muhammad] 
+senantiasa akan melihat kekhianatan dari mereka kecuali sedikit di 
+antara mereka [yang tidak berkhianat], maka ma&#8217;afkanlah mereka dan 
+biarkanlah mereka, sesungguhnya Allah menyukai orang-orang yang berbuat 
+baik. (13)
+QS. Al-Maidah 5:13">QS. Al-Maidah 5:13</a>. Kami belum 
+mengetahui historisitas masing-masing ayat ini. Sebagaimana telah 
+disebutkan sebelumnya, untuk menetapkan mana yang nasikh dan mana yang 
+mansukh adalah urutan turunnya ayat. Hal ini tidak bisa dikira-kira. 
+Tidak ada wilayah ijtihad disini. Satu-satunya cara mengetahui Asbabun 
+Nuzul dan kronologi ayat, menentukan mana yang lebih dulu diturunkan dan
+ yang lebih akhir adalah dengan membaca riwayat. Menetapkan mana yang 
+nasakh dan mansukh tidak selalu gampang.</p>
+  </div>
+  <h3>Nasakh ayat universal</h3>
+  <div>
+    <p>Nasakh tidak dapat dilakukan terhadap 
+teks al-Qur`an yang mengandung prinsip-prinsip ajaran yang universal, 
+ajaran yang melintasi ruang dan waktu, mengatasi pelbagai etnis dan 
+keyakinan. Tapi Nasakh diterapkan untuk terus-menerus memperbaharui 
+teks-teks agama yang tidak lagi merepresentasikan prinsip-prinsip dasar 
+Islam.<br />
+<br />
+Termasuk dalam kategori ayat yang tidak bisa 
+dinasakh ini, seperti ayat &#8220;wa idza hakamtum bayna al-nas an tahkumu bi 
+al&#8217;adl&#8221;, &#8220;I&#8217;dilu huwa aqrabu li al-taqwa&#8221;, dan sebagainya. Nasakh 
+terhadap ayat yang demikian bukan saja berpunggungan dengan semangat 
+kehadiran Islam awal, melainkan juga bertentangan dengan logika nasakh 
+sendiri.<br />
+<br />
+Sementara ayat-ayat mu&#8217;amalah dalam al-Qur`an yang bersifat tehnis operasional atau&nbsp; <i>furu&#8217;iyyah</i> atau <i>fikih al-Qur`an</i>,
+ seperti ayat yang berbicara tentang bentuk-bentuk hukuman (&#8216;uqubat), 
+sanksi bagi para pelaku pidana (hudud), bilangan waris dan sebagainya, 
+maka tetap terbuka kemungkinan untuk dinasakh dan difalsifikasi, 
+sekiranya ayat tadi tidak efektif lagi sebagai sarana untuk mewujudkan 
+cita kemalahatan. (Lihat: Maslahah Mursalah)</p>
+  </div>
+  <h3>Nasakh ayat Jihad</h3>
+  <div>
+      <p>Lihat: <a href="jihad.html">Jihad</a></p>
+  </div>
+</div>                
+                            
+<br/>
+<p><b>Logika Nasakh Mansukh</b><p/>
+<p>
+Sebelum
+ ada perintah shalat, maka shalat tidak dihukumi wajib; dan setelah 
+turun perintah, shalat hukumnya menjadi wajib; perubahan dari tidak 
+wajib menjadi wajib ini bukan nasakh, karena kata kunci Nasakh adalah 
+pembatalan hukum, penghapusan hukum syara' dengan dalil syara'. Dua ayat
+ surah Al-Jum'ah ini: <a href="#" title="
+ي&#1614;ـ&#1648;&#1619;أ&#1614;ي&#1617;&#1615;ہ&#1614;ا
+ ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ء&#1614;ام&#1614;ن&#1615;و&#1619;ا&#1618; إ&#1616;ذ&#1614;ا ن&#1615;ود&#1616;ى&#1614; ل&#1616;لص&#1617;&#1614;ل&#1614;و&#1648;ة&#1616; م&#1616;ن ي&#1614;و&#1761;م&#1616; ٱل&#1761;ج&#1615;م&#1615;ع&#1614;ة&#1616;
+ ف&#1614;ٱس&#1761;ع&#1614;و&#1761;ا&#1618; إ&#1616;ل&#1614;ى&#1648; ذ&#1616;ك&#1761;ر&#1616; ٱلل&#1617;&#1614;ه&#1616; و&#1614;ذ&#1614;ر&#1615;وا&#1618; ٱل&#1761;ب&#1614;ي&#1761;ع&#1614;&#8204;&#1754; ذ&#1614;ٲل&#1616;ك&#1615;م&#1761; 
+خ&#1614;ي&#1761;ر&#1612;&#1772; ل&#1617;&#1614;ك&#1615;م&#1761; إ&#1616;ن ك&#1615;نت&#1615;م&#1761; ت&#1614;ع&#1761;ل&#1614;م&#1615;ون&#1614; 
+Hai orang-orang yang beriman, apabila diseru untuk menunaikan sembahyang 
+pada hari Jum&#8217;at, maka bersegeralah kamu kepada mengingat Allah dan 
+tinggalkanlah jual-beli. Yang demikian itu lebih baik bagimu jika kamu 
+mengetahui.
+QS. Al-Jum'ah (9)">QS. Al-Jum'ah: 9</a>[/tooltip]
+dan <a href="#" title="
+ف&#1614;إ&#1616;ذ&#1614;ا ق&#1615;ض&#1616;ي&#1614;ت&#1616; 
+ٱلص&#1617;&#1614;ل&#1614;و&#1648;ة&#1615; ف&#1614;ٱنت&#1614;ش&#1616;ر&#1615;وا&#1618; ف&#1616;ى ٱل&#1761;أ&#1614;ر&#1761;ض&#1616; و&#1614;ٱب&#1761;ت&#1614;غ&#1615;وا&#1618; م&#1616;ن ف&#1614;ض&#1761;ل&#1616; ٱلل&#1617;&#1614;ه&#1616; 
+و&#1614;ٱذ&#1761;ك&#1615;ر&#1615;وا&#1618; ٱلل&#1617;&#1614;ه&#1614; ك&#1614;ث&#1616;ير&#1611;&#1772;ا ل&#1617;&#1614;ع&#1614;ل&#1617;&#1614;ك&#1615;م&#1761; ت&#1615;ف&#1761;ل&#1616;ح&#1615;ون&#1614; 
+Apabila telah ditunaikan sembahyang, maka bertebaranlah kamu di muka bumi; dan 
+carilah karunia Allah dan ingatlah Allah banyak-banyak supaya kamu 
+beruntung.&nbsp; ">QS. Al-Jum'ah (10)</a> juga bukan pola nasakh. Perubahan hukum 
+dari jual beli yang dihukumi haram ketika shalat Jum'at menjadi boleh 
+setelah shalat Jum'at bukan dikarenakan hukum pada ayat yeng kedua. Jika
+ ini nasakh maka setiap hari Jum'at terjadi nasakh-mansukh yang berulang
+ terus-menerus: ketika shalat jum'at jual-beli dilarang, dan setelah 
+selesai kembali diperbolehkan, begitu seterusnya. Perubahan hukum 
+sementara ini tidak disebut Nasakh. Begitu juga antara <a href="#" title="
+أ&#1615;ح&#1616;ل&#1617;&#1614;
+ ل&#1614;ك&#1615;م&#1761; ص&#1614;ي&#1761;د&#1615; ٱل&#1761;ب&#1614;ح&#1761;ر&#1616; و&#1614;ط&#1614;ع&#1614;ام&#1615;ه&#1615;&#12288;ۥ م&#1614;ت&#1614;ـ&#1648;ع&#1611;&#1772;ا ل&#1617;&#1614;ك&#1615;م&#1761; 
+و&#1614;ل&#1616;لس&#1617;&#1614;ي&#1617;&#1614;ار&#1614;ة&#1616;&#1750; و&#1614;ح&#1615;ر&#1617;&#1616;م&#1614; ع&#1614;ل&#1614;ي&#1761;ك&#1615;م&#1761; ص&#1614;ي&#1761;د&#1615; ٱل&#1761;ب&#1614;ر&#1617;&#1616; م&#1614;ا د&#1615;م&#1761;ت&#1615;م&#1761; 
+ح&#1615;ر&#1615;م&#1611;&#1772;ا&#1751; و&#1614;ٱت&#1617;&#1614;ق&#1615;وا&#1618; ٱلل&#1617;&#1614;ه&#1614; ٱل&#1617;&#1614;ذ&#1616;ى&#1619; إ&#1616;ل&#1614;ي&#1761;ه&#1616; ت&#1615;ح&#1761;ش&#1614;ر&#1615;ون&#1614;&#12288;
+Dihalalkan
+ bagimu binatang buruan laut [1] dan makanan [yang berasal] dari laut 
+[2] sebagai makanan yang lezat bagimu, dan bagi orang-orang yang dalam 
+perjalanan; dan diharamkan atasmu [menangkap] binatang buruan darat, 
+selama kamu dalam ihram. Dan bertakwalah kepada Allah yang kepada-Nyalah
+ kamu akan dikumpulkan.
+QS. Al-Maidah (96)">QS. Al-Maidah: 96</a> &nbsp;
+dengan <a href="#" title="
+ي&#1614;ـ&#1648;&#1619;أ&#1614;ي&#1617;&#1615;ہ&#1614;ا
+ ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ء&#1614;ام&#1614;ن&#1615;وا&#1618; ل&#1614;ا ت&#1615;ح&#1616;ل&#1617;&#1615;وا&#1618; ش&#1614;ع&#1614;ـ&#1648;&#1619;ٮ&#1621;&#1616;ر&#1614; ٱلل&#1617;&#1614;ه&#1616; و&#1614;ل&#1614;ا 
+ٱلش&#1617;&#1614;ہ&#1761;ر&#1614; ٱل&#1761;ح&#1614;ر&#1614;ام&#1614; و&#1614;ل&#1614;ا ٱل&#1761;ه&#1614;د&#1761;ى&#1614; و&#1614;ل&#1614;ا ٱل&#1761;ق&#1614;ل&#1614;ـ&#1648;&#1619;ٮ&#1621;&#1616;د&#1614; و&#1614;ل&#1614;ا&#1619; 
+ء&#1614;ا&#1619;م&#1617;&#1616;ين&#1614; ٱل&#1761;ب&#1614;ي&#1761;ت&#1614; ٱل&#1761;ح&#1614;ر&#1614;ام&#1614; ي&#1614;ب&#1761;ت&#1614;غ&#1615;ون&#1614; ف&#1614;ض&#1761;لا&#1611;&#1772; م&#1617;&#1616;ن ر&#1617;&#1614;ب&#1617;&#1616;ہ&#1616;م&#1761; 
+و&#1614;ر&#1616;ض&#1761;و&#1614;ٲن&#1611;&#1772;ا&#1754; و&#1614;إ&#1616;ذ&#1614;ا ح&#1614;ل&#1614;ل&#1761;ت&#1615;م&#1761; ف&#1614;ٱص&#1761;ط&#1614;اد&#1615;وا&#1618;&#1754; و&#1614;ل&#1614;ا ي&#1614;ج&#1761;ر&#1616;م&#1614;ن&#1617;&#1614;ك&#1615;م&#1761; 
+ش&#1614;ن&#1614;ـ&#1620;&#1614;ان&#1615; ق&#1614;و&#1761;م&#1613; أ&#1614;ن ص&#1614;د&#1617;&#1615;وڪ&#1615;م&#1761; ع&#1614;ن&#1616; ٱل&#1761;م&#1614;س&#1761;ج&#1616;د&#1616; ٱل&#1761;ح&#1614;ر&#1614;ام&#1616; أ&#1614;ن 
+ت&#1614;ع&#1761;ت&#1614;د&#1615;وا&#1618;&#1752; و&#1614;ت&#1614;ع&#1614;او&#1614;ن&#1615;وا&#1618; ع&#1614;ل&#1614;ى ٱل&#1761;ب&#1616;ر&#1617;&#1616; و&#1614;ٱلت&#1617;&#1614;ق&#1761;و&#1614;ى&#1648;&#1750; و&#1614;ل&#1614;ا 
+ت&#1614;ع&#1614;او&#1614;ن&#1615;وا&#1618; ع&#1614;ل&#1614;ى ٱل&#1761;إ&#1616;ث&#1761;م&#1616; و&#1614;ٱل&#1761;ع&#1615;د&#1761;و&#1614;ٲن&#1616;&#1754; و&#1614;ٱت&#1617;&#1614;ق&#1615;وا&#1618; ٱلل&#1617;&#1614;ه&#1614;&#1750; إ&#1616;ن&#1617;&#1614; 
+ٱلل&#1617;&#1614;ه&#1614; ش&#1614;د&#1616;يد&#1615; ٱل&#1761;ع&#1616;ق&#1614;اب&#1616;
+Hai orang-orang 
+yang beriman, janganlah kamu melanggar syi&#8217;ar-syi&#8217;ar Allah [3] dan 
+jangan melanggar kehormatan bulan-bulan haram [4] jangan [mengganggu] 
+binatang-binatang had-ya [5] dan binatang-binatang qalaa-id [6] dan 
+jangan [pula] mengganggu orang-orang yang mengunjungi Baitullah sedang 
+mereka mencari karunia dan keridhaan dari Tuhannya [7] dan apabila kamu 
+telah menyelesaikan ibadat haji, maka bolehlah berburu. Dan janganlah 
+sekali-kali kebencian [mu] kepada sesuatu kaum karena mereka 
+menghalang-halangi kamu dari Masjidil Haram, mendorongmu berbuat aniaya 
+[kepada mereka]. Dan tolong-menolonglah kamu dalam [mengerjakan] 
+kebaikan dan takwa, dan jangan tolong-menolong dalam berbuat dosa dan 
+pelanggaran. Dan bertakwalah kamu kepada Allah, sesungguhnya Allah amat 
+berat siksa-Nya.
+QS. Al-Maidah (2)">QS. Al-Maidah: 2</a> &nbsp;
+hampir sama dengan contoh yang pertama: bukan <i>Nasakh</i>. perubahan hukum dari keharaman berburu menjadi kebolehan 
+berburu bukan nasakh antar ayat, tapi karena <i>illat 
+</i>keharamannya hilang, yaitu ketika sedang ihram.<br />
+<br />
+Nasakh adalah penghapusan hukum. Perintah yang harus ditaati dalam waktu tertentu karena <i>illat</i> 
+tertentu yang mengharuskan diberlakukan hukum tersebut, kemudian dengan 
+seiring dengan perubahan <i>illat,</i> hukum berubah ke hukum lain, bukan 
+termasuk nasakh.<br />
+<br />
+Hukum ayat yang di nasakh tidak dapat 
+dimunculkan kembali oleh realitas. Misalnya dalam kasus pada masa awal 
+Islam dan tidak relevan pada konteks sekarang, adalah perintah 
+kepada kaum muslimin untuk bersabar atas rintangan yang dimunculkan oleh
+ kaum musyrik dan perintah untuk memerangi mereka. Perintah sabar adalah
+ penangguhan, atau dibatalkan sementara karena jumlah umat Islam masih 
+sedikit. <i>"Hai orang-orang 
+beriman, kendalikan diri kalian"</i>. Ketika kondisi ini berubah, hukum 
+yang
+ ditangguknan kembali menjadi efektif dan berlaku. Ketika kaum muslim 
+menjadi kuat maka 
+ber amar-makruf nahi munkar dan menjalankan perang menjadi kewajiban. 
+Dan ketika situasi lemah hukumnya kembali ke bersabar. Ini bukan pola <i>Nasakh.</i> Sesuatu yang diperintahkan karena sebab tertentu, kemudian sebab 
+tersebut hilang seperti pada saat masih lemah dan berjumlah sedikit, ini
+ bukan <i>Nasakh,</i> tapi menangguhkan. Yang ditangguhkan adalah 
+perintah berperang. Dalam konteks 
+masih&nbsp; lemah, perintahnya adalah kewajiban untuk bersabar atas rintangan
+ yang menyakitkan. Kedua hukum itu, yaitu berdamai ketika kondisi lemah dan mengangkat 
+senjata ketika kuat, kembali berlaku seiring dengan munculnya <i>illat</i>. Hukum mengangkat senjata tidak menasakh hukum berdamai, tapi 
+masing-maisng ditaati pada waktunya sendiri.<br />
+<br />
+Contoh lainnya yang lebih detail pada persoalan fiqhiyah. <a href="#" title="
+ي&#1614;ـ&#1648;&#1619;أ&#1614;ي&#1617;&#1615;ہ&#1614;ا
+ ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ء&#1614;ام&#1614;ن&#1615;و&#1619;ا&#1618; إ&#1616;ذ&#1614;ا ق&#1615;م&#1761;ت&#1615;م&#1761; إ&#1616;ل&#1614;ى ٱلص&#1617;&#1614;ل&#1614;و&#1648;ة&#1616; ف&#1614;ٱغ&#1761;س&#1616;ل&#1615;وا&#1618; 
+و&#1615;ج&#1615;وه&#1614;ك&#1615;م&#1761; و&#1614;أ&#1614;ي&#1761;د&#1616;ي&#1614;ك&#1615;م&#1761; إ&#1616;ل&#1614;ى ٱل&#1761;م&#1614;ر&#1614;اف&#1616;ق&#1616; و&#1614;ٱم&#1761;س&#1614;ح&#1615;وا&#1618; ب&#1616;ر&#1615;ء&#1615;وس&#1616;ك&#1615;م&#1761;
+ و&#1614;أ&#1614;ر&#1761;ج&#1615;ل&#1614;ڪ&#1615;م&#1761; إ&#1616;ل&#1614;ى ٱل&#1761;ك&#1614;ع&#1761;ب&#1614;ي&#1761;ن&#1616;&#1754; و&#1614;إ&#1616;ن ك&#1615;نت&#1615;م&#1761; ج&#1615;ن&#1615;ب&#1611;&#1772;ا 
+ف&#1614;ٱط&#1617;&#1614;ه&#1617;&#1614;ر&#1615;وا&#1618;&#1754; و&#1614;إ&#1616;ن ك&#1615;نت&#1615;م م&#1617;&#1614;ر&#1761;ض&#1614;ى&#1648;&#1619; أ&#1614;و&#1761; ع&#1614;ل&#1614;ى&#1648; س&#1614;ف&#1614;ر&#1613; أ&#1614;و&#1761; ج&#1614;ا&#1619;ء&#1614; 
+أ&#1614;ح&#1614;د&#1612;&#1772; م&#1617;&#1616;نك&#1615;م م&#1617;&#1616;ن&#1614; ٱل&#1761;غ&#1614;ا&#1619;ٮ&#1621;&#1616;ط&#1616; أ&#1614;و&#1761; ل&#1614;ـ&#1648;م&#1614;س&#1761;ت&#1615;م&#1615; ٱلن&#1617;&#1616;س&#1614;ا&#1619;ء&#1614; ف&#1614;ل&#1614;م&#1761; 
+ت&#1614;ج&#1616;د&#1615;وا&#1618; م&#1614;ا&#1619;ء&#1611;&#1772; ف&#1614;ت&#1614;ي&#1614;م&#1617;&#1614;م&#1615;وا&#1618; ص&#1614;ع&#1616;يد&#1611;&#1772;ا ط&#1614;ي&#1617;&#1616;ب&#1611;&#1772;ا ف&#1614;ٱم&#1761;س&#1614;ح&#1615;وا&#1618; 
+ب&#1616;و&#1615;ج&#1615;وه&#1616;ڪ&#1615;م&#1761; و&#1614;أ&#1614;ي&#1761;د&#1616;يك&#1615;م م&#1617;&#1616;ن&#1761;ه&#1615;&#1754; م&#1614;ا ي&#1615;ر&#1616;يد&#1615; ٱلل&#1617;&#1614;ه&#1615; ل&#1616;ي&#1614;ج&#1761;ع&#1614;ل&#1614; 
+ع&#1614;ل&#1614;ي&#1761;ڪ&#1615;م م&#1617;&#1616;ن&#1761; ح&#1614;ر&#1614;ج&#1613;&#1772; و&#1614;ل&#1614;ـ&#1648;ك&#1616;ن ي&#1615;ر&#1616;يد&#1615; ل&#1616;ي&#1615;ط&#1614;ه&#1617;&#1616;ر&#1614;ك&#1615;م&#1761; و&#1614;ل&#1616;ي&#1615;ت&#1616;م&#1617;&#1614; 
+ن&#1616;ع&#1761;م&#1614;ت&#1614;ه&#1615;&#12288;ۥ ع&#1614;ل&#1614;ي&#1761;ك&#1615;م&#1761; ل&#1614;ع&#1614;ل&#1617;&#1614;ڪ&#1615;م&#1761; ت&#1614;ش&#1761;ك&#1615;ر&#1615;ون
+Hai orang-orang yang beriman, apabila kamu hendak mengerjakan shalat, maka 
+basuhlah mukamu dan tanganmu sampai dengan siku, dan sapulah kepalamu 
+dan [basuh] kakimu sampai dengan kedua mata kaki, dan jika kamu junub 
+maka mandilah, dan jika kamu sakit [1] atau dalam perjalanan atau 
+kembali dari tempat buang air [kakus] atau menyentuh [2] perempuan, lalu
+ kamu tidak memperoleh air, maka bertayamumlah dengan tanah yang baik 
+[bersih]; sapulah mukamu dan tanganmu dengan tanah itu. Allah tidak 
+hendak menyulitkan kamu, tetapi Dia hendak membersihkan kamu dan 
+menyempurnakan ni&#8217;mat-Nya bagimu, supaya kamu bersyukur.
+QS. Al-Maidah (6)">QS. Al-Maidah: 6</a> mencantumkan empat kewajiban: pembasuhan empat 
+anggota 
+badan dan tidak menyebutkan niat. Niat dalam wudhu tidak termasuk 
+kewajiban, dimana kalangan 
+syafi'iyah mewajibkannya. Jadi status kewajiban niat 
+dalam wudhu adalah menambah kewajiban dari nash. Bagi Hanafiyah ini 
+termasuk Nasakh, dan mengartikan bahwa mewajibkan niat dalam wudhu 
+berarti 
+menambahi kewaijiban yang telah tercantum dalam nash. Menurut hanafiyah 
+niat dalam wudhu tidak 
+termasuk kewajiban, beda dengan Syafi'iyah yang mewajibkan dan memiliki 
+konsekuensi tidak sah jika tidak disertai niat. Bagi Syafi'iyah, 
+persyaratan niat tidak menyebabkan nasakh, penambahan tersebut tidak 
+menghapus hukum syara' sehingga itu bukan nasakh.<p/><br/>
+
+<p><b>Pola-pola Nasakh</b><p/>
+<p>Perubahan hukum yang ada pada satu teks dengan teks lain adakalanya tetap 
+mempertahankan kedua teks tersebut, adakalanya satu teks dibuang diganti
+ dengan yang lain. Proses nasakh selalu melibatkan dalil-dalil syara'.<p/>
+
+<div id="accordion4">
+  <h3>Mengganti hukum</h3>
+  <div>
+    <p>Kedua
+ contoh berikut polanya sama, menasakh ayat dengan ayat lain, dan ayat 
+yang di nasakh masih menjadi bagian Al-Qur'an. Tulisannya tidak di 
+Nasakh, tapi hukumnya.<br />
+<br />
+<br />
+<br />
+<div style="text-align: right;">
+أ&#1614;ي&#1617;&#1614;ام&#1611;&#1772;ا م&#1617;&#1614;ع&#1761;د&#1615;ود&#1614;ٲت&#1613;&#1772;&#8204;&#1754; ف&#1614;م&#1614;ن ك&#1614;ان&#1614; م&#1616;نك&#1615;م م&#1617;&#1614;ر&#1616;يض&#1611;ا أ&#1614;و&#1761; ع&#1614;ل&#1614;ى&#1648; س&#1614;ف&#1614;ر&#1613;&#1772; ف&#1614;ع&#1616;د&#1617;&#1614;ة&#1612;&#1772; م&#1617;&#1616;ن&#1761; أ&#1614;ي&#1617;&#1614;ام&#1613; أ&#1615;خ&#1614;ر&#1614;&#8204;&#1754; <u>و&#1614;ع&#1614;ل&#1614;ى ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ي&#1615;ط&#1616;يق&#1615;ون&#1614;ه&#1615;&nbsp;ۥ ف&#1616;د&#1761;ي&#1614;ة&#1612;&#1772; ط&#1614;ع&#1614;ام&#1615; م&#1616;س&#1761;ك&#1616;ين&#1613;&#1772;&#8204;&#1750;</u> ف&#1614;م&#1614;ن ت&#1614;ط&#1614;و&#1617;&#1614;ع&#1614; خ&#1614;ي&#1761;ر&#1611;&#1772;ا ف&#1614;ه&#1615;و&#1614; خ&#1614;ي&#1761;ر&#1612;&#1772; ل&#1617;&#1614;ه&#1615;&nbsp;ۥ&#8204;&#1754; و&#1614;أ&#1614;ن ت&#1614;ص&#1615;وم&#1615;وا&#1618; خ&#1614;ي&#1761;ر&#1612;&#1772; ل&#1617;&#1614;ڪ&#1615;م&#1761;&#8204;&#1750; إ&#1616;ن ك&#1615;نت&#1615;م&#1761; ت&#1614;ع&#1761;ل&#1614;م&#1615;ون&#1614; </div>
+<br />
+<i>"wajib bagi orang-orang yang mampu berpuasa untuk membayar fidyah berupa pemberian makan untuk orang miskin."</i><br />
+<br />
+Diterjemahkan
+ daman bahasa Indonesia: <i>"[yaitu] dalam beberapa hari yang tertentu. Maka
+ barangsiapa di antara kamu ada yang sakit atau dalam perjalanan [lalu 
+ia berbuka], maka [wajiblah baginya berpuasa] sebanyak hari yang 
+ditinggalkan itu pada hari- hari yang lain. <u>Dan wajib bagi 
+orang-orang yang berat menjalankannya [jika mereka tidak berpuasa] 
+membayar fidyah, [yaitu]: memberi makan seorang miskin.</u> Barangsiapa 
+yang dengan kerelaan hati mengerjakan kebajikan [2], maka itulah yang 
+lebih baik baginya. Dan berpuasa lebih baik bagimu jika kamu mengetahui."</i><br />
+<br />
+Terjemah dalam bahasa Indonesia sudah memuat penafsiran. Dalam arti aslinya, ayat ini menjelaskan bahwa orang-orang yang 
+mampu berpuasa boleh tidak berpuasa dengan menggantinya dengan 
+pembayaran fidyah. Status Al-Qur'annya ayat ini tidak dinasakh, artinya ayat ini masih menjadi bagian Al_Qur'an, hanya hukumnya
+ yang dinasakh, sehingga wajib berpuasa bagi semua orang yang mampu 
+melakukannya. Ayat tersebut dinasakh dengan ayat ini:<br />
+<br />
+<div style="text-align: right;">
+ش&#1614;ہ&#1761;ر&#1615; ر&#1614;م&#1614;ض&#1614;ان&#1614; ٱل&#1617;&#1614;ذ&#1616;ى&#1619; أ&#1615;نز&#1616;ل&#1614; ف&#1616;يه&#1616; ٱل&#1761;ق&#1615;ر&#1761;ء&#1614;ان&#1615; ه&#1615;د&#1611;&#1772;ى ل&#1617;&#1616;لن&#1617;&#1614;اس&#1616; و&#1614;ب&#1614;ي&#1617;&#1616;ن&#1614;ـ&#1648;ت&#1613;&#1772; م&#1617;&#1616;ن&#1614; ٱل&#1761;ه&#1615;د&#1614;ى&#1648; و&#1614;ٱل&#1761;ف&#1615;ر&#1761;ق&#1614;ان&#1616;&#8204;&#1754; <u>ف&#1614;م&#1614;ن ش&#1614;ہ&#1616;د&#1614; م&#1616;نك&#1615;م&#1615; ٱلش&#1617;&#1614;ہ&#1761;ر&#1614; ف&#1614;ل&#1761;ي&#1614;ص&#1615;م&#1761;ه&#1615;&#8204;&#1750;</u>
+ و&#1614;م&#1614;ن ڪ&#1614;ان&#1614; م&#1614;ر&#1616;يض&#1611;ا أ&#1614;و&#1761; ع&#1614;ل&#1614;ى&#1648; س&#1614;ف&#1614;ر&#1613;&#1772; ف&#1614;ع&#1616;د&#1617;&#1614;ة&#1612;&#1772; م&#1617;&#1616;ن&#1761; أ&#1614;ي&#1617;&#1614;ام&#1613; 
+أ&#1615;خ&#1614;ر&#1614;&#8204;&#1751; ي&#1615;ر&#1616;يد&#1615; ٱلل&#1617;&#1614;ه&#1615; ب&#1616;ڪ&#1615;م&#1615; ٱل&#1761;ي&#1615;س&#1761;ر&#1614; و&#1614;ل&#1614;ا ي&#1615;ر&#1616;يد&#1615; ب&#1616;ڪ&#1615;م&#1615; ٱل&#1761;ع&#1615;س&#1761;ر&#1614;
+ و&#1614;ل&#1616;ت&#1615;ڪ&#1761;م&#1616;ل&#1615;وا&#1618; ٱل&#1761;ع&#1616;د&#1617;&#1614;ة&#1614; و&#1614;ل&#1616;ت&#1615;ڪ&#1614;ب&#1617;&#1616;ر&#1615;وا&#1618; ٱلل&#1617;&#1614;ه&#1614; ع&#1614;ل&#1614;ى&#1648; م&#1614;ا 
+ه&#1614;د&#1614;ٮ&#1648;ك&#1615;م&#1761; و&#1614;ل&#1614;ع&#1614;ل&#1617;&#1614;ڪ&#1615;م&#1761; ت&#1614;ش&#1761;ك&#1615;ر&#1615;ون&#1614; </div>
+<i><br /></i>
+<i>"Barang siapa di antara kalian yang menemui bulan ramadhan, maka hendaklah dia berpuasa di bulan itu."</i><br />
+<br />
+Terjemah lengkapnya, <i>[Beberapa
+ hari yang ditentukan itu ialah] bulan Ramadhan, bulan yang di dalamnya 
+diturunkan [permulaan] Al Qur&#8217;an sebagai petunjuk bagi manusia dan 
+penjelasan-penjelasan mengenai petunjuk itu dan pembeda [antara yang hak
+ dan yang bathil].<u> Karena itu, barangsiapa di antara kamu hadir [di 
+negeri tempat tinggalnya] di bulan itu, maka hendaklah ia berpuasa pada 
+bulan itu,</u> dan barangsiapa sakit atau dalam perjalanan [lalu ia 
+berbuka], maka [wajiblah baginya berpuasa], sebanyak hari yang 
+ditinggalkannya itu, pada hari- hari yang lain. Allah menghendaki 
+kemudahan bagimu, dan tidak menghendaki kesukaran bagimu. Dan hendaklah 
+kamu mencukupkan bilangannya dan hendaklah kamu mengagungkan Allah atas 
+petunjuk-Nya yang diberikan kepadamu, supaya kamu bersyukur. </i>QS. Al-Baqarah
+ 185.<br />
+<br />
+<br />
+Contoh lain:<br />
+<br />
+<div style="text-align: right;">
+<u>و&#1614;ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ي&#1615;ت&#1614;و&#1614;ف&#1617;&#1614;و&#1761;ن&#1614; م&#1616;نڪ&#1615;م&#1761; و&#1614;ي&#1614;ذ&#1614;ر&#1615;ون&#1614; أ&#1614;ز&#1761;و&#1614;ٲج&#1611;&#1772;ا و&#1614;ص&#1616;ي&#1617;&#1614;ة&#1611;&#1772; ل&#1616;&#1617;أ&#1614;ز&#1761;و&#1614;ٲج&#1616;ه&#1616;م م&#1617;&#1614;ت&#1614;ـ&#1648;ع&#1611;ا إ&#1616;ل&#1614;ى ٱل&#1761;ح&#1614;و&#1761;ل&#1616;</u>
+ غ&#1614;ي&#1761;ر&#1614; إ&#1616;خ&#1761;ر&#1614;اج&#1613;&#1772;&#8204;&#1754; ف&#1614;إ&#1616;ن&#1761; خ&#1614;ر&#1614;ج&#1761;ن&#1614; ف&#1614;ل&#1614;ا ج&#1615;ن&#1614;اح&#1614; ع&#1614;ل&#1614;ي&#1761;ڪ&#1615;م&#1761; ف&#1616;ى م&#1614;ا 
+ف&#1614;ع&#1614;ل&#1761;ن&#1614; ف&#1616;ى&#1619; أ&#1614;نف&#1615;س&#1616;ه&#1616;ن&#1617;&#1614; م&#1616;ن م&#1617;&#1614;ع&#1761;ر&#1615;وف&#1613;&#1772;&#8204;&#1751; و&#1614;ٱلل&#1617;&#1614;ه&#1615; ع&#1614;ز&#1616;يز&#1612; ح&#1614;ڪ&#1616;يم&#1612;&#1772;</div>
+<br />
+<i><u>Dan orang-orang yang akan meninggal dunia di
+ antaramu dan meninggalkan isteri, hendaklah berwasiat untuk 
+isteri-isterinya, [yaitu] diberi nafkah hingga setahun lamanya</u> 
+dengan tidak disuruh pindah [dari rumahnya]. Akan tetapi jika mereka 
+pindah [sendiri], maka tidak ada dosa bagimu [wali atau waris dari yang 
+meninggal] membiarkan mereka berbuat yang ma&#8217;ruf terhadap diri mereka. 
+Dan Allah Maha Perkasa lagi Maha Bijaksana </i><br />
+<br />
+dinasakh dengan<br />
+<br />
+<div style="text-align: right;">
+و&#1614;ٱل&#1617;&#1614;ذ&#1616;ين&#1614; ي&#1615;ت&#1614;و&#1614;ف&#1617;&#1614;و&#1761;ن&#1614; م&#1616;نك&#1615;م&#1761; و&#1614;ي&#1614;ذ&#1614;ر&#1615;ون&#1614; أ&#1614;ز&#1761;و&#1614;ٲج&#1611;&#1772;ا <u>ي&#1614;ت&#1614;ر&#1614;ب&#1617;&#1614;ص&#1761;ن&#1614; ب&#1616;أ&#1614;نف&#1615;س&#1616;ه&#1616;ن&#1617;&#1614; أ&#1614;ر&#1761;ب&#1614;ع&#1614;ة&#1614; أ&#1614;ش&#1761;ہ&#1615;ر&#1613;&#1772; و&#1614;ع&#1614;ش&#1761;ر&#1611;&#1772;ا&#8204;&#1750;</u>
+ ف&#1614;إ&#1616;ذ&#1614;ا ب&#1614;ل&#1614;غ&#1761;ن&#1614; أ&#1614;ج&#1614;ل&#1614;ه&#1615;ن&#1617;&#1614; ف&#1614;ل&#1614;ا ج&#1615;ن&#1614;اح&#1614; ع&#1614;ل&#1614;ي&#1761;ك&#1615;م&#1761; ف&#1616;يم&#1614;ا ف&#1614;ع&#1614;ل&#1761;ن&#1614; 
+ف&#1616;ى&#1619; أ&#1614;نف&#1615;س&#1616;ه&#1616;ن&#1617;&#1614; ب&#1616;ٱل&#1761;م&#1614;ع&#1761;ر&#1615;وف&#1616;&#8204;&#1751; و&#1614;ٱلل&#1617;&#1614;ه&#1615; ب&#1616;م&#1614;ا ت&#1614;ع&#1761;م&#1614;ل&#1615;ون&#1614; خ&#1614;ب&#1616;ير&#1612;&#1772; </div>
+<br />
+<i>Orang-orang yang meninggal dunia di antaramu dengan meninggalkan isteri-isteri <u>[hendaklah para isteri itu] menangguhkan dirinya [ber&#8217;iddah] empat bulan sepuluh hari.</u>
+ Kemudian apabila telah habis iddahnya, maka tiada dosa bagimu [para 
+wali] membiarkan mereka berbuat terhadap diri mereka [1] menurut yang 
+patut. Allah mengetahui apa yang kamu perbuat.</i></p>
+  </div>
+  <h3>Membuang teks Al-Qur'an</h3>
+  <div>
+    <p>Adakalanya teks yang di Nasakh tidak lagi menjadi bagian Al_Qur'an:<br />
+<br />
+"Orang yang sudah pernah menikah, pria atau wanita, jika berzina maka rajamlah keduanya, secara pasti."<br />
+<br />
+Ayat
+ ini, sebagaimana keterangan Umar bin Khattab dalam hadits sahih Bukhari
+ Muslim, dulu merupakan bagian dari Al-Qur'an, lalu statusnya sebagai 
+bagian dari Al-Qu'ran di Nasakh. Meski menghapus status sebagai bagian 
+dari ayat Al-Qur'an, tapi hukumnya tetap, karena rasulullah tetap 
+memberlakukan hukum rajam pada pezina muhshan.</p>
+  </div>
+  <h3>Membuang teks Al-Qur'an sekaligus hukumnya</h3>
+  <div>
+    <p>Pola ini berbeda 
+dari sebelumnya. Menasakh rash (tulisan/teks) ayat Qur'an tanpa menasakh
+ hukumnya, artinya hukumnya tetap berlaku.<br />
+<br />
+Pola yang berbeda ada pada contoh berikut, dimana teks dan hukum keduanya sama-sama di Nasakh.<br />
+<br />
+"Dari
+ Aisyah RA, beliau berkata: dahulu di antara ayat Al-Qur'an yang 
+diturunkan adalah "sepuluh kali susuan yang diketahui itu menjadikan 
+mahram", lalu dinasakh dengan "lima kali susuan yang diketahui", lalu 
+rasulullah wafat dan ayat "lima kali susuan yang diketahui" masih dibaca
+ sebagai ayat al-Qur'an." HR Muslim.</p>
+  </div>
+</div>
+                            
+<br />
+<p>Selain antar ayat, Nasakh juga terjadi antara Sunnah dengan Al-Qur'an.</p>
+                        
+<div id="accordion5">
+  <h3>Nasakh sunnah dengan Al-Qur'an</h3>
+  <div>
+    <p>Seperti yang ditetapkan dengan 
+sunnah fi'liyyah: rasulullah menghadap Baitul Maqdis dalam shalat. 
+Sebelum dinasakh Al-Qur'an, kita menilai sunah fi'liyah ini sebagai 
+kewajiban untuk menghadap Baitul Maqdis. Kewajiban menghadap Baitul 
+Maqdis yang ditetapkan dengan sunah fi'liyah di Nasakh dengan Al-Qur'an 
+yang mewajibkan menghadap Ka'bah. Tindakan Rasulullah yang menaati 
+Al-Qur'an dengan menghadap Ka'bah itu akhirnya juga menjadi sunnah 
+fi'liyah yang menasakh sunah fi'liyah sebelumnya, sekaligus menguatkan 
+nasakh sunnah oleh Al-Qur'an tersebut.<br />
+<br />
+ق&#1614;د&#1761; ن&#1614;ر&#1614;ى&#1648; 
+ت&#1614;ق&#1614;ل&#1617;&#1615;ب&#1614; و&#1614;ج&#1761;ه&#1616;ك&#1614; ف&#1616;ى ٱلس&#1617;&#1614;م&#1614;ا&#1619;ء&#1616;&#8204;&#1750; ف&#1614;ل&#1614;ن&#1615;و&#1614;ل&#1617;&#1616;ي&#1614;ن&#1617;&#1614;ك&#1614; ق&#1616;ب&#1761;ل&#1614;ة&#1611;&#1772; 
+ت&#1614;ر&#1761;ض&#1614;ٮ&#1648;ه&#1614;ا&#8204;&#1754; ف&#1614;و&#1614;ل&#1617;&#1616; و&#1614;ج&#1761;ه&#1614;ك&#1614; ش&#1614;ط&#1761;ر&#1614; ٱل&#1761;م&#1614;س&#1761;ج&#1616;د&#1616; ٱل&#1761;ح&#1614;ر&#1614;ام&#1616;&#8204;&#1754; و&#1614;ح&#1614;ي&#1761;ث&#1615; 
+م&#1614;ا ك&#1615;نت&#1615;م&#1761; ف&#1614;و&#1614;ل&#1617;&#1615;وا&#1618; و&#1615;ج&#1615;وه&#1614;ك&#1615;م&#1761; ش&#1614;ط&#1761;ر&#1614;ه&#1615; ۥ&#8204;&#1751; و&#1614;إ&#1616;ن&#1617;&#1614; ٱل&#1617;&#1614;ذ&#1616;ين&#1614; 
+أ&#1615;وت&#1615;وا&#1618; ٱل&#1761;ك&#1616;ت&#1614;ـ&#1648;ب&#1614; ل&#1614;ي&#1614;ع&#1761;ل&#1614;م&#1615;ون&#1614; أ&#1614;ن&#1617;&#1614;ه&#1615; ٱل&#1761;ح&#1614;ق&#1617;&#1615; م&#1616;ن ر&#1617;&#1614;ب&#1617;&#1616;ه&#1616;م&#1761;&#8204;&#1751; 
+و&#1614;م&#1614;ا ٱلل&#1617;&#1614;ه&#1615; ب&#1616;غ&#1614;ـ&#1648;ف&#1616;ل&#1613; ع&#1614;م&#1617;&#1614;ا ي&#1614;ع&#1761;م&#1614;ل&#1615;ون&#1614; ( ١٤٤ ) <br />
+<br />
+Sungguh
+ Kami [sering] melihat mukamu menengadah ke langit [4], maka sungguh 
+Kami akan memalingkan kamu ke kiblat yang kamu sukai. Palingkanlah 
+mukamu ke arah Masjidil Haram. Dan di mana saja kamu berada, 
+palingkanlah mukamu ke arahnya. Dan sesungguhnya orang-orang [Yahudi dan
+ Nasrani] yang diberi Al Kitab [Taurat dan Injil] memang mengetahui, 
+bahwa berpaling ke Masjidil Haram itu adalah benar dari Tuhannya; dan 
+Allah sekali-kali tidak lengah dari apa yang mereka kerjakan. (144)</p>
+  </div>
+  <h3>Nasakh summah demgam summah</h3>
+  <div>
+    <p>Nasakh Sunnah dengan Sunnah 
+seperti "Aku pernah melarang kalian dari berziarah kubur, maka sekarang 
+berziarahlah ke kubur." (HR. Muslim)</p>
+  </div>
+  <h3>Nasakh Al-Qur'an dengan Sunnah</h3>
+  <div>
+    <p>Mengenai Nasakh Al-Qur'an dengan
+ Sunnah ada berbeda pendapat. Posisi Sunnah adalah penjelas kandungan 
+qur'an, bukan sebaliknya. Al-Qur'an hanya boleh dinasakh dengan 
+Al-Qur'an, Nasakh Al-Qur'an dengan Sunnah tidak boleh terjadi. Al-Qur'an
+ tidak bisa dinasakh dengan As-Sunnah secara mutlak, baik dengan Hadits 
+Mutawatir maupun hadits Ahad. Pendapat ini dialamatkan kepada Imam 
+Syafi'i. Ini tentang etika, posisi, dan kedudukan masing-masing dari 
+keduanya. Menasakh dari Al-Qur'an berarti penggantian dari diri 
+rasulullah.<br />
+<br />
+Pendpat yang berbeda mengatakan Nasakh 
+bukan penggantian yang berasal dari sisi Rasulullah. karena apa yang 
+beliau sabdakan, semuanya berdasarkan wahyu Allah.<br />
+<br />
+و&#1614;م&#1614;ا ي&#1614;نط&#1616;ق&#1615; ع&#1614;ن&#1616; ٱل&#1761;ه&#1614;و&#1614;ى&#1648;&#1619; إ&#1616;ن&#1761; ه&#1615;و&#1614; إ&#1616;ل&#1617;&#1614;ا و&#1614;ح&#1761;ى&#1612;&#1772; ي&#1615;وح&#1614;ى<br />
+<br />
+"Dan
+ tiadalah yang diucapkannya itu [Al Qur&#8217;an] menurut kemauan hawa 
+nafsunya. Ucapannya itu tiada lain hanyalah wahyu yang diwahyukan 
+[kepadanya],"</p>
+  </div>
+</div>
+                        
+                        
+<br />
+<p><b>Penutup</b><p/>
+<p>Penggantian ayat 
+dengan ayat lain serta perubahan hukum tidak berarti 
+"perubahan pada ilmu allah", revisi, memutuskan sesuatu lalu meralatnya,
+ memberlakukan satu hukum lalu 
+mengubah hukum tersebut. Tidak demikian. Konsep akidah kita adalah ilmu 
+Allah mencakup masa lalu, masa kini, dan mendatang, yang 
+universal dan partikular. Sebagaimana disebutkan sebelumnya, konsep 
+dasar Al-Qur'an adalah wahyu yang berangkat dari konsep realitas. 
+Perubahan adalah sifat yang konstan dan selalu mengiringi realitas. 
+Selama teks ditujukan pada realitas maka sudah tentu teks memperhatikan 
+konsidi-kondisi realitas.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Teori Ushul Fiqh</span>
+							<h2 class="title title--full">Amm dan Khash</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author03" />
+								<span class="meta__author">Redaksi Ushulfiqh.com</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+							</div>
+<p>Pada ayat umum, hukum dapat diterapkan pada beribu-ribu peristiwa yang serupa. Aturannya, konsep "keumuman lafadz" harus didasarkan pada tanda pada Al-Qur'an itu sendiri untuk menentukan boleh tidaknya penarikan dan peralihan tersebut. </p>
+<p>Al-Qur'an mestinya diterapkan sesuai konteksnya. Membaca sejarah periwayatan (Lihat: Asbabun Nuzul) begitu penting, karena tafsir harus selalu melihat sisi historisitasnya sehingga hukum yang dihasilkan relevan dan tidak menyimpang dari maksud turunnya suatu ayat. Namun dalam ayat yang konteksnya umum, terdapat mekanisme generalisasi untuk keluar dari eksklusifitas tersebut sehingga dapat merespon realitas yang dinamis dan evolutif. Kaidahnya adalah "keumuman lafadz" tidak harus terpaku pada "kekhususan sebab". Pada ayat umum, hukum dapat diterapkan pada beribu-ribu peristiwa yang serupa. Aturannya, konsep "keumuman lafadz" harus didasarkan pada tanda pada Al-Qur'an itu sendiri untuk menentukan boleh tidaknya penarikan dan peralihan tersebut.</p><br/>
+<p><b>Konsep Amm dan Khash</b><p/>
+<p>Amm dan Khash adalah keumuman dan kekhususan melalui analisis perangkat 
+bahasa. Kekhususan (takhsis) disini adalah bukan faktor peristiwa atau 
+munasabah, atau kekhususan konsep ayat Al-Qur'an yang dibatasi oleh 
+peristiwa partikular yang direspon ayat tersebut. Adakalanya peralihan 
+semantis dalam mekanisme bahasa Arab menjadikan ayat yang menurut bentuk
+ dan maknanya amm, tapi hukumnya dikhususkan. Bentuk takhsis bisa 
+didasarkan pada tanda-tanda bahasa yang ada pada ayat tersebut, atau 
+dibagian Al-Qur'an yang lain. Adakalanya formatnya umum tapi maknanya 
+khusus, tidak bisa mencakup semua bagian yang ditunjukkan ayat tersebut.
+ Konsep Amm dan Khash adalah analisis perangkat bahasa sehingga tidak 
+berbenturan dengan konsep Asbabun Nuzul. Memberlakukan "keumuman lafadz"
+ bukan berarti mengabaikan sebab turunnnya, karena mengabaikan Asbabun 
+Nuzul (dimana banyak hal upaya menyingkap makna teks tergantung pada 
+ilmu ini) tentu tidak tepat.<p/>
+<p>
+Misalnya <a href="#" title="و&#1614;ال&#1617;&#1614;ذ&#1616;ين&#1614; ي&#1614;ر&#1618;م&#1615;ون&#1614; ال&#1618;م&#1615;ح&#1618;ص&#1614;ن&#1614;ات&#1616; ث&#1615;م&#1617;&#1614; ل&#1614;م&#1618;
+ ي&#1614;أ&#1618;ت&#1615;وا ب&#1616;أ&#1614;ر&#1618;ب&#1614;ع&#1614;ة&#1616; ش&#1615;ه&#1614;د&#1614;اء&#1614; ف&#1614;اج&#1618;ل&#1616;د&#1615;وه&#1615;م&#1618; ث&#1614;م&#1614;ان&#1616;ين&#1614; ج&#1614;ل&#1618;د&#1614;ة&#1611; 
+و&#1614;ل&#1614;ا ت&#1614;ق&#1618;ب&#1614;ل&#1615;وا ل&#1614;ه&#1615;م&#1618; ش&#1614;ه&#1614;اد&#1614;ة&#1611; أ&#1614;ب&#1614;د&#1611;ا &#1754; و&#1614;أ&#1615;ول&#1614;&#1648;ئ&#1616;ك&#1614; ه&#1615;م&#1615; 
+ال&#1618;ف&#1614;اس&#1616;ق&#1615;ون&#1614;
+Dan orang-orang yang menuduh 
+wanita-wanita yang baik-baik (berbuat zina) dan mereka tidak 
+mendatangkan empat orang saksi, maka deralah mereka (yang menuduh itu) 
+delapan puluh kali dera, dan janganlah kamu terima kesaksian mereka buat
+ selama-lamanya. Dan mereka itulah orang-orang yang fasik.">QS. An-Nur 24: 4</a>
+yang turun berkenaan dengan hukuman bagi orang-orang yang menuduh 
+Aisyah. Hukum yang terkandung dalam ayat tersebut tidak dikhususkan bagi
+ orang yang menjadi sasaran langsung ayat tersebut, tapi konteks 
+hukumnya dijadikan umum, mencakup siapa saja yang dikenai sifat 
+sebagaimana diformulasikan dalam jumlah shillah (klausa penghubung) 
+setelah kata ganti penghubung. Generalisasi karena pemakaian isim 
+maushul dan kalimat setelahnya.<br />
+<br />
+Konsep Amm dan Khash terkait juga dengan: Mutlaq Muqayyad.<br />
+Lihat juga: Asbabun Nuzul<p/><br />
+
+<p><b>Mekanisme Amm dan Khash</b><p/>
+<p>
+Karena
+ Al-Qur&#8217;an menggunakan medium Bahasa Arab, sebagaimana disebutkan 
+sebelumnya, untuk memahami peralihan amm-khash adalah melalui peralihan 
+semantis dalam mekanisme bahasa:<p/>
+    
+<div id="accordion6">
+  <h3>Mekanisme Amm</h3>
+  <div>
+    <p>Mekanisme Amm<br />
+1. Kata "kullu" di awal ayat, atau sebagai keterangan<br />
+2. Semua kata penghubung, asma' al-maushul<br />
+3. Kata ayy, ma, dan man (mana/apa/siapa saja), baik sebagai kata syarat, kata tanya, atau kata penghubung<br />
+4. Kata Jama' yang dima'rifatkan dengan alif-lam atau idhafah<br />
+5. Kata benda kategorial (isim jins) yang dima'rifatkan dengan alif-lam atau idhafah<br />
+6. Isim Nakirah dalam konteks larangan, negasi, dan syarat.</p>
+  </div>
+  <h3>Mekanisme Khash / Takhsis</h3>
+  <div>
+    <p>Mekanisme Takhsis Muttashil<br />
+1. Pengecualian (al-Istisna')<br />
+2. Pembatasan (al-taqyid) dengan sifat<br />
+3. Pengecualian dengan dengan batas (ghayah)<br />
+4. Pengecualian dengan pengganti (badal)<br />
+<br />
+Mekanisme Takhsis Munfashil<br />
+1. Pengecualian ayat Al-Qur&#8217;an dengan ayat Al-Qur&#8217;an yang lain<br />
+2. Pengecualian Al-Qur&#8217;an dengan Sunnah<br />
+3. Pengecualian Sunnah dengan Al-Qur&#8217;an<br />
+4. Pengecualian Sunnah dengan Sunnah<br />
+5. Pengecualian Al-Qur&#8217;an dengan Qiyas<br />
+6. Pengecualian Sunnah dengan al-Qiyas</p>
+  </div>
+</div>
+    
+<p>Mekanisme
+ Amm juga dapat dilakukan dengan kembali ke makna generik. Misalnya 
+dalam konteks hubungan antar agama, makna generik "orang yang beriman" 
+dalam <a href="#" title="
+إ&#1616;ن&#1617;&#1614;م&#1614;ا ٱل&#1761;م&#1615;ؤ&#1761;م&#1616;ن&#1615;ون&#1614; إ&#1616;خ&#1761;و&#1614;ة&#1612;&#1772; ف&#1614;أ&#1614;ص&#1761;ل&#1616;ح&#1615;وا&#1618; ب&#1614;ي&#1761;ن&#1614; أ&#1614;خ&#1614;و&#1614;ي&#1761;ك&#1615;م&#1761;&#8204;&#1754; و&#1614;ٱت&#1617;&#1614;ق&#1615;وا&#1618; ٱلل&#1617;&#1614;ه&#1614; ل&#1614;ع&#1614;ل&#1617;&#1614;ك&#1615;م&#1761; ت&#1615;ر&#1761;ح&#1614;م&#1615;ون&#1614; 
+Sesungguhnya
+ orang-orang yang beriman adalah bersaudara karena itu damaikanlah 
+antara kedua saudaramu dan bertakwalah kepada Allah supaya kamu mendapat
+ rahmat.
+">Al-Hujurat 49:10</a> adalah umum, bukan eksklusif dimaksudkan 
+sebagai adalah orang-orang muslim saja, tapi siapa saja yang percaya dan
+ menaruh percaya (trust) kepada Tuhan. Di bagian lain, kata &#8220;muslim&#8221; 
+juga dipakai dalam arti generiknya, yaitu: &#8220;orang-orang yang memasrahkan
+ hidupnya kepada kehendak Allah,&#8221; tidak peduli apa agama formalnya. 
+Islam dalam <a href="#" title="
+إ&#1616;ن&#1617;&#1614; الد&#1616;&#1617;ين&#1614; ع&#1616;ند&#1614; الل&#1617;&#1614;ه&#1616; ال&#1618;إ&#1616;س&#1618;ل&#1614;ام&#1615; ٣:١٩ 
+Agama
+ yang benar dan diterima di sisi Allah adalah agama yang membawa ajaran 
+ketundukan kepada Allah dengan penuh keikhlasan. (QS. Ali-Imran 
+3:19)">QS. Ali-Imran 3:19</a> dan ayat lain yang serupa <a href="#" title="
+و&#1614;م&#1614;ن ي&#1614;ب&#1618;ت&#1614;غ&#1616; غ&#1614;ي&#1618;ر&#1614; ال&#1618;إ&#1616;س&#1618;ل&#1614;ام&#1616; د&#1616;ين&#1611;ا ف&#1614;ل&#1614;ن ي&#1615;ق&#1618;ب&#1614;ل&#1614; م&#1616;ن&#1618;ه&#1615; و&#1614;ه&#1615;و&#1614; ف&#1616;ي ال&#1618;آخ&#1616;ر&#1614;ة&#1616; م&#1616;ن&#1614; ال&#1618;خ&#1614;اس&#1616;ر&#1616;ين&#1614; ٣:٨٥
+Barangsiapa
+ mencari &#8220;din&#8221; atau agama selain yang membawa ajaran ketundukan kepada 
+Allah, Tuhan tak akan menerimanya (QS. Ali-Imran 3:85)">QS. Ali-Imran 3:85</a> juga 
+memiliki makna umum. Kata &#8220;Islam&#8221; dalam kedua ayat tersebut maknanya 
+bukan Islam dalam pengertian nama agama tertentu. Islam dipahami dalam 
+pengertiannya yang umum, yaitu: ketundukan. Jadi pengertiannya adalah: 
+agama atau jalan penyembahan terhadap Tuhan yang benar ialah jalan yang 
+di dalamnya ada sikap &#8220;ketundukan&#8221;. Agama yang benar agama ialah yang 
+mengandung ajaran ketundukan kepada Tuhan. Ayat-ayat ini bukan menunjuk 
+kepada satu agama saja, tapi mencakup agama mana saja yang mengajarkan 
+sikap ketundukan.<p/>
+<p><b>Kesimpulan</b><p/>
+<p>
+Konsep
+ Amm potensial memberikan tafsiran Alqur&#8217;an yang sesuai dengan 
+maksud-maksud dan nilai-nilai universal yang dikandung Qur&#8217;an itu 
+sendiri, tidak menitikfokuskan perhatian, melulu pada nilai-nilai 
+situasional-partikular-lokal. Meski bukan berarti konsep Asbabun Nuzul 
+adalah membatasi hanya pada konteks turunnya ayat, karena tujuan dibalik
+ penuturan Asbabun Nuzul ialah mengungkapkan makna teks dengan kembali 
+pada konteksnya yang lebih luas.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Teori Ushul Fiqh</span>
+							<h2 class="title title--full">Mutlaq Muqayyad</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author04" />
+								<span class="meta__author">Redaksi Ushulfiqh.com</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+							</div>
+<p>Hubungan antar-bagian Al-Qur'an dari perspektif keumuman dan kekhususan ada dua: Pertama, jika suatu ayat memiliki makna umum, kadang ada ayat lain yang mangkhususkan (takhsis) makna umum tersebut. Kedua, jika ada ayat yang mutlak, bisa jadi ada ayat lain yang membatasi kemutlakan tersebut.</p>
+<p>Yang pertama tersebut adalah pembahasan Amm dan Khash (Baca: Amm dan Khash), yang kedua adalah Mutlaq Muqayyad.</p><br/>
+							<p><b>Konsep <i>Mutlaq Muqayyad</i></b><p/>
+<p>
+Kaidahnya adalah ayat Al-Qur'an yang 
+mutlak atau umum tetap dalam status kemutlakan dan keumumannya selama 
+tidak ayat lain yang membatasinya. Jika sebuah ayat 
+bersifat mutlak atau umum, maka harus diberlakukan kemutlakan atau 
+keumumannya. Jika kemudian dibatasi <i>(muqoyyad)</i> atau bersifat khusus, 
+maka harus diberlakukan berdasarkan filter pembatasan atau 
+kekhususannya tersebut. Jika mutlak di satu sisi dan muqoyyad 
+di sisi yang lain, maka sisi kemutlakannya harus ditangguhkan dan 
+diberlakukan sisi kekhususannya.<br />
+<br />
+Ahli Kitab tidak 
+termasuk dalam kategori kafir dari analisis <i>Mutlaq Muqayyad</i>. Lihat misalnya <a href="#" title="م&#1617;&#1614;ا 
+ي&#1614;و&#1614;د&#1617;&#1615; ال&#1617;&#1614;ذ&#1616;ين&#1614; ك&#1614;ف&#1614;ر&#1615;وا م&#1616;ن&#1618; أ&#1614;ه&#1618;ل&#1616; ال&#1618;ك&#1616;ت&#1614;اب&#1616; و&#1614;ل&#1614;ا ال&#1618;م&#1615;ش&#1618;ر&#1616;ك&#1616;ين&#1614; 
+أ&#1614;ن ي&#1615;ن&#1614;ز&#1617;&#1614;ل&#1614; ع&#1614;ل&#1614;ي&#1618;ك&#1615;م م&#1616;&#1617;ن&#1618; خ&#1614;ي&#1618;ر&#1613; م&#1616;&#1617;ن ر&#1617;&#1614;ب&#1616;&#1617;ك&#1615;م&#1618;
+Orang-orang 
+kafir dari Ahli Kitab dan orang-orang musyrik tiada menginginkan 
+diturunkannya sesuatu kebaikan kepadamu dari Tuhanmu.">QS. Al-Baqarah 2: 105</a> yang 
+dengan jelas membedakan bahwa Ahli Kitab bukan termasuk kafir dan 
+musyrik. Penyebutan kafir dibatasi hanya golongan tertentu dari Ahli 
+Kitab, tidak secara keseluruhan. Ayat tersebut juga memisahkan Ahli Kitab 
+dengan musyrik. Atau <a href="#" title="ه&#1615;و&#1614; ال&#1617;&#1614;ذ&#1616;ي 
+أ&#1614;خ&#1618;ر&#1614;ج&#1614; ال&#1617;&#1614;ذ&#1616;ين&#1614; ك&#1614;ف&#1614;ر&#1615;وا م&#1616;ن&#1618; أ&#1614;ه&#1618;ل&#1616; ال&#1618;ك&#1616;ت&#1614;اب&#1616; م&#1616;ن د&#1616;ي&#1614;ار&#1616;ه&#1616;م&#1618; 
+ل&#1616;أ&#1614;و&#1617;&#1614;ل&#1616; ال&#1618;ح&#1614;ش&#1618;ر&#1616;
+Dialah yang mengeluarkan orang-orang kafir di 
+antara ahli kitab dari kampung-kampung mereka pada saat pengusiran yang 
+pertama.">QS. Al-Hashr 59: 2</a> dimana "orang kafir" yang dimaksud bukan seluruh Ahli
+ Kitab. Ini adalah realitas sejarah: dalam pengusiran bangsa Yahudi dari
+ Jazirah Arab, yang dimaksud "orang-orang kafir di antara ahli kitab" 
+sangat spesifik menunjuk bangsa Yahudi dari suku Bani Nadlir, satu suku 
+pada zaman awal Islam. Saat pengusiran pertama adalah pada masa Nabi 
+Muhammad: mereka tinggal di Madinah dan diusir ke negeri Syam. Dan 
+terakhir mereka diusir ke Khaibar oleh Khalifah Umar semasa ia menjabat 
+sebagai khalifah. Konteks penyebutan kafir dalam ayat ini tidak bisa digeneralisai, tapi sangat 
+spesifik seperti yang disebutkan. Juga <a href="#" title="ل&#1614;م&#1618; ي&#1614;ك&#1615;ن&#1616; ال&#1617;&#1614;ذ&#1616;ين&#1614; ك&#1614;ف&#1614;ر&#1615;وا م&#1616;ن&#1618; أ&#1614;ه&#1618;ل&#1616; ال&#1618;ك&#1616;ت&#1614;اب&#1616; 
+و&#1614;ال&#1618;م&#1615;ش&#1618;ر&#1616;ك&#1616;ين&#1614; م&#1615;نف&#1614;ك&#1616;&#1617;ين&#1614; ح&#1614;ت&#1617;&#1614;ى&#1648; ت&#1614;أ&#1618;ت&#1616;ي&#1614;ه&#1615;م&#1615; ال&#1618;ب&#1614;ي&#1616;&#1617;ن&#1614;ة&#1615;
+Orang-orang
+ yang kafir dari kalangan Ahlui Kitab dan orang-orang 
+musyrik...">QS. Al-Bayyinah 98: 1</a> membedakan Ahli Kitab dengan penyembah berhala, 
+yang dalam ayat tersebut disebut sebagai musyrik; dan <a href="#" title="إ&#1616;ن&#1617;&#1614; ال&#1617;&#1614;ذ&#1616;ين&#1614; ك&#1614;ف&#1614;ر&#1615;وا م&#1616;ن&#1618; أ&#1614;ه&#1618;ل&#1616; ال&#1618;ك&#1616;ت&#1614;اب&#1616; 
+و&#1614;ال&#1618;م&#1615;ش&#1618;ر&#1616;ك&#1616;ين&#1614; ف&#1616;ي ن&#1614;ار&#1616; ج&#1614;ه&#1614;ن&#1617;&#1614;م&#1614;
+Sesungguhnya orang-orang 
+kafir dari ahli kitab dan orang-orang musyrik -dimasukkan- ke dalam 
+neraka Jahanam..."QS. Al-Bayyinah 98: 6></a> yang juga membatasi/mengecualikan bahwa tidak 
+seluruh Ahli Kitab dimasukkan ke neraka jahanam. Ayat lain misalnya
+ <a href="#" title="و&#1614;د&#1617;&#1614;ت ط&#1617;&#1614;ائ&#1616;ف&#1614;ة&#1612; م&#1616;&#1617;ن&#1618; أ&#1614;ه&#1618;ل&#1616; 
+ال&#1618;ك&#1616;ت&#1614;اب&#1616; ل&#1614;و&#1618; ي&#1615;ض&#1616;ل&#1617;&#1615;ون&#1614;ك&#1615;م&#1618; و&#1614;م&#1614;ا ي&#1615;ض&#1616;ل&#1617;&#1615;ون&#1614; إ&#1616;ل&#1617;&#1614;ا أ&#1614;نف&#1615;س&#1614;ه&#1615;م&#1618; و&#1614;م&#1614;ا
+ ي&#1614;ش&#1618;ع&#1615;ر&#1615;ون&#1614;
+Segolongan dari Ahli Kitab ingin menyesatkan kamu, 
+padahal mereka (sebenarnya) tidak menyesatkan melainkan dirinya sendiri,
+ dan mereka tidak menyadarinya.">QS. Ali Imran 3: 69</a> menjelaskan bahwa tidak semua 
+Ahli Kitab yang ingin menyesatkan, hanya segolongan saja dari Ahli 
+Kitab; <a href="#" title="و&#1614;ل&#1614;و&#1618; آم&#1614;ن&#1614; أ&#1614;ه&#1618;ل&#1615; 
+ال&#1618;ك&#1616;ت&#1614;اب&#1616; ل&#1614;ك&#1614;ان&#1614; خ&#1614;ي&#1618;ر&#1611;ا ل&#1617;&#1614;ه&#1615;م &#1754; م&#1616;&#1617;ن&#1618;ه&#1615;م&#1615; ال&#1618;م&#1615;ؤ&#1618;م&#1616;ن&#1615;ون&#1614; 
+و&#1614;أ&#1614;ك&#1618;ث&#1614;ر&#1615;ه&#1615;م&#1615; ال&#1618;ف&#1614;اس&#1616;ق&#1615;ون&#1614;
+... di antara mereka ada yang beriman...">QS. Ali Imran 3: 110</a> lebih tegas mengatakan, bahwa: diantara mereka ada yang beriman.<br />
+<br />
+Komunitas
+ Yahudi dan Kristen dalam Islam sangat dihormati dan dihargai sebagai 
+sesama &#8220;agama Semit&#8221; warisan Ibrahim. <a href="#" title="و&#1614;ل&#1614;ت&#1614;ج&#1616;د&#1614;ن&#1617;&#1614; أ&#1614;ق&#1618;ر&#1614;ب&#1614;ه&#1615;م م&#1617;&#1614;و&#1614;د&#1617;&#1614;ة&#1611; ل&#1616;&#1617;ل&#1617;&#1614;ذ&#1616;ين&#1614; آم&#1614;ن&#1615;وا ال&#1617;&#1614;ذ&#1616;ين&#1614;
+ ق&#1614;ال&#1615;وا إ&#1616;ن&#1617;&#1614;ا ن&#1614;ص&#1614;ار&#1614;ى&#1648; &#1754; ذ&#1614;&#1648;ل&#1616;ك&#1614; ب&#1616;أ&#1614;ن&#1617;&#1614; م&#1616;ن&#1618;ه&#1615;م&#1618; ق&#1616;س&#1616;&#1617;يس&#1616;ين&#1614; 
+و&#1614;ر&#1615;ه&#1618;ب&#1614;ان&#1611;ا و&#1614;أ&#1614;ن&#1617;&#1614;ه&#1615;م&#1618; ل&#1614;ا ي&#1614;س&#1618;ت&#1614;ك&#1618;ب&#1616;ر&#1615;ون&#1614;
+Dan sesungguhnya kamu
+ dapati yang paling dekat persahabatannya dengan orang-orang yang 
+beriman ialah orang-orang yang berkata: "Sesungguhnya kami ini orang 
+Nasrani". Yang demikian itu disebabkan karena di antara mereka itu 
+(orang-orang Nasrani) terdapat pendeta-pendeta dan rahib-rahib, (juga) 
+karena sesungguhnya mereka tidak menymbongkan diri.">QS. Al-Maidah 
+5:82</a> juga 
+menyatakan secara jelas bahwa diantara mereka terdapat para rahib yang 
+sederhana dan pendeta yang terdidik, dan mereka tidak menyombongkan 
+diri. Para pendeta dan rahib yang disebut Al-Qur&#8217;an ini merujuk pada 
+kaum evangelis Kristen. Sayangnya kini terjadi pergeseran serius status 
+non-Muslim dari &#8220;Ahlul Kitab&#8221; yang dihargai hak-haknya ke &#8220;kafir&#8221; yang 
+berpotensi menghancurkan Islam dan kaum Muslim. Kelompok &#8220;Islam ekstrim&#8221;
+ menjadi mereka komunitas agama yang selalu dicurigai dan menjadi 
+ancaman serius terhadap eksistensi Islam.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Teori Ushul Fiqh</span>
+							<h2 class="title title--full">Muhkam dan Mutasyabih</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/logo_s.png" alt="author05" />
+								<span class="meta__author">Redaksi Ushulfiqh.com</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushul Fiqh</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Free Content</span>
+							</div>
+<p>Al-Qur'an adalah sebuah kitab yang kaya akan simbol dan metafor, dan karenanya menjadi multiinterpretasi. Bagian Al-Qur'an yang masuk kategori ayat muhkam dapat dipahami dengan jelas, sehingga tidak memerlukan ta'wil, sebagian yang lain adalah ayat mutasyabih yang ambigu dan membutuhkan ta'wil. (Takwil: adalah memindahkan makna dzahir kepada makna lain).</p>
+<p>Aturannya adalah, yang mutasyabih harus dikembalikan ke yang muhkam. Maksudnya, tafsir atas yang ambigu didasarkan pada yang jelas, atau yang muhkam menjadi panduan untuk menafsirkan dan memahami yang mutasyabih. Jadi bagian-bagian Al-Qur'an saling menafsirkan satu sama lain. Konsep Muhkam Mutasyabih menekankan penggunaan kriteria-kriteria internal dalam mengurai dan mencari kejelasan makna teks yang samar. Hal ini karena Al-Qur'an mengandung bagian-bagian yang dapat dianggap sebagai kunci-kunci semantik yang memungkinkan pembaca dapat memasuki "dunia bahasa Al-Qur'an", sehingga memungkinkan menangkap hal-hal yang rahasia dan samar.</p><br/>
+<p><b>Konsep Muhkam Mutasyabih</b><br />
+<br />
+Ambiguitas
+ Al-Qur'an yang dimaksud adalah bagian-bagian Al-Qur'an kadang 
+mengandung dua makna, baik secara hakiki maupun metaforis, memiliki dua 
+makna yang memiliki kemungkinan sama dan salah satunya sulit di tarjih 
+sehingga makna mana yang dimaksudkan sulit dipastikan. (Yang ambigu ini 
+disebut juga mujmal. Baca: Mujmal). Dan salah satu fenomena ambiguitas 
+yang terpenting adalah perselisihan seputar muhkam dan mutasyabih.<br />
+<br />
+Ambiguitas
+ ini muncul karena karakter dari sifat bahasa. Hubungan antara ungkapan 
+struktur bahasa dengan makna atau semantiknya kadang ambigu dan 
+distingsi, memiliki potensi abstraksi dan generalisasi, atau gradasi 
+dari yang distingsi ke ambigu. Selain bentuk morfologis (sharf) kata 
+kerja, melalui sistem bahasa, semantik dan stilistika yang ada dalam 
+teks Al-Qur'an yang membentuk leksikografinya yang khas, juga banyak 
+dari kata dalam Al-Qur'an yang mengandung banyak kemungkinan bacaan.<br />
+<br />
+Misalnya <a href="#" title="و&#1614;ي&#1614;س&#1618;أ&#1614;ل&#1615;ون&#1614;ك&#1614; ع&#1614;ن&#1616; ال&#1618;م&#1614;ح&#1616;يض&#1616; &#1750;
+ ق&#1615;ل&#1618; ه&#1615;و&#1614; أ&#1614;ذ&#1611;ى ف&#1614;اع&#1618;ت&#1614;ز&#1616;ل&#1615;وا الن&#1616;&#1617;س&#1614;اء&#1614; ف&#1616;ي ال&#1618;م&#1614;ح&#1616;يض&#1616; &#1750; و&#1614;ل&#1614;ا 
+ت&#1614;ق&#1618;ر&#1614;ب&#1615;وه&#1615;ن&#1617;&#1614; ح&#1614;ت&#1617;&#1614;ى&#1648; ي&#1614;ط&#1618;ه&#1615;ر&#1618;ن&#1614; &#1750; ف&#1614;إ&#1616;ذ&#1614;ا ت&#1614;ط&#1614;ه&#1617;&#1614;ر&#1618;ن&#1614; ف&#1614;أ&#1618;ت&#1615;وه&#1615;ن&#1617;&#1614; 
+م&#1616;ن&#1618; ح&#1614;ي&#1618;ث&#1615; أ&#1614;م&#1614;ر&#1614;ك&#1615;م&#1615; الل&#1617;&#1614;ه&#1615; &#1754; إ&#1616;ن&#1617;&#1614; الل&#1617;&#1614;ه&#1614; ي&#1615;ح&#1616;ب&#1617;&#1615; الت&#1617;&#1614;و&#1617;&#1614;اب&#1616;ين&#1614; 
+و&#1614;ي&#1615;ح&#1616;ب&#1617;&#1615; ال&#1618;م&#1615;ت&#1614;ط&#1614;ه&#1616;&#1617;ر&#1616;ين&#1614;
+Mereka bertanya kepadamu 
+tentang haidh. Katakanlah: &#8220;Haidh itu adalah suatu kotoran&#8221;. Oleh sebab 
+itu hendaklah kamu menjauhkan diri dari wanita di waktu haidh; dan 
+janganlah kamu mendekati mereka, sebelum mereka suci. Apabila mereka 
+telah suci, maka campurilah mereka itu di tempat yang diperintahkan 
+Allah kepadamu. Sesungguhnya Allah menyukai orang-orang yang bertaubat 
+dan menyukai orang-orang yang mensucikan diri.">QS. Al-Baqarah 2: 222</a> dimana kata 
+mendekati dapat diartikan secara harfiah atau kiasan, dan kata suci juga
+ dapat berarti berhenti haid dan dapat pula berarti wudhu, atau mandi 
+besar. Yang tepat adalah mendekati secara kiasan, dalam arti hubungan 
+suami istri, dan yang dimaksud suci tentu saja bukan karena wudhu, tapi 
+makna yang lain. Atau <a href="#" title="ه&#1615;و&#1614; ال&#1617;&#1614;ذ&#1616;ي خ&#1614;ل&#1614;ق&#1614; الس&#1617;&#1614;م&#1614;او&#1614;ات&#1616; 
+و&#1614;ال&#1618;أ&#1614;ر&#1618;ض&#1614; ف&#1616;ي س&#1616;ت&#1617;&#1614;ة&#1616; أ&#1614;ي&#1617;&#1614;ام&#1613; ث&#1615;م&#1617;&#1614; اس&#1618;ت&#1614;و&#1614;ى&#1648; ع&#1614;ل&#1614;ى ال&#1618;ع&#1614;ر&#1618;ش&#1616; &#1754; 
+ي&#1614;ع&#1618;ل&#1614;م&#1615; م&#1614;ا ي&#1614;ل&#1616;ج&#1615; ف&#1616;ي ال&#1618;أ&#1614;ر&#1618;ض&#1616; و&#1614;م&#1614;ا ي&#1614;خ&#1618;ر&#1615;ج&#1615; م&#1616;ن&#1618;ه&#1614;ا و&#1614;م&#1614;ا ي&#1614;نز&#1616;ل&#1615; 
+م&#1616;ن&#1614; الس&#1617;&#1614;م&#1614;اء&#1616; و&#1614;م&#1614;ا ي&#1614;ع&#1618;ر&#1615;ج&#1615; ف&#1616;يه&#1614;ا &#1750; و&#1614;ه&#1615;و&#1614; م&#1614;ع&#1614;ك&#1615;م&#1618; أ&#1614;ي&#1618;ن&#1614; م&#1614;ا 
+ك&#1615;نت&#1615;م&#1618; &#1754; و&#1614;الل&#1617;&#1614;ه&#1615; ب&#1616;م&#1614;ا ت&#1614;ع&#1618;م&#1614;ل&#1615;ون&#1614; ب&#1614;ص&#1616;ير&#1612;
+Dialah 
+yang menciptakan langit dan bumi dalam enam masa: Kemudian Dia 
+bersemayam di atas 'Arsy. Dia mengetahui apa yang masuk ke dalam bumi 
+dan apa yang keluar daripadanya dan apa yang turun dari langit dan apa 
+yang naik kepada-Nya. Dan Dia bersama kamu di mana saja kamu berada. Dan
+ Allah Maha Melihat apa yang kamu kerjakan.">QS. Al-Hadid 57:4</a> dimana tidak 
+mungkin mengartikan kebersamaan (ma'a) dalam "Dan Dia bersama kamu di 
+mana saja kamu berada" dengan arti bersama atau kedekatan secara harfiah
+ dengan zat Allah, karena itu harus dibelokkan dari makna tersebut dan 
+diartikan dengan kekuasaan, pengetahuan, atau penjagaan. Atau <a href="#" title="و&#1614;اخ&#1618;ف&#1616;ض&#1618; ل&#1614;ه&#1615;م&#1614;ا ج&#1614;ن&#1614;اح&#1614; الذ&#1617;&#1615;ل&#1616;&#1617; م&#1616;ن&#1614; 
+الر&#1617;&#1614;ح&#1618;م&#1614;ة&#1616; و&#1614;ق&#1615;ل ر&#1617;&#1614;ب&#1616;&#1617; ار&#1618;ح&#1614;م&#1618;ه&#1615;م&#1614;ا ك&#1614;م&#1614;ا ر&#1614;ب&#1617;&#1614;ي&#1614;ان&#1616;ي ص&#1614;غ&#1616;ير&#1611;ا
+Dan
+ rendahkanlah dirimu terhadap mereka berdua dengan penuh kesayangan dan 
+ucapkanlah: Wahai Tuhanku, kasihilah mereka keduanya, sebagaimana mereka
+ berdua telah mendidik aku waktu kecil.">QS. Al-Isra' 17: 24</a> dimana sayap ditakwil 
+dengan makna lain. Tentu karena manusia tidak memiliki sayap, ayat 
+tersebut diartikan dengan tunduk dan bersikan baik.<br />
+<br />
+Yang
+ menjadi menarik berikutnya adalah kenapa Al-Qur'an memiliki ambiguitas?
+ Kenapa tidak seluruhnya muhkam?. Jawabannya sederhana, andaikata 
+seluruh Al-Qur'an itu muhkam, maka hanya akan ada satu golongan saja. 
+Islam hanya akan memiliki satu wajah, tidak ada diferensiasi 
+madzhab-madzhab. Hasil akhirnya, Islam melahirkan satu kebudayaan. Jika 
+keseluruhan Qur'an adalah mubham ia akan cocok dengan satu golongan 
+saja, dan tidak mengakui penafsiran dan golongan lain karena sifatnya 
+jelas sehingga tidak memerlukan ta'wil atau penafsiran lain. Konsep ini 
+menjadi penting dalam kerangka pluralitas. Karena Al-Qur'an memuat yang 
+muhkam dan mutasyabih, maka masing-masing pengikut dari satu golongan 
+akan berusaha mendapatkan didalamnya suatu yang menguatkan golongannya 
+dan mendukung pendapatnya. Semua pengikut golongan -golongan tersebut 
+akan meneliti dan memikirkannya. Al-Qur'an kemudian menjadikan dirinya 
+sebagai poros kebudayaan melalui akseptabilitasnya untuk ditafsirkan dan
+ ditakwilkan secara beraneka ragam dalam berbagai tempat dan waktu, 
+bukan menjadi poros kebudayaan yang menafikan kebudayaan-kebudayaan 
+lain.<p/><br />
+<p><b>Mekanisme Muhkam Mutasyabih</b><p/>
+<p>Prinsipnya
+ adalah bahwa ambiguitas ayat mutasyabih maknanya dapat ditemukan dengan
+ kembali kepada Al-Qur'an itu sendiri di tempat lain. Asumsinya adalah, 
+sebuah ayat yang mutasyabih di suatu tempat, mempunyai penjelasannya di 
+tempat&nbsp; lain atau memiliki penafsirannya ada di tempat lain. 
+Mekanismenya, jika ingin manafsirkan bagian Al-Qur'an yang ambigu maka 
+pertama kali harus mancarinya dalam Al-Qur'an. Karena sebagaimana 
+disebutkan di awal: bagian-bagian Al-Qur'an saling menafsirkan satu sama
+ lain sehingga bisa menggunakan kriteria-kriteria internal didalam 
+Al-Qur'an itu sendiri untuk mengurai dan mencari kejelasan makna yang 
+samar.<br />
+<br />
+Konsep Muhkam Mutasyabih dengan sendirinya 
+menjelaskan bahwa tidak selalu tepat memaknai Al-Qur'an secara harfiah. 
+Contoh-contoh sudah kita sebutkan sebelumnya, dan contoh lain dapat 
+ditemukan di berbagai tulisan di blog ini, misalnya: Amr dan Nahi, 
+menjelaskan bagaimana ayat muhkam pun yang berisi perintah yang jelas 
+akhirnya tidak selalu berarti kewajiban, dan larangan yang tegas dalam 
+Al-Qur'an juga tidak selalu berarti keharaman. (Lihat: Amr dan Nahi)<br />
+<br />
+Mengungkap
+ makna Al-Qur'an yang ambigu dalam menafsirkan dan menta'wilkannya harus
+ tunduk pada rasionalitas. Produk tafsir-ta'wil tidak dibenarkan 
+bertentangan dengan yang rasional. Hal ini tidak lain karena Al-Qur'an 
+tidak bertantangan dengan akal manusia. Jika hukum-hukum dan kandungan 
+Al-Qur'an tidak rasional, maka tentu saja rasionalitas manusia secara 
+keseluruhan ditolak Al-Qur'an. Jika Al-Qur'an tidak rasional maka akan 
+berbeda-beda antara satu kelompok dengan kelompok lain dalam satu masa 
+dan dalam satu masyarakat dalam memahami Al-Qur'an, dan akan 
+berbeda-beda antara masyarakat satu sengan masyarakat lainnya dalam satu
+ masa, dan perbedaan itu akan semakin berbeda seiring dengan perubahan 
+waktu, kemajuan zaman, dam perkembangan masyarakat. Realitasnya tidak 
+demikian, tapi Al-Qur'an melintasi masa selalu sejalan dengan akal 
+manusia. Jadi kesimpulannya sederhana, Al-Qur'an dan rasionalitas tidak 
+saling bertentangan. Hal ini karena akal manusia tidak mendustakan apa 
+yang dibawa oleh syara'. Sebabnya tidak lain karena syara' hanya membawa
+ apa yang dapat dipahami oleh akal. Dan karena Al-Qur'an dan 
+rasionalitas itu sejalan, maka mekanisme menafsirkan dan menta'wilkan 
+harus tunduk pada rasionalitas.<p/><br />
+
+<p><b>Kesimpulan</b><p/>
+<p>
+Realitasnya
+ adalah terjadi perbedaan pendapat mengenai makna Al-Qur'an yang ambigu 
+dalam menafsirkan dan menta'wilkannya. Konsep Muhkam Mutasyabih dan 
+mekanisme penyelesaiannya meski menggunakan data dari bahasa teks 
+Al-Qur'an, takwil berangkat dari kerangka kultural yang 
+merepresentasikan wawasan pembaca terhadap teks Al-Qur'an. Menetapkan 
+mana makna yang tidak diunggulkan dan diunggulkan tergantung pada 
+wawasan dan akal pembaca/penafsir. Produk akhirnya, kalau disimpulkan, 
+karena banyak interpretasi pada tataran struktur dan stilistika (gaya 
+bahasa), dan tentu saja, ditambah perbedaan cara pandang yang menjadi 
+pijakan pembaca dan mufasir, adalah produk tafsir yang selalu ada pada 
+level dzanni (asumsi, dugaan), bukan yang qat'iy (pasti).</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Teori Ushul Fiqh</span>
+							<h2 class="title title--full">Amr dan Nahi</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author06" />
+								<span class="meta__author">Redaksi Ushulfiqh.com</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+							</div>
+<p>Ada dua pendekatan untuk memahami Syari'at Islam. Pertama, melalui pendekatan Maqashid Syari’ah atau tujuan syara’ dalam menetapkan hukum (Lihat: Maqashid Syari'ah). Kedua, karena Al-Qur’an dan Sunnah dimana syari’at Islam terkandung didalamnya menggunakan medium bahasa Arab, maka untuk memahami syari’at Islam adalah melalui kaidah-kaidah kebahasaan. </p>
+<p>Diantara kaidah kebahasaan yang digunakan untuk menetapkan dan menerangkan hukum-hukum syari’at adalah Amr dan Nahi. Hal ini karena kebanyakan hukum-hukum syari’at yang taklif ditetapkan atas adanya tuntutan untuk melaksanakan atau tuntutan untuk meninggalkannya.</p><br/>
+<p><b>Konsep Amr dan Nahi</b><p/>
+<p>
+Dalam
+ terminologi ushul fiqh, Amr adalah tuntutan untuk melaksanakan suatu 
+perintah, dan Nahi berarti perintah atau tuntutan meninggalkan suatu 
+larangan. Keduanya adalah perintah, yang pertama adalah perintah untuk 
+melaksanakan hal-hal yang diperintah, yang kedua adalah perintah untuk 
+meninggalkan hal-hal yang dilarang. Sebagaimana Amr, Nahi juga merupakan
+ tuntutan. Nahi merupakan larangan, baik yang harus ditinggalkan yang 
+disebut haram, atau yang sebaiknya ditinggalkan yang disebut makruh; dan
+ Amr bisa juga berarti perintah yang harus dilakukan atau disebut juga 
+Wajib, atau berupa perintah yang sebaiknya dilakukan atau yang disebut 
+Sunnah. Yang menentukan apakah Amr berarti Wajib atau Sunnah, dan Nahi 
+apakah menunjukkan hukum Haram atau Makruh sesuai dengan yang 
+dikehendaki syara&#8217;, adalah qarinah-qarinah yang menjelaskannya. Apabila 
+Amr dan Nahi disertai qarinah maka maknanya sesuai dengan konteks dan 
+qarinahnya tersebut.<p/>
+                            
+<div id="accordion7">
+  <h3>Pola Perintah (Amr) dalam Al-Qur'an</h3>
+  <div>
+    <p>Dalam bahasa arab, 
+bentuk amr menggunakan sighat if&#8217;al yang berarti kerjakan dan li-taf&#8217;al 
+yang berarti hendaklah kamu mengerjakan. Sedangkan Nahi menggunakan 
+sighat (bentuk kalimat) la taf&#8217;al yang berarti janganlah kamu 
+mengerjakan. Selain itu, ada beberapa bentuk (sighah) yang dimiliki amr,
+ yang semuanya menuntut dilaksanakannya suatu perbuatan, yaitu:<br />
+<br />
+(1) Fi&#8217;il amr (kata kerja imperatif)<br />
+(2) Fi&#8217;il Mudhari yang disertai huruf lam yang berfungsi imperatif<br />
+(3) Ism Mashdar yang berfungsi sebagai fi&#8217;il amr<br />
+(4) Ism fi&#8217;il amr<br />
+(5) Jumlah Khabariyah yang digunakan sebagai tuntutan (thalab)<br />
+(6) Pernyataan yang berakar dari kata amr<br />
+(7) Pernyataan yang berakar dari kata fardl<br />
+(8) Pernyataan yang berakar dari kata kutiba</p>
+  </div>
+  <h3>Pola Larangan (Nahi) dalam Al-Qur'an</h3>
+  <div>
+    <p>Lafadz Nahi juga 
+memiliki model yang yang variatif. Ada beberapa model yang mempunyai 
+arti larangan, yaitu:<br />
+<br />
+(1) menggunakan kata yang berakar dari naha<br />
+(2) menggunakan kata yang berakar dari haruma<br />
+(3) menggunakan kata yang berakar dari zara&#8217;a,<br />
+(4) menggunakan kalimat khabar yang didahului oleh huruf la nafi.</p>
+  </div>
+</div>     
+                            
+<br/>
+<p><b>Mekanisme Amr dan Nahi</b><p/>
+<p>
+<i>Pertama, </i>Amr
+ pada dasarnya menunjukkan wajib, kecuali ada qarinah yang menunjukkan 
+selainnya. Nahi pada dasarnya menunjukkan keharaman, kecuali adanya 
+dalil yang menunjukkan sebaliknya. Contohnya, perintah shalat dan zakat 
+dalam QS. al-Baqarah (2): 43 adalah berarti kewajiban setiap mukalaf 
+untuk melakukan shalat dan membayar zakat. Begitu juga perintah menjaga 
+persaudaraan Sunni-Syi'ah, Ahmadiyah, dan golongan lain dalam Islam 
+sebagaimana diwajibkan <a href="#" title="
+إ&#1616;ن&#1617;&#1614;م&#1614;ا ٱل&#1761;م&#1615;ؤ&#1761;م&#1616;ن&#1615;ون&#1614; إ&#1616;خ&#1761;و&#1614;ة&#1612;&#1772; ف&#1614;أ&#1614;ص&#1761;ل&#1616;ح&#1615;وا&#1618; ب&#1614;ي&#1761;ن&#1614; أ&#1614;خ&#1614;و&#1614;ي&#1761;ك&#1615;م&#1761;&#8204;&#1754; و&#1614;ٱت&#1617;&#1614;ق&#1615;وا&#1618; ٱلل&#1617;&#1614;ه&#1614; ل&#1614;ع&#1614;ل&#1617;&#1614;ك&#1615;م&#1761; ت&#1615;ر&#1761;ح&#1614;م&#1615;ون&#1614;
+Sesungguhnya
+ orang-orang yang beriman adalah bersaudara karena itu damaikanlah 
+antara kedua saudaramu dan bertakwalah kepada Allah supaya kamu mendapat
+ rahmat.
+QS. Al-Hujurat (49:10) ">QS. Al-Hujurat 49:10</a>. Atau dalam konteks 
+yang lebih luas kaitannya hubungan antar agama, mukmin atau orang yang 
+beriman dalam ayat tersebut bisa dikembalikan ke makna generiknya yaitu 
+siapapun yang percaya dan menaruh percaya (trust) kepada Tuhan, termasuk
+ Ahli Kitab dan umat agama lain, bukan eksklusif dimaksudkan umat Islam 
+saja. (Lihat juga: Ahli Kitab). Dalam rangka mewujudkan ikatan 
+silaturahmi dan tali persaudaraan antar bangsa - antar agama - antar 
+kebudayaan, merupakan kewajiban kita sebagai umat beragama untuk saling 
+mengenal. <a href="#" title="
+ي&#1614;ـ&#1648;&#1619;أ&#1614;ي&#1617;&#1615;ہ&#1614;ا 
+ٱلن&#1617;&#1614;اس&#1615; إ&#1616;ن&#1617;&#1614;ا خ&#1614;ل&#1614;ق&#1761;ن&#1614;ـ&#1648;ك&#1615;م م&#1617;&#1616;ن ذ&#1614;ك&#1614;ر&#1613;&#1772; و&#1614;أ&#1615;نث&#1614;ى&#1648; و&#1614;ج&#1614;ع&#1614;ل&#1761;ن&#1614;ـ&#1648;ك&#1615;م&#1761; 
+ش&#1615;ع&#1615;وب&#1611;&#1772;ا و&#1614;ق&#1614;ب&#1614;ا&#1619;ٮ&#1621;&#1616;ل&#1614; ل&#1616;ت&#1614;ع&#1614;ار&#1614;ف&#1615;و&#1619;ا&#1618;&#8204;&#1754; إ&#1616;ن&#1617;&#1614; أ&#1614;ڪ&#1761;ر&#1614;م&#1614;ك&#1615;م&#1761; ع&#1616;ند&#1614; 
+ٱلل&#1617;&#1614;ه&#1616; أ&#1614;ت&#1761;ق&#1614;ٮ&#1648;ك&#1615;م&#1761;&#8204;&#1754; إ&#1616;ن&#1617;&#1614; ٱلل&#1617;&#1614;ه&#1614; ع&#1614;ل&#1616;يم&#1612; خ&#1614;ب&#1616;ير&#1612;&#1772;
+Hai manusia, sesungguhnya Kami menciptakan kamu dari seorang laki-laki dan 
+seorang perempuan dan menjadikan kamu berbangsa-bangsa dan bersuku-suku 
+supaya kamu saling kenal mengenal. Sesungguhnya orang yang paling mulia 
+di antara kamu di sisi Allah ialah orang yang paling bertakwa di antara 
+kamu. Sesungguhnya Allah Maha Mengetahui lagi Maha Mengenal.
+Q.S Al-Hujraat 49:13">Q.S Al-Hujraat 49:13</a> menjelaskan bahwa dalam pandangan Islam, 
+manusia mempunyai dua kapasitas, yaitu sebagai hamba (&#8216;abid) dan sebagai
+ representasi Tuhan (khalifah), tanpa membedakan jenis kelamin, etnik, 
+agama, warna kulit, dan sebagainya. Laki-laki dan perempuan mempunyai 
+kewajiban yang sama dalam menjalankan tugas menjaga perdamaian dan 
+silaturahmi antar agama. <a href="#" title="
+و&#1614;ل&#1618;ت&#1614;ك&#1615;ن
+ م&#1616;&#1617;نك&#1615;م&#1618; أ&#1615;م&#1617;&#1614;ة&#1612; ي&#1614;د&#1618;ع&#1615;ون&#1614; إ&#1616;ل&#1614;ى ال&#1618;خ&#1614;ي&#1618;ر&#1616; و&#1614;ي&#1614;أ&#1618;م&#1615;ر&#1615;ون&#1614; ب&#1616;ال&#1618;م&#1614;ع&#1618;ر&#1615;وف&#1616;
+ و&#1614;ي&#1614;ن&#1618;ه&#1614;و&#1618;ن&#1614; ع&#1614;ن&#1616; ال&#1618;م&#1615;نك&#1614;ر&#1616; &#1754; و&#1614;أ&#1615;ول&#1614;&#1648;ئ&#1616;ك&#1614; ه&#1615;م&#1615; ال&#1618;م&#1615;ف&#1618;ل&#1616;ح&#1615;ون&#1614; [٣:١٠٤]
+Dan
+ hendaklah ada di antara kamu segolongan umat yang menyeru kepada 
+kebajikan, menyuruh kepada yang ma'ruf dan mencegah dari yang munkar; 
+merekalah orang-orang yang beruntung.
+">Q.S.Ali &#8216;Imran, 3:104</a> dan <a href="#" title="
+إ&#1616;ن&#1617;&#1614;
+ ٱلل&#1617;&#1614;ه&#1614; ي&#1614;أ&#1761;م&#1615;ر&#1615; ب&#1616;ٱل&#1761;ع&#1614;د&#1761;ل&#1616; و&#1614;ٱل&#1761;إ&#1616;ح&#1761;س&#1614;ـ&#1648;ن&#1616; و&#1614;إ&#1616;يت&#1614;ا&#1619;ى&#1621;&#1616; ذ&#1616;ى 
+ٱل&#1761;ق&#1615;ر&#1761;ب&#1614;ى&#1648; و&#1614;ي&#1614;ن&#1761;ه&#1614;ى&#1648; ع&#1614;ن&#1616; ٱل&#1761;ف&#1614;ح&#1761;ش&#1614;ا&#1619;ء&#1616; و&#1614;ٱل&#1761;م&#1615;نڪ&#1614;ر&#1616; و&#1614;ٱل&#1761;ب&#1614;غ&#1761;ى&#1616;&#8204;&#1754; 
+ي&#1614;ع&#1616;ظ&#1615;ك&#1615;م&#1761; ل&#1614;ع&#1614;ل&#1617;&#1614;ڪ&#1615;م&#1761; ت&#1614;ذ&#1614;ك&#1617;&#1614;ر&#1615;ون&#1614;
+Sesungguhnya Allah 
+menyuruh [kamu] berlaku adil dan berbuat kebajikan, memberi kepada kaum 
+kerabat, dan Allah melarang dari perbuatan keji, kemungkaran dan 
+permusuhan. Dia memberi pengajaran kepadamu agar kamu dapat mengambil 
+pelajaran.
+QS. An-Nahl 16: 90">QS. An-Nahl 16: 90</a> merupakan ayat substantif 
+sekaligus menjadi tujuan umum syari'ah untuk mewujudkan keadilan dan 
+kebajikan, dan melarang permusuhan. Kedua ayat ini menjadi kerangka 
+analisa relasi jender dalam Al-Qur'an, bahwa laki-laki dan perempuan 
+memiliki peran sosial dalam masyarakat yang sama.<br />
+<br />
+Namun
+ tidak setiap perintah dalam Al-Qur'an dihukumi sebagai wajib. 
+Tergantung ada tidaknya qarinah yang menunjukkan arti selain wajib. 
+Shalat Tahajud misalnya. dalam <a href="#" title="و&#1614;م&#1616;ن&#1614; الل&#1617;&#1614;ي&#1618;ل&#1616; ف&#1614;ت&#1614;ه&#1614;ج&#1617;&#1614;د&#1618; ب&#1616;ه&#1616; ن&#1614;اف&#1616;ل&#1614;ة&#1611; ل&#1617;&#1614;ك&#1614; ع&#1614;س&#1614;ى&#1648; أ&#1614;ن 
+ي&#1614;ب&#1618;ع&#1614;ث&#1614;ك&#1614; ر&#1614;ب&#1617;&#1615;ك&#1614; م&#1614;ق&#1614;ام&#1611;ا م&#1617;&#1614;ح&#1618;م&#1615;ود&#1611;ا<br />
+Dan pada sebahagian malam 
+hari bersembahyang tahajudlah kamu sebagai suatu ibadah tambahan bagimu;
+ mudah-mudahan Tuhan-mu mengangkat kamu ke tempat yang 
+terpuji.">QS. Al-Isra' 17: 79</a> menunjukkan arti perintah yang jelas, dimana 
+disebutkan sebelumnya konsep Amr menunjukkan arti wajib. Tapi kita 
+menghukumi Tahajud sebagai Sunnah karena ada qarinah yang menunjukkan 
+arti selain wajib.[/tooltip] Perintah mencatat setiap transaksi jual 
+beli dalam <a href="#" title="
+و&#1614;إ&#1616;ن ك&#1615;نت&#1615;م&#1618; 
+ع&#1614;ل&#1614;ى&#1648; س&#1614;ف&#1614;ر&#1613; و&#1614;ل&#1614;م&#1618; ت&#1614;ج&#1616;د&#1615;وا ك&#1614;ات&#1616;ب&#1611;ا ف&#1614;ر&#1616;ه&#1614;ان&#1612; م&#1617;&#1614;ق&#1618;ب&#1615;وض&#1614;ة&#1612; &#1750; ف&#1614;إ&#1616;ن&#1618; 
+أ&#1614;م&#1616;ن&#1614; ب&#1614;ع&#1618;ض&#1615;ك&#1615;م ب&#1614;ع&#1618;ض&#1611;ا ف&#1614;ل&#1618;ي&#1615;ؤ&#1614;د&#1616;&#1617; ال&#1617;&#1614;ذ&#1616;ي اؤ&#1618;ت&#1615;م&#1616;ن&#1614; أ&#1614;م&#1614;ان&#1614;ت&#1614;ه&#1615; 
+و&#1614;ل&#1618;ي&#1614;ت&#1617;&#1614;ق&#1616; الل&#1617;&#1614;ه&#1614; ر&#1614;ب&#1617;&#1614;ه&#1615; &#1751; و&#1614;ل&#1614;ا ت&#1614;ك&#1618;ت&#1615;م&#1615;وا الش&#1617;&#1614;ه&#1614;اد&#1614;ة&#1614; &#1754; و&#1614;م&#1614;ن 
+ي&#1614;ك&#1618;ت&#1615;م&#1618;ه&#1614;ا ف&#1614;إ&#1616;ن&#1617;&#1614;ه&#1615; آث&#1616;م&#1612; ق&#1614;ل&#1618;ب&#1615;ه&#1615; &#1751; و&#1614;الل&#1617;&#1614;ه&#1615; ب&#1616;م&#1614;ا ت&#1614;ع&#1618;م&#1614;ل&#1615;ون&#1614; 
+ع&#1614;ل&#1616;يم&#1612;
+Jika kamu dalam perjalanan (dan bermu'amalah 
+tidak secara tunai) sedang kamu tidak memperoleh seorang penulis, maka 
+hendaklah ada barang tanggungan yang dipegang (oleh yang berpiutang). 
+Akan tetapi jika sebagian kamu mempercayai sebagian yang lain, maka 
+hendaklah yang dipercayai itu menunaikan amanatnya (hutangnya) dan 
+hendaklah ia bertakwa kepada Allah Tuhannya; dan janganlah kamu (para 
+saksi) menyembunyikan persaksian. Dan barangsiapa yang 
+menyembunyikannya, maka sesungguhnya ia adalah orang yang berdosa 
+hatinya; dan Allah Maha Mengetahui apa yang kamu kerjakan.">QS. Al-Baqarah 2: 283</a>
+adalah tidak wajib.<br />
+<br />
+Contoh lain misalnya terkait hukum pidana Islam, dimana <a href="#" title="
+ي&#1614;ا أ&#1614;ي&#1617;&#1615;ه&#1614;ا ال&#1617;&#1614;ذ&#1616;ين&#1614; آم&#1614;ن&#1615;وا ك&#1615;ت&#1616;ب&#1614; ع&#1614;ل&#1614;ي&#1618;ك&#1615;م&#1615; ال&#1618;ق&#1616;ص&#1614;اص&#1615; ف&#1616;ي ال&#1618;ق&#1614;ت&#1618;ل&#1614;ى
+Hai
+ orang-orang yang beriman, diwajibkan atas kamu qishash berkenaan dengan
+ orang-orang yang dibunuh.">QS. Al-Baqarah 2: 283</a> secara harfiah pemberlakuan Qishash
+ adalah wajib. Tapi sekarang hukum ini dianggap tidak lagi sesuai dengan
+ rasa keadilan. Qishash adalah hukuman pritimif: mata dibalas mata, 
+telinga dibalas telinga, nyawa balas nyawa, tidak ada pengecualian. Dulu
+ Qishash adalah praktek yang lumrah dimana hampir semua bangsa 
+pra-modern menerapkannya, bukan merupakan hukum original dari Islam. 
+Dari analisis Mashlahah Mursalah hukum pidana seperti rajam, potong 
+tangan, qisas, hukum penyaliban, dsb. ini sudah tidak bisa diberlakukan 
+lagi karena tidak sesuai dengan rasa keadilan masyarakat modern.<br />
+<br />
+<i>Kedua,</i>
+ Amr pada dasarnya tidak memiliki konsekuensi untuk segera dikerjakan. 
+Pada dasarnya perintah tidak mengharuskan segera dilakukan kecuali ada 
+qarinah (indikasi) yang menunjukkan bahwa suatu perkara itu harus 
+dilakukan dengan segera. Jika Amr tidak dikaitkan dengan qarinah yang 
+menunjukkan waktu pelaksanaannya maka itu berarti tidak menghendaki 
+penyegeraan, karena inti konsep Amr adalah terwujudnya suatu pekerjaan, 
+dan pemenuhan perintah itu bukan diletakkan pada kesegeraannya, tetapi 
+atas kesempurnaannya.<br />
+<br />
+<i>Ketiga,</i> Amr pada dasarnya 
+tidak memiliki konsekuensi pengulangan, kecuali ada qarinah yang 
+menghendaki adanya pengulangan. Amr yang terkait dengan syarat dan sifat
+ adalah menunjukkan pengulangan. Sebagaimana perintah bersuci karena 
+junub, <a href="#" title="QS. 5:6">QS. 5:6</a> dan perintah salat karena 
+bergesernya matahari, <a href="#" title="QS. 17: 78">QS. 17: 78</a> yang 
+berarti perintah bersuci harus dilakukan setiap kali junub, dan 
+melakukan shalat setiap bergesernya matahari. Jika Amr mutlak atau tidak
+ disertai syarat dan sifat atau adanya qarinah yang mengnendaki 
+pengulangan, maka perintah itu cukup dilakukan sekali. Sesuai dengan 
+kaidah bahwa asal sesuatu itu bebas dari tanggungan (al-ashl bara&#8217;at 
+al-dzimmah).<br />
+<br />
+<i>Keempat,</i> sesuatu yang menjadi 
+sarana atau medium bagi terlaksananya suatu kewajiban hukumnya wajib. 
+Perintah mengerjakan sesuatu, berarti perintah juga mengerjakan hal yang
+ menyebabkan perbuatan tersebut terwujud. <br />
+<br />
+<i>Kelima,</i>
+ perintah kepada sesuatu, berarti larangan terhadap kebalikannya. Dan 
+sebaliknya, larangan akan suatu dapat diartikan sebagai perintah 
+terhadap sesuatu yang berlawanan atau kebalikan dari yang dilarang 
+tersebut.<br />
+<br />
+<br />
+<br />
+<b>Perintah setelah Larangan</b><br />
+<br />
+Sesuatu
+ yang diperintahkan setelah sebelumnya dilarang adalah menunjukkan hukum
+ mubah (tidak wajib). Jika sesuatu diperintahkan setelah sebelumnya 
+dilarang, maka status hukum perintah tersebut bukan berarti wajib atau 
+sunnah, tetapi mubah. Contoh kuntu nahay tukum an ziyaraatil qabuuri fa 
+zuuruuha, Aku telah melarang berziarah kubur, maka berziarahlah 
+sekarang. (H.R. Muslim). Perintah dalam hadis ini menunjukkan bahwa 
+status hukum berziarah kubur adalah mubah atau boleh, sebab letaknya 
+jatuh setelah larangan.<p/><br />
+<p><b>Penutup</b><p/>
+<p>
+Pada pembahasan <a href="http://fiqhushul.blogspot.co.id/2015/11/mafhum.html">Mafhum</a>
+ dijalaskan bahwa beberapa bagian Al-Qur&#8217;an memberikan pemahaman secara 
+langsung dan 
+jelas, beberapa lainnya tidak memberikan arti dan pemahaman yang jelas 
+karena maknanya tersirat. Hal ini menjadikan Al-Qur'an sebagai sumber 
+hukum Islam, tidak selalu tepat didekati dengan
+ mengandalkan pemahaman harfiah saja. Pembahasan Amr dan Nahi disini 
+juga menjelaskan hal yang sama bahwa Al-Qur'an tidak bisa didekati 
+secara harfiah. Sesuatu yang diperintahkan secara tegas, yang semestinya
+ dibaca sebagai wajib, kadang tidak selalu demikian. Perlu analisis yang
+ lengkap apakah sebuah ayat terkait <a href="http://fiqhushul.blogspot.co.id/2015/11/nasakh-mansukh.html">Nasakh Mansukh</a>, <a href="http://fiqhushul.blogspot.co.id/2015/11/mutlaq-muqayyad.html">Mutlaq Muqayyad</a>, <a href="http://fiqhushul.blogspot.co.id/2015/11/amm-dan-khash.html">Amm dan Khash</a>, dan sebagainya.</p>
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Teori Ushul Fiqh</span>
+							<h2 class="title title--full">Mafhum</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" width="20%" src="img/logo_t.png" alt="author07" />
+								<span class="meta__author">Redaksi Ushul Fiqh</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> Ushulfiqh.com</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> Pro</span>
+							</div>
+<p>Beberapa bagian Al-Qur’an bisa dipahami secara langsung dan jelas, beberapa lainnya tidak memberikan arti dan pemahaman yang jelas karena maknanya tersirat. Karenanya Al-Qur'an sebagai sumber hukum Islam tidak selalu tepat didekati dengan mengandalkan pemahaman harfiah saja. </p>
+<p>Realitas Al-Qur'an ini menjadikan 
+hukum-hukum dalam Islam tidak selalu mendapat rujukan secara tekstual dalam 
+Al-Qur'an. Meski demikiaan, terkadang penunjukan hukum yang tidak 
+disebutkan mempunyai kesamaan dengan hukum yang disebutkan <i>(Mafhum muwafaqoh)</i>.<i> Mafhum</i> adalah pengertian tersirat dari suatu teks.</p>
+<p>Lihat contoh sederhana dalam kasus dimana suatu hal tetap memiliki konsekuensi 
+hukum meski tidak disebutkan dalam Al-Qur'an:<p/>
+    
+<div id="accordion8">
+  <h3>Memukul / menyakiti kedua orang tua</h3>
+  <div>
+    <p>Kita tidak menemukan ayat 
+Al-Qur'an yang secara harfiah mengatakan 
+larangan memukul atau menyakiti kedua orang tua. Hukum yang tersurat dalam <a href="#" title="و&#1614;ق&#1614;ض&#1614;ى&#1648; ر&#1614;ب&#1617;&#1615;ك&#1614; أ&#1614;ل&#1617;&#1614;ا ت&#1614;ع&#1618;ب&#1615;د&#1615;وا إ&#1616;ل&#1617;&#1614;ا إ&#1616;ي&#1617;&#1614;اه&#1615; 
+و&#1614;ب&#1616;ال&#1618;و&#1614;ال&#1616;د&#1614;ي&#1618;ن&#1616; إ&#1616;ح&#1618;س&#1614;ان&#1611;ا &#1754; إ&#1616;م&#1617;&#1614;ا ي&#1614;ب&#1618;ل&#1615;غ&#1614;ن&#1617;&#1614; ع&#1616;ند&#1614;ك&#1614; ال&#1618;ك&#1616;ب&#1614;ر&#1614; 
+أ&#1614;ح&#1614;د&#1615;ه&#1615;م&#1614;ا أ&#1614;و&#1618; ك&#1616;ل&#1614;اه&#1615;م&#1614;ا ف&#1614;ل&#1614;ا ت&#1614;ق&#1615;ل ل&#1617;&#1614;ه&#1615;م&#1614;ا أ&#1615;ف&#1613;&#1617; و&#1614;ل&#1614;ا 
+ت&#1614;ن&#1618;ه&#1614;ر&#1618;ه&#1615;م&#1614;ا و&#1614;ق&#1615;ل ل&#1617;&#1614;ه&#1615;م&#1614;ا ق&#1614;و&#1618;ل&#1611;ا ك&#1614;ر&#1616;يم&#1611;ا
+Dan Tuhanmu telah memerintahkan supaya kamu jangan menyembah selain Dia dan 
+hendaklah kamu berbuat baik pada ibu bapakmu dengan sebaik-baiknya. Jika
+ salah seorang di antara keduanya atau kedua-duanya sampai berumur 
+lanjut dalam pemeliharaanmu, maka sekali-kali janganlah kamu mengatakan 
+kepada keduanya perkataan "uff" dan janganlah kamu membentak mereka dan 
+ucapkanlah kepada mereka perkataan yang mulia.">QS. al-Isra' (17):23</a>[/tooltip]&nbsp; adalah 
+larangan mengucapkan kata &#8220;uff&#8221; dan menghardik orang tua. Tapi larangan 
+memukul orang tua dan perbuatan lain yang menyakiti orang tua adalah 
+<i>Mafhum muwafaqoh</i> (memiliki konsekuensi hukum yang sama dengan 
+yang disebutkan) dari ayat tersebut. Ketentuan hukumnya tersirat dalam 
+ayat tersebut.<br />
+<br />
+<a href="#" title="Makna 
+yang tersirat lebih berat hukumnya daripada harfiahnya">Fahwal Khitab</a> ayat 
+ini adalah mengucapkan kata-kata keji saja tidak boleh (dilarang) 
+apalagi memukulnya. &nbsp;</p>
+  </div>
+  <h3>Membakar / merusak harta anak yatim</h3>
+  <div>
+    <p>Begitu juga kita tidak menemukan hukum 
+larangan membakar atau merusak harta anak 
+yatim. Yang ada, secara harfiah <a href="#" title="إ&#1616;ن&#1617;&#1614; ال&#1617;&#1614;ذ&#1616;ين&#1614; ي&#1614;أ&#1618;ك&#1615;ل&#1615;ون&#1614; أ&#1614;م&#1618;و&#1614;ال&#1614; ال&#1618;ي&#1614;ت&#1614;ام&#1614;ى&#1648; ظ&#1615;ل&#1618;م&#1611;ا إ&#1616;ن&#1617;&#1614;م&#1614;ا 
+ي&#1614;أ&#1618;ك&#1615;ل&#1615;ون&#1614; ف&#1616;ي ب&#1615;ط&#1615;ون&#1616;ه&#1616;م&#1618; ن&#1614;ار&#1611;ا &#1750; و&#1614;س&#1614;ي&#1614;ص&#1618;ل&#1614;و&#1618;ن&#1614; س&#1614;ع&#1616;ير&#1611;ا
+Sesungguhnya
+ orang-orang yang memakan harta anak yatim secara zalim, sebenarnya 
+mereka itu menelan api sepenuh perutnya dan mereka akan masuk ke dalam 
+api yang menyala-nyala (neraka).">QS. al-Nisa' 4: 10</a> memberikan 
+ilustrasi hukuman bagi pemakan harta anak yatim, yang berarti larangan 
+memakan harta anak yatim. Larangan membakar (atau hal-hal yang sifatnya 
+merusak) harta anak yatim <i>Mafhum muwafaqoh</i> (memiliki konsekuensi hukum yang sama dengan yang disebutkan) dari ayat tersebut.<br />
+<br />
+<a href="#" title="Makna yang tersirat sama hukumnya dengan 
+harfiahnya">Lahnal Khitab</a> ayat ini adalah memakan, membakar, merusak, 
+menghabiskan harta anak yatim, atau perbuatan apapun mengambil haknya 
+anak yatim adalah memiliki kosnekuensi hukum yang sama.</p>
+  </div>
+</div>
+    
+
+<br />
+<p>Definisi dan contoh tersebut menjelaskan bahwa hukum terhadap sesuatu yang tidak disebutkan dalam Al-Qur'an terkadang sama dengan hukum yang disebutkan <i>(Mafhum muwafaqoh). </i>Kesamaan hukum ini disebabkan karena adanya kesamaan <i>illat</i> (alasan hukum, ratio legis) atau <i>wasf </i>(sifat, kualitas)</span>. Tapi terkadang hukum hanya berlaku pada yang disebutkan sehingga tersirat bahwa pada apa yang tidak disebutkan maka konsekuensi hukumnya berbeda (<i>Mafhum mukhalafah</i>). <i>Mafhum mukhalafah</i> semacam pembatasan. (Lihat juga: <a href="http://www.ushulfiqh.com/2015/11/amm-dan-khash.html">Takhsis</a>). Lihat contoh 
+sederhana dalam kasus:<p/>
+                    
+<div id="accordion9">
+  <h3>Jual beli saat Adzan Jum'at</h3>
+  <div>
+    <p><a href="#" title="ي&#1614;ا أ&#1614;ي&#1617;&#1615;ه&#1614;ا ال&#1617;&#1614;ذ&#1616;ين&#1614; آم&#1614;ن&#1615;وا إ&#1616;ذ&#1614;ا ن&#1615;ود&#1616;ي&#1614; ل&#1616;لص&#1617;&#1614;ل&#1614;اة&#1616; م&#1616;ن ي&#1614;و&#1618;م&#1616; ال&#1618;ج&#1615;م&#1615;ع&#1614;ة&#1616; ف&#1614;اس&#1618;ع&#1614;و&#1618;ا إ&#1616;ل&#1614;ى&#1648; ذ&#1616;ك&#1618;ر&#1616; الل&#1617;&#1614;ه&#1616; و&#1614;ذ&#1614;ر&#1615;وا ال&#1618;ب&#1614;ي&#1618;ع&#1614; &#1754; ذ&#1614;&#1648;ل&#1616;ك&#1615;م&#1618; خ&#1614;ي&#1618;ر&#1612; ل&#1617;&#1614;ك&#1615;م&#1618; إ&#1616;ن ك&#1615;نت&#1615;م&#1618; ت&#1614;ع&#1618;ل&#1614;م&#1615;ون&#1614;
+Hai orang-orang beriman, apabila diseru untuk menunaikan shalat Jum'at, maka bersegeralah kamu kepada mengingat Allah dan tinggalkanlah jual beli. Yang demikian itu lebih baik bagimu jika kamu mengetahui.">QS. Al-Jum'ah 62: 9</a> secara harfiah menghukumi tidak bolehnya jual beli saat adzan Jum'at, sedang pada hari-hari yang lain tidak disebutkan. Dapat dipahami hukum jual beli pada selain hari Jum'at Mafhum mukhalafah (memiliki konsekuensi hukum yang berbeda dengan yang disebutkan) dari ayat ini yaitu: boleh, termasuk kebolehan jual beli di hari Jum&#8217;at sebelum adzan 
+dan setelah selesai shalat Jum'at.</p>
+  </div>
+  <h3>Zakat hewan yang digembalakan</h3>
+  <div>
+    <p>Hadits Nabi Muhammad: فى 
+سا&#1618;يمة الغنام زكاة &#8220;Pada hewan-hewan yang digembalakan terdapat (wajib) 
+zakat&#8221;. Hadits ini tidak menjelas status hewan yang tidak digembalakan. Status hewan yang digunakan untuk bekerja misalnya, adalah <i>Mafhum mukhalafah </i> (memiliki konsekuensi hukum yang berbeda dengan yang disebutkan)</span> dari hadits ini, yaitu: tidak adanya kewajiban zakat</p>
+  </div>
+  <h3>Haji di bulan yang ditentukan</h3>
+  <div>
+    <p>Dari <a href="#" title="ال&#1618;ح&#1614;ج&#1617;&#1615; أ&#1614;ش&#1618;ه&#1615;ر&#1612; م&#1617;&#1614;ع&#1618;ل&#1615;وم&#1614;ات&#1612; &#1754; ف&#1614;م&#1614;ن ف&#1614;ر&#1614;ض&#1614; ف&#1616;يه&#1616;ن&#1617;&#1614; 
+ال&#1618;ح&#1614;ج&#1617;&#1614; ف&#1614;ل&#1614;ا ر&#1614;ف&#1614;ث&#1614; و&#1614;ل&#1614;ا ف&#1615;س&#1615;وق&#1614; و&#1614;ل&#1614;ا ج&#1616;د&#1614;ال&#1614; ف&#1616;ي ال&#1618;ح&#1614;ج&#1616;&#1617; &#1751; و&#1614;م&#1614;ا 
+ت&#1614;ف&#1618;ع&#1614;ل&#1615;وا م&#1616;ن&#1618; خ&#1614;ي&#1618;ر&#1613; ي&#1614;ع&#1618;ل&#1614;م&#1618;ه&#1615; الل&#1617;&#1614;ه&#1615; &#1751; و&#1614;ت&#1614;ز&#1614;و&#1617;&#1614;د&#1615;وا ف&#1614;إ&#1616;ن&#1617;&#1614; خ&#1614;ي&#1618;ر&#1614;
+ الز&#1617;&#1614;اد&#1616; الت&#1617;&#1614;ق&#1618;و&#1614;ى&#1648; &#1754; و&#1614;ات&#1617;&#1614;ق&#1615;ون&#1616; ي&#1614;ا أ&#1615;ول&#1616;ي ال&#1618;أ&#1614;ل&#1618;ب&#1614;اب&#1616;<br />
+<br />
+(Musim)
+ haji adalah beberapa bulan yang dimaklumi, barangsiapa yang menetapkan 
+niatnya dalam bulan itu akan mengerjakan haji, maka tidak boleh rafats, 
+berbuat fasik dan berbantah-bantahan di dalam masa mengerjakan haji. Dan
+ apa yang kamu kerjakan berupa kebaikan, niscaya Allah mengetahuinya. 
+Berbekallah, dan sesungguhnya sebaik-baik bekal adalah takwa dan 
+bertakwalah kepada-Ku hai orang-orang yang berakal.">QS. al-Baqarah 2:197</a> 
+disimpulkan bahwa Tidak adanya haji kecuali pada bulan-bulan tertentu 
+yang telah masyhur.</p>
+  </div>
+</div>      
+                    
+                    
+
+<br />
+<p><b>Konsep Mafhum</b><p/>
+<p>
+Konsep <i>Mafhum</i> dengan
+ sendirinya menjelaskan sebuah realitas bahwa tidak semua persoalan ada 
+jawabannya "secara harfiah" dalam Al-Qur'an. <i>Mafhum muwafaqoh</i> dan <span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-language: IN; vertical-align: baseline;"><i>Mafhum mukhalafah</i></span> adalah upaya menemukan makna tersirat Al-Qur'an sehingga hal apapun yang tidak disebutkan didalamnya tetap bisa 
+merujuk secara tidak langsung pada Al-Qur'an. Namun tidak semua persoalan bisa dijawab Al-Qur'an. Misalnya 
+Al-Qur'an tidak lengkap dalam memuat konsep keadilan. Masalah perbudakan misalnya, jelas memperlihatkan ketidaksempurnaan Al-Qur'an dalam memuat konsep keadilan secara menyeluruh. Realitasnya kita tidak bisa menemukan landasan 
+tekstual yang kuat untuk mengilegalkan perbudakan, karena Al-Qur'an 
+tidak secara eksplisit mengharamkan tindak dehumanisasi ini. Praktek 
+perbudakan tidak pernah dihapuskan secara mutlak baik melalui Al-Quran 
+ataupun Hadits, dan konsep <i>Mafhum muwafaqoh</i> dan <span style="mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-language: IN; vertical-align: baseline;"><i>Mafhum mukhalafah</i></span> tidak menjawab kasus ini. Persoalan bisa dijawab dengan kembali ke konsep generik <i>Mafhum:</i><p/>
+                    
+<div id="accordion10">
+  <h3>Hukum perbudakan</h3>
+  <div>
+    <p>Mencermati pesan yang implisit dari ayat Qur'an kita menjumpai banyak indikasi bahwa visi ke depan yang hendak dituju Islam adalah kesetaraan. <i>Mafhum </i>penyebutan Al-Qur'an: <i>'ithq al-raqabah</i> (pembebasan budak) sebagai sanksi atas dosa-dosa tertentu adalah upaya untuk memedekakan setiap budak, atau dengan kata lain adalah menghapuskan sistem perbudakan. Ini adalah visi Islam: kesetaraan, karena tidak ada sistem kasta dalam Islam. Umar ibn Khattab pernah mengatakan: <i>"limadza ista'badtum al-nas, laqad waladathum ummahatuhum ahraran"</i> (mengapa memperbudak manusia, sementara mereka lahir dalam kondisi bebas?).</p>
+  </div>
+  <h3>Larangan poligami</h3>
+  <div>
+    <p>Al-Qur'an juga tidak secara tegas melarang 
+poligami. Meski poligami bukanlah bentuk perkawinan yang dikehendaki 
+Islam, Al-Qur'an mengungapkannya tidak secara langsung. Meski demikian, 
+spirit Al-Qur'an pembatasan maksimal empat dari tradisi tanpa batas pada
+ masa pra-Islam, terjadi karena kondisi saat itu tidak memungkinkan untuk 
+menetapkan keharusan monogami. Maka <i>Mafhum </i>bahwa bukan empat itulah yang dituju sebagai hukum final Islam. Dalam konsep Islam, idealnya adalah: satu suami satu isteri.<br />
+Baca selengkapnya: <a href="http://www.ushulfiqh.com/2015/11/poligami.html">Poligami</a></p>
+  </div>
+  <h3>...</h3>
+  <div>
+    <p>...</p>
+  </div>
+</div>
+                    
+                    
+						</article>
+						<article class="content__item">
+							<span class="category category--full">Philosophy</span>
+							<h2 class="title title--full">Ignorance is Bliss</h2>
+							<div class="meta meta--full">
+								<img class="meta__avatar" src="img/authors/8.png" alt="author08" />
+								<span class="meta__author">Matthew Walters</span>
+								<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+								<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+							</div>
+							<p>In contrast to this, our discussion readily shows that the double meaning in question belonged to the word taboo from the very beginning and that it serves to designate a definite ambivalence as well as everything which has come into existence on the basis of this ambivalence. </p>
+							<p>Excerpts from <a href="http://www.gutenberg.org/ebooks/41214">Totem and Taboo</a> by Sigmund Freud.</p>
+						</article>
+					</div>
+					<button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+				</section>
+			</div>
+		</div><!-- /container -->
+        
+		<script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
