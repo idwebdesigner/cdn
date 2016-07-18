@@ -1,11 +1,167 @@
-<!DOCTYPE html>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Shuttle - Material Design Mobile Template</title>
+    <meta name="description" content="Material Design Mobile Template">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+    <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#222222">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/" >
+    -->
+
+    <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+    <!--
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    -->
+      
+    <!-- Fonts -->
+    <link href="fonts/raleway.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="ionicons-2.0.1/css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+      
+    <script src="offline/h5utils.js"></script>
+    <style>#hideMe {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+    @keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+    }
+    @-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+    }</style>
+    <script src="js/vendor/jquery-2.1.0.min.js"></script>
+    <script> 
+    $(function(){
+    $("#contentloader").load("http://file.designer.web.id/database/angular.html"); 
+    $("#rightloader").load("http://file.designer.web.id/database/right.html"); 
+    $("#leftloader").load("http://file.designer.web.id/database/left.html"); 
+    });
+    </script> 
+  </head>
+  
+  <body>
         
-    </body>
+        <!-- Article Content -->
+        <div class="animated fadeinup delay-1">
+            <div id="contentloader"></div>
+          <div class="section">
+            <p class="text-flow"><span class="dropcap">A</span> AngularJS fits the definition of a framework the best, even though it's much more lightweight than a typical framework and that's why many confuse it with a library. AngularJS is 100% JavaScript, 100% client-side and compatible with both desktop and mobile browsers. So it's definitely not a plugin or some other native browser extension.</p>
+            <div id='hideMe'><br/><img src="img/30.gif" style="width:20px; float:left; margin-right: 10px; "><p class="small">Load database...</p></div>
+              
+            <article>
+              <p class="small"><span id="status">checking...</span></p>
+              <ol id="state"></ol>
+            </article>
+            <script>
+            var statusElem  = document.getElementById('status'),
+                state               = document.getElementById('state');
+
+            function online(event) {
+              statusElem.className = navigator.onLine ? 'online' : 'offline';
+              statusElem.innerHTML = navigator.onLine ? '' : '<br/>You&#39;re offline, check network connection, more content required internet access';
+              state.innerHTML += '';
+            }
+
+            addEvent(window, 'online', online);
+            addEvent(window, 'offline', online);
+            online({ type: 'ready' });
+            </script>
+
+              
+              <script style="font-size:5em;" src="https://gist.github.com/faridiot/70f10f33a9249ae80262709572eaaff6.js"></script>
+              
+            <ul class="faq collapsible popout animated fadeinright delay-2" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>PROJECT USING ANGULAR</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/fa5c9a76d659dc67eceaeae962e0dadd.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>GLOSSARY</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/dca30610ec17ca999adf43938bad8c47.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>DEVELOPER</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/267de79f0f1a35c1b04cb9d17b8e4ea4.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>JSFIDDLE EXAMPLES</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/916b4ed0978c1494fd432c80398fdb8f.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>CONTRIBUTING</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/5c7994e5c6e7e41e36edaa301c1bc854.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>LICENSE</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/55cf09cdf8646fe6ca68a16a51c6df54.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>FAQ</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/01a5b5e1adadcc3f407670ee115e6828.js"></script></div>
+              </li>
+            </ul>
+              
+              
+          </div>
+        </div>
+    
+    <!-- Scripts -->
+    <script src="js/vendor/jquery-2.1.0.min.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/vendor/HeadsUp.js"></script>
+    <script src="js/vendor/jquery.smoothState.js"></script>
+    <script src="js/vendor/chart.min.js"></script>
+    <script src="js/vendor/jquery.mixitup.min.js"></script>
+    <script src="js/vendor/jquery.swipebox.min.js"></script>
+    <script src="js/vendor/masonry.min.js"></script>
+    <script src="js/vendor/swiper.min.js"></script>
+    <script src="js/vendor/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
