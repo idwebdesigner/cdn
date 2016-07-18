@@ -83,27 +83,6 @@
         <div class="animated fadeinup delay-1">
           <div class="section">
             <p class="text-flow"><span class="dropcap">A</span> AngularJS fits the definition of a framework the best, even though it's much more lightweight than a typical framework and that's why many confuse it with a library. AngularJS is 100% JavaScript, 100% client-side and compatible with both desktop and mobile browsers. So it's definitely not a plugin or some other native browser extension.</p>
-            <div id='hideMe'><br/><img src="img/30.gif" style="width:20px; float:left; margin-right: 10px; "><p class="small">Load database...</p></div>
-              
-            <article>
-              <p class="small"><span id="status">checking...</span></p>
-              <ol id="state"></ol>
-            </article>
-            <script>
-            var statusElem  = document.getElementById('status'),
-                state               = document.getElementById('state');
-
-            function online(event) {
-              statusElem.className = navigator.onLine ? 'online' : 'offline';
-              statusElem.innerHTML = navigator.onLine ? '' : '<br/>You&#39;re offline, check network connection, more content required internet access';
-              state.innerHTML += '';
-            }
-
-            addEvent(window, 'online', online);
-            addEvent(window, 'offline', online);
-            online({ type: 'ready' });
-            </script>
-
               
               <script style="font-size:5em;" src="https://gist.github.com/faridiot/70f10f33a9249ae80262709572eaaff6.js"></script>
               
