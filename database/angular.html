@@ -48,24 +48,45 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+      
+    <script src="offline/h5utils.js"></script>
+    <style>#hideMe {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+    @keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+    }
+    @-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+    }</style>
     <style>a {color: #80771E;}</style>
   </head>
   
   <body>
         
-    <!-- Main Container -->
-    <div id="main" class="main">
-
-
-
-      <!-- Page Contents -->
-      <div class="animated fadeinup">
-        
-        <!-- Article Content -->
         <div class="animated fadeinup delay-1">
           <div class="section">
               
             <p class="text-flow"><span class="dropcap">A</span> AngularJS fits the definition of a framework the best, even though it's much more lightweight than a typical framework and that's why many confuse it with a library. AngularJS is 100% JavaScript, 100% client-side and compatible with both desktop and mobile browsers. So it's definitely not a plugin or some other native browser extension.</p>
+            <div id='hideMe'><br/><img src="img/30.gif" style="width:20px; float:left; margin-right: 10px; "><p class="small">Load database...</p></div>
+              
+            <br/>
               
               <script style="font-size:5em;" src="https://gist.github.com/faridiot/70f10f33a9249ae80262709572eaaff6.js"></script>
               
@@ -103,14 +124,9 @@
               
           </div>
         </div>
-
-      </div> 
-      <!-- End of Page Contents -->
-        
-    </div>
-    <!-- End of Main Container -->
     
     <!-- Scripts -->
+    <script src="js/vendor/jquery-2.1.0.min.js"></script>
     <script src="js/vendor/jquery-2.1.0.min.js"></script>
     <script src="js/helper.js"></script>
     <script src="js/vendor/HeadsUp.js"></script>
