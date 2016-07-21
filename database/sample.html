@@ -6,6 +6,17 @@
         <title></title>
          <script src="js/vendor/jquery-2.1.0.min.js"></script>
         <script type="text/javascript" src="js/vendor/gist-embed.min.js"></script>
+
+    <script>setInterval(function) {
+      $.ajax({
+      url : "img/30.gif",/* or other resource */
+      type: "HEAD"
+      })
+      .done(function() {
+      location.reload();
+      });
+}, 6000;</script>
+
     </head>
     <body>
                     <p class="text-flow"><span class="dropcap">SAMPLE</span><div id='hideMe'><br/><img src="img/30.gif" style="width:20px; float:left; margin-right: 10px; "><p class="small">Load database...</p></div>
