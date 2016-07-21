@@ -1,27 +1,113 @@
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-         <script src="js/vendor/jquery-2.1.0.min.js"></script>
-        <script type="text/javascript" src="js/vendor/gist-embed.min.js"></script>
-
-    <script>setInterval(function) {
-      $.ajax({
-      url : "img/30.gif",/* or other resource */
-      type: "HEAD"
-      })
-      .done(function() {
-      location.reload();
-      });
-}, 6000;</script>
-
-    </head>
-    <body>
-                    <p class="text-flow"><span class="dropcap">SAMPLE</span><div id='hideMe'><br/><img src="img/30.gif" style="width:20px; float:left; margin-right: 10px; "><p class="small">Load database...</p></div>
+            <p class="text-flow"><span class="dropcap">J</span> JavaScript library for mobile-friendly interactive maps. Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 33 KB of gzipped JS code, it has all the mapping <a href="http://leafletjs.com/#features">features</a> most developers ever need.</p><div id='hideMe'><br/><img src="img/30.gif" style="width:20px; float:left; margin-right: 10px; "><p class="small">Load database...</p></div>
               <br/>
+              
+             <p><p>A <a href="https://select2.github.io/">Select2</a> v4 <a href="https://select2.github.io/examples.html#themes">Theme</a> for Bootstrap 3</p>
+<p>Demonstrations available at<br>
+<a href="http://select2.github.io/select2-bootstrap-theme/">select2.github.io/select2-bootstrap-theme</a></p>
+<h5><a id="Compatibility_5"></a>Compatibility</h5>
+<p>Tested with Bootstrap v3.3.6 and Select2 v4.0.3 in latest Chrome, Firefox and Safari (Mac) and Internet Explorer 11 and 10.</p>
+<h5><a id="Installation_9"></a>Installation</h5>
+<p>You can <a href="https://github.com/select2/select2-bootstrap-theme/releases">download select2-bootstrap-theme from this GitHub repo</a>, install it using Bower or npm, or source it directly from CDNJS.</p>
+<h6><a id="Install_using_Bower_or_npm_13"></a>Install using Bower or npm</h6>
+<p>You may install select2-bootstrap-theme with <a href="https://bower.io/">Bower</a> or <a href="https://www.npmjs.com/">npm</a>:</p>
+<pre><code class="language-shell">// Bower
+bower install select2-bootstrap-theme
 
-        <code data-gist-id="e5cb26d9f3a3c7b6bd0cfd541dca2a9a"></code>
-    </body>
-</html>
+// npm
+npm install select2-bootstrap-theme
+</code></pre>
+<h6><a id="Source_select2bootstraptheme_from_CDNJS_25"></a>Source select2-bootstrap-theme from CDNJS</h6>
+<p>select2-bootstrap-theme <a href="https://cdnjs.com/libraries/select2-bootstrap-theme/">is also available on CDNJS</a>.</p>
+<h5><a id="Usage_29"></a>Usage</h5>
+<p>The Select2 Bootstrap Theme only works with Select2 v4.x. Applying the theme requires <code>select2-bootstrap.css</code> referenced after the default <code>select2.css</code> that comes with Select2:</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"select2.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"select2-bootstrap.css"</span>&gt;</span>
+</code></pre>
+<p>To apply the theme, tell Select2 to do so by passing <code>bootstrap</code> to the <a href="https://select2.github.io/examples.html#themes"><code>theme</code></a> option when initializing Select2:</p>
+<pre><code class="language-js">$( <span class="hljs-string">"#dropdown"</span> ).select2({
+    theme: <span class="hljs-string">"bootstrap"</span>
+});
+</code></pre>
+<h5><a id="Changelog_46"></a>Changelog</h5>
+<h6><a id="010beta8_48"></a>0.1.0-beta.8</h6>
+<ul>
+<li>Fixed bower.jsons “main” field [<a href="https://github.com/select2/select2-bootstrap-theme/pull/45">#45</a>].</li>
+<li>Do no re-assign the <code>$form-control-default-box-shadow</code>, <code>$form-control-focus-box-shadow</code>, and <code>$form-control-transition</code> Sass variables if they are already assigned [<a href="https://github.com/select2/select2-bootstrap-theme/pull/45">#45</a>].</li>
+</ul>
+<h6><a id="010beta7_53"></a>0.1.0-beta.7</h6>
+<ul>
+<li>Fixed version number in distribution files.</li>
+</ul>
+<h6><a id="010beta6_57"></a>0.1.0-beta.6</h6>
+<ul>
+<li>Fixed a bug where math would not compile correctly in Less v2.6.0 [<a href="https://github.com/select2/select2-bootstrap-theme/pull/36">#36</a>].</li>
+<li>Fixed version number for Bower and NPM.</li>
+<li>Docs: Updated AnchorJS to latest version.</li>
+</ul>
+<h6><a id="010beta5_63"></a>0.1.0-beta.5</h6>
+<ul>
+<li>Updated all development dependencies.</li>
+<li>Added Browsersync, Autoprefixer (as required by bootstrap-sass) and scss2less to the build process.</li>
+<li>Built on Bootstrap 3 v3.3.6 and corresponding bootstrap-sass.</li>
+<li>Rewrote the sizing class CSS to work with <code>containerCssClass</code> option available with the full Select2 build. [<a href="https://github.com/select2/select2-bootstrap-theme/issues/34">#34</a>]</li>
+<li>Added copyright and license information. [<a href="https://github.com/select2/select2-bootstrap-theme/issues/43">#43</a>]</li>
+</ul>
+<h6><a id="010beta4_71"></a>0.1.0-beta.4</h6>
+<ul>
+<li>Added missing styles for <code>.select2-container--focus</code>. [<a href="https://github.com/select2/select2-bootstrap-theme/issues/18">#18</a>]</li>
+<li>Added support for Bootstrap’s <a href="http://getbootstrap.com/css/#forms-inline"><code>.form-inline</code></a>. [<a href="https://github.com/select2/select2-bootstrap-theme/pull/13">#13</a>]</li>
+<li>Added basic styles for <code>.select2-selection__clear</code> in <code>.select2-selection--multiple</code>. [<a href="https://github.com/select2/select2-bootstrap-theme/issues/11">#11</a>]</li>
+<li>Brought Less source in line with the Sass version and fixed Less patch file and test. [<a href="https://github.com/select2/select2-bootstrap-theme/commit/3e86f34f6c94302cd8b4d6c3d751c5fb70fe61f6">3e86f34</a>]</li>
+</ul>
+<h6><a id="010beta3_78"></a>0.1.0-beta.3</h6>
+<ul>
+<li>Fixed specifity problems with <code>.form-control.select2-hidden-accessible</code>.</li>
+</ul>
+<h6><a id="010beta2_82"></a>0.1.0-beta.2</h6>
+<ul>
+<li>Added Less version.</li>
+</ul>
+<h6><a id="010beta1_86"></a>0.1.0-beta.1</h6>
+<h5><a id="Contributing_88"></a>Contributing</h5>
+<p>The project offers <a href="http://lesscss.org/">Less</a> and <a href="http://sass-lang.com/">Sass</a> sources for building <code>select2-bootstrap.css</code>; both make use of variables from either <a href="https://github.com/twbs/bootstrap">Bootstrap</a> (Less) or <a href="https://github.com/twbs/bootstrap-sass">Bootstrap for Sass</a>. The demo pages are built using <a href="http://jekyllrb.com/">Jekyll</a> and there are a bunch of <a href="http://gruntjs.com/">Grunt</a> tasks to ease development.</p>
+<p>With <a href="https://www.ruby-lang.org/en/downloads/">Ruby</a> and <a href="http://rubygems.org/pages/download">RubyGems</a>, <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://bower.io/">Bower</a>, <a href="http://nodejs.org/">node.js</a>, <a href="http://lesscss.org/">Less</a> and <a href="http://sass-lang.com/">Sass</a> installed, run</p>
+<pre><code class="language-sh">npm install &amp;&amp; bower install
+</code></pre>
+<p>to install all necessary development dependencies.</p>
+<ul>
+<li><code>grunt copy</code> copies assets from <code>components</code> to <code>_jekyll</code> – use this in case a new version of Twitter Bootstrap or Select2 are out and need to be tested</li>
+<li><code>grunt build</code> builds <code>docs</code></li>
+<li><code>grunt serve</code> builds <code>docs</code> and serves them via Jekyll’s <code>--watch</code> flag on <a href="http://localhost:4000">http://localhost:4000</a></li>
+<li><code>grunt watch</code> watches for changes in <code>src/select2-bootstrap.scss</code> (<a href="https://github.com/gruntjs/grunt-contrib-watch#optionslivereload">livereload</a> is enabled)</li>
+</ul>
+<p>Develop in <code>src/select2-bootstrap.scss</code> and test your changes using <code>grunt watch</code> and <code>grunt serve</code>. Ideally, port your changes to <code>lib/select2-bootstrap.less</code> and make sure tests are passing to verify that Less and Sass compile down to the target CSS via <code>npm test</code>.</p>
+<p><code>grunt scss2less</code> helps in converting the Sass source to its Less counterpart (and overwrites the existing <code>src/select2-bootstrap.less</code>), but doesn’t do the full job – please review the changes to the Less source file and make the necessary adjustments.</p>
+<h5><a id="Copyright_and_license_109"></a>Copyright and license</h5>
+<p>The license is available within the repository in the <a href="LICENSE">LICENSE</a> file.</p></p>
+              
+            <ul class="faq collapsible popout animated fadeinright delay-2" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>FAQ</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/ca9354b4452c5fa01ed7431f353d5895.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>PLUGIN GUIDE</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/abbcc5c17171b504110e2f6f4fd0b029.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>API REFERENCE</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/c81b6152a8a1d09c71a85ebc35381161.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>CHANGELOG</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/cb2b280f9925dff19e9e7052cade3b44.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>CONTRIBUTING</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/4831bd5ede14fb76eea689f1fdb5aa57.js"></script></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="ion-android-add right"></i>LICENSE</div>
+                <div class="collapsible-body"><script src="https://gist.github.com/faridiot/d8d8dcdf8546d7a5bce673a3728d2bc6.js"></script></div>
+              </li>
+            </ul>
